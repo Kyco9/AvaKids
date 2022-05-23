@@ -4,8 +4,10 @@
 @using AvaKids.Models;
 @model Product
 
-@{ 
+
+@{
     var format = System.Globalization.CultureInfo.GetCultureInfo("vi-VN");
+    var otherpd = ViewBag.OtherProduct;
 }
 
 
@@ -77,7 +79,7 @@
                     </div>
                     <div class="product-top">
                         <div class="product-price">
-                            <span class="price-current">@String.Format(format,"{0:c0}", Model.Price)</span>
+                            <span class="price-current">@String.Format(format, "{0:c0}", Model.Price)</span>
                             <span class="price-old">@String.Format(format, "{0:c0}", Model.PriceOld)</span>
                             <span class="price-percent">-20%</span>
                         </div>
@@ -169,7 +171,34 @@
         <div class="other-product">
             <h4>Đồ chơi khác</h4>
             <div class="list-other-product">
-                <div class="other-product-item">
+
+                @foreach(var opd in otherpd)
+                { 
+                    <div class="other-product-item">
+                    <div class="item">
+                        <a href="#">
+                            <div class="item-img">
+                                <img src="~/img/OtherToys/@opd.oImage" />
+                            </div>
+                            <div class="item-content">
+                                <h3>@opd.oProductName</h3>
+                                <p class="item-price">@String.Format(format, "{0:c0}", opd.oPrice)</p>
+                                <div class="boxprice">
+                                    <p class="price-old">@String.Format(format, "{0:c0}", opd.oPriceOld)</p>
+                                    <span class="percent">20%</span>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="buy-btn">
+                            <button>Chọn mua</button>
+                        </div>
+                    </div>
+                </div>
+                }
+
+              
+                @* ============================đầu=============================== *@
+                <!--<div class="other-product-item">
                     <div class="item">
                         <a href="#">
                             <div class="item-img">
@@ -188,9 +217,9 @@
                             <button>Chọn mua</button>
                         </div>
                     </div>
-                </div>
+                </div>-->
                 @* ============================================ *@
-                <div class="other-product-item">
+                <!--<div class="other-product-item">
                     <div class="item">
                         <a href="#">
                             <div class="item-img">
@@ -209,9 +238,9 @@
                             <button>Chọn mua</button>
                         </div>
                     </div>
-                </div>
+                </div>-->
                 @* ============================================ *@
-                <div class="other-product-item">
+                <!--<div class="other-product-item">
                     <div class="item">
                         <a href="#">
                             <div class="item-img">
@@ -230,9 +259,9 @@
                             <button>Chọn mua</button>
                         </div>
                     </div>
-                </div>
+                </div>-->
                 @* ============================================ *@
-                <div class="other-product-item">
+                <!--<div class="other-product-item">
                     <div class="item">
                         <a href="#">
                             <div class="item-img">
@@ -251,9 +280,9 @@
                             <button>Chọn mua</button>
                         </div>
                     </div>
-                </div>
+                </div>-->
                 @* ============================================ *@
-                <div class="other-product-item">
+                <!--<div class="other-product-item">
                     <div class="item">
                         <a href="#">
                             <div class="item-img">
@@ -272,9 +301,9 @@
                             <button>Chọn mua</button>
                         </div>
                     </div>
-                </div>
+                </div>-->
                 @* ============================================ *@
-                <div class="other-product-item">
+                <!--<div class="other-product-item">
                     <div class="item">
                         <a href="#">
                             <div class="item-img">
@@ -293,11 +322,12 @@
                             <button>Chọn mua</button>
                         </div>
                     </div>
-                </div>
+                </div>-->
                 @* ============================================ *@
+                
             </div>
         </div>
-        <div class="comment"></div>
+        <div class="comment" style="height:300px;"></div>
         <div class="commitment"></div>
     </div>
 </body>
