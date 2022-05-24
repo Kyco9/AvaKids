@@ -46,7 +46,13 @@
                         </div>
                     </div>
                     <div class="list-image">
-                        <img class="small-image" src="~/img/do-choi-tram-canh-sat-tuan-tra-cuu-hoa-bien-lego-city-60308-2.jpg" />
+
+                        @foreach (var x in Model.ProductMain.ThumbnailProduct)
+                        {
+                            <img class="small-image" src="~/img/@x.thumb" />
+                        }
+
+                        @*<img class="small-image" src="~/img/do-choi-tram-canh-sat-tuan-tra-cuu-hoa-bien-lego-city-60308-2.jpg" />
                         <img class="small-image" src="~/img/do-choi-tram-canh-sat-tuan-tra-cuu-hoa-bien-lego-city-60308-3.jpg" />
                         <img class="small-image" src="~/img/do-choi-tram-canh-sat-tuan-tra-cuu-hoa-bien-lego-city-60308-5.jpg" />
                         <img class="small-image" src="~/img/do-choi-tram-canh-sat-tuan-tra-cuu-hoa-bien-lego-city-60308-7.jpg" />
@@ -54,7 +60,7 @@
                         <img class="small-image" src="~/img/do-choi-tram-canh-sat-tuan-tra-cuu-hoa-bien-lego-city-60308-2.jpg" />
                         <img class="small-image" src="~/img/do-choi-tram-canh-sat-tuan-tra-cuu-hoa-bien-lego-city-60308-3.jpg" />
                         <img class="small-image" src="~/img/do-choi-tram-canh-sat-tuan-tra-cuu-hoa-bien-lego-city-60308-5.jpg" />
-                        <img class="small-image" src="~/img/do-choi-tram-canh-sat-tuan-tra-cuu-hoa-bien-lego-city-60308-9.jpg" />
+                        <img class="small-image" src="~/img/do-choi-tram-canh-sat-tuan-tra-cuu-hoa-bien-lego-city-60308-9.jpg" />*@
                     </div>
                 </div>
                 <div class="review-post">
@@ -137,8 +143,8 @@
                             <li>
                                 <p class="text01">Loại</p>
                                 <p class="text02">
-                                    <span>@Model.ProductMain.Type</span>
-                                    <span>Đồ chơi lắp ráp</span>
+                                    <span>@Model.ProductMain.Type[0].dd</span>
+                                    <span>@Model.ProductMain.Type[1].dd</span>
                                 </p>
                             </li>
                             <li>

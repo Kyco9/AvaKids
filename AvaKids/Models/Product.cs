@@ -5,6 +5,16 @@ using System.Threading.Tasks;
 
 namespace AvaKids.Models
 {
+    public class TypeList
+    {
+        public string dd { get; set; }
+    }
+
+    public class ThumbnailList
+    {
+        public string thumb { get; set; }
+    }
+
     public class Product
     {
         public int ProductID { get; set; }
@@ -13,13 +23,14 @@ namespace AvaKids.Models
         public decimal PriceOld { get; set; }
         public string Image { get; set; }
         public string Trademark { get; set; }
-        public string Type { get; set; }
+        public List<TypeList> Type { get; set; }
         public byte Age { get; set; }
         public string Material { get; set; }
         public string BoxSize { get; set; }
         public float Weight { get; set; }
         public string Note { get; set; }
         public string Manufacturing { get; set; }
+        public List<ThumbnailList> ThumbnailProduct { get; set; }
 
 
     }
@@ -40,27 +51,82 @@ namespace AvaKids.Models
                 Image = "do-choi-tram-canh-sat-tuan-tra-cuu-hoa-bien-lego-city-60308-6.jpg",
 
                 Trademark = "Lego (Đan Mạch)",
-                Type = "Đồ chơi bé trai Đồ chơi lắp ráp",
+                Type = new List<TypeList>() {
+                    new TypeList
+                    {
+                        dd = "Đồ chơi bé trai"
+                    },
+                    new TypeList
+                    {
+                        dd = "Đồ chơi lắp ráp"
+                    }
+                },
                 Age = 5,
                 Material = "Nhựa",
                 BoxSize = "38x26x6 cm",
                 Weight = 724,
                 Note = "Có các chi tiết nhỏ; không dùng cho trẻ dưới 3 tuổi; tránh nguy cơ tiềm ẩn khi trẻ sử dụng sai",
-                Manufacturing = "Trung Quốc"
+                Manufacturing = "Trung Quốc",
+
+                ThumbnailProduct = new List<ThumbnailList>
+                {
+                    new ThumbnailList
+                    {
+                        thumb = "do-choi-tram-canh-sat-tuan-tra-cuu-hoa-bien-lego-city-60308-6.jpg"
+                    },
+                    new ThumbnailList
+                    {
+                        thumb = "do-choi-tram-canh-sat-tuan-tra-cuu-hoa-bien-lego-city-60308-8.jpg",
+                    },
+                    new ThumbnailList
+                    {
+                        thumb = "do-choi-tram-canh-sat-tuan-tra-cuu-hoa-bien-lego-city-60308-2.jpg",
+                        
+                    },
+                    new ThumbnailList
+                    {
+                        thumb = "do-choi-tram-canh-sat-tuan-tra-cuu-hoa-bien-lego-city-60308-3.jpg",
+                    },
+                    new ThumbnailList
+                    {
+                        thumb = "do-choi-tram-canh-sat-tuan-tra-cuu-hoa-bien-lego-city-60308-4.jpg",
+                    },
+                    new ThumbnailList
+                    {
+                        thumb = "do-choi-tram-canh-sat-tuan-tra-cuu-hoa-bien-lego-city-60308-5.jpg"
+                    },
+                    new ThumbnailList
+                    {
+                        thumb = "do-choi-tram-canh-sat-tuan-tra-cuu-hoa-bien-lego-city-60308-7.jpg",
+                    },
+                    new ThumbnailList
+                    {
+                        thumb = "do-choi-tram-canh-sat-tuan-tra-cuu-hoa-bien-lego-city-60308-9.jpg",
+                    }
+                }
             };
 
             ProductsList = new List<Product>()
             {
                 new Product
                 {
-                    ProductName="Đồ chơi xe địa hình cứu hộ Lego City 60301 (157 chi tiết)",
+                    ProductID = 258927,
+                    ProductName = "Đồ chơi xe địa hình cứu hộ Lego City 60301 (157 chi tiết)",
                     Price = 993200,
                     PriceOld = 1399000,
                     Image = "do-choi-xe-dia-hinh-cuu-ho-lego-city-60301-201121-124424-600x600.jpg",
-
                     Trademark = "Lego (Đan Mạch)",
-                    Type = "Đồ chơi bé trai Đồ chơi lắp ráp",
-                    Age = 5,
+                    Type = new List<TypeList>() {
+                        new TypeList
+                        {
+                            dd = "Đồ chơi bé trai"
+                        },
+                        new TypeList
+                        {
+                            dd = "Đồ chơi lắp ráp"
+                        }
+                    },
+                    Age = 4,
                     Material = "Nhựa",
                     BoxSize = "38x26x6 cm",
                     Weight = 724,
