@@ -2,7 +2,7 @@
 
 
 @using AvaKids.Models;
-@model Product
+@model LegoCity
 
 
 @{
@@ -35,7 +35,7 @@
             <div class="product-left">
                 <div class="product-image">
                     <div class="main-image">
-                        <img src="~/img/@Model.Image" alt="do-choi-tram-canh-sat-tuan-tra-cuu-hoa-bien-lego-city-60308-6" />
+                        <img src="~/img/@Model.ProductMain.Image" alt="do-choi-tram-canh-sat-tuan-tra-cuu-hoa-bien-lego-city-60308-6" />
                         <div class="icon-count-zoom">
                             <div class="zoom-icon"><i class="bi bi-zoom-in"></i></div>
                             <div class="arrow-icon">
@@ -77,15 +77,15 @@
             <div class="product-right">
                 <div class="product-info">
                     <div class="product-title">
-                        <h3>@Model.ProductName</h3>
+                        <h3>@Model.ProductMain.ProductName</h3>
                     </div>
                     <div class="product-top">
                         <div class="product-price">
-                            <span class="price-current">@String.Format(format, "{0:c0}", Model.Price)</span>
-                            <span class="price-old">@String.Format(format, "{0:c0}", Model.PriceOld)</span>
+                            <span class="price-current">@String.Format(format, "{0:c0}", Model.ProductMain.Price)</span>
+                            <span class="price-old">@String.Format(format, "{0:c0}", Model.ProductMain.PriceOld)</span>
                             <span class="price-percent">-20%</span>
                         </div>
-                        <span class="product-code">#@Model.ProductID</span>
+                        <span class="product-code">#@Model.ProductMain.ProductID</span>
                     </div>
                     <div class="product-promotion">
                         <p>Khuyến mãi  (Đến 31/05)</p>
@@ -131,39 +131,39 @@
                         <ul class="info-article ">
                             <li>
                                 <p class="text01">Thương hiệu</p>
-                                <p class="text02">@Model.Trademark</p>
+                                <p class="text02">@Model.ProductMain.Trademark</p>
                             </li>
 
                             <li>
                                 <p class="text01">Loại</p>
                                 <p class="text02">
-                                    <span>@Model.Type</span>
+                                    <span>@Model.ProductMain.Type</span>
                                     <span>Đồ chơi lắp ráp</span>
                                 </p>
                             </li>
                             <li>
                                 <p class="text01">Độ tuổi</p>
-                                <p class="text02">@Model.Age</p>
+                                <p class="text02">@Model.ProductMain.Age</p>
                             </li>
                             <li>
                                 <p class="text01">Chất liệu</p>
-                                <p class="text02">@Model.Material</p>
+                                <p class="text02">@Model.ProductMain.Material</p>
                             </li>
                             <li>
                                 <p class="text01">Kích thước hộp</p>
-                                <p class="text02">@Model.BoxSize</p>
+                                <p class="text02">@Model.ProductMain.BoxSize</p>
                             </li>
                             <li>
                                 <p class="text01">Trọng lượng</p>
-                                <p class="text02">@Model.Weight g</p>
+                                <p class="text02">@Model.ProductMain.Weight g</p>
                             </li>
                             <li>
                                 <p class="text01">Lưu ý khi sử dụng</p>
-                                <p class="text02">@Model.Note</p>
+                                <p class="text02">@Model.ProductMain.Note</p>
                             </li>
                             <li>
                                 <p class="text01">Nơi sản xuất</p>
-                                <p class="text02">@Model.Manufacturing</p>
+                                <p class="text02">@Model.ProductMain.Manufacturing</p>
                             </li>
                         </ul>
                     </div>
@@ -174,19 +174,19 @@
             <h4>Đồ chơi khác</h4>
             <div class="list-other-product">
 
-                @foreach(var opd in otherpd)
+                @foreach(var listPro in Model.ProductsList)
                 { 
                     <div class="other-product-item">
                     <div class="item">
                         <a href="#">
                             <div class="item-img">
-                                <img src="~/img/OtherToys/@opd.oImage" />
+                                <img src="~/img/OtherToys/@listPro.Image" />
                             </div>
                             <div class="item-content">
-                                <h3>@opd.oProductName</h3>
-                                <p class="item-price">@String.Format(format, "{0:c0}", opd.oPrice)</p>
+                                <h3>@listPro.ProductName</h3>
+                                <p class="item-price">@String.Format(format, "{0:c0}", listPro.Price)</p>
                                 <div class="boxprice">
-                                    <p class="price-old">@String.Format(format, "{0:c0}", opd.oPriceOld)</p>
+                                    <p class="price-old">@String.Format(format, "{0:c0}", listPro.PriceOld)</p>
                                     <span class="percent">20%</span>
                                 </div>
                             </div>
