@@ -63,15 +63,48 @@ body {
     width: 100%;
 }
 /*=====================================icon=====================================*/
-
-.icon-count-zoom {
+.product-image{
+    position: relative
+}
+.num-count {
     position: absolute;
-    top: 584px;
-    left: 6px;
+    top: 557px;
+    left: 514px;
+    z-index: 1;
+    padding: 5px 20px;
+    color: white;
+    opacity: .9;
+}
+
+.owl-nav {
+    position: absolute;
+    top: 540px;
+    left: 500px;
+    z-index: 1 !important;
+    font-size: 25px;
+    background-color: gray;
+    opacity: .7;
+    color: white;
+    border-radius: 20px;
+}
+
+.owl-prev{
+    margin-right: 25px !important;
+}
+
+button:hover.owl-prev {
+    background-color: black !important;
+    color: white !important;
+}
+
+button:hover.owl-next {
+    background-color: black !important;
+    color: white !important;
+
 }
 
 
-.zoom-icon, .arrow-icon {
+.zoom-icon, .arrow-icon, owl-nav {
     display: inline-block;
     cursor: pointer;
     opacity: .6;
@@ -132,19 +165,17 @@ body {
     background: #808080;
 }
 
-.list-image img.small-image {
-    width: 80px;
-    height: 80px;
-    margin: 5px;
+img.small-image {
     border: 1px solid #bdbdbd;
     border-radius: 10px;
     cursor: pointer;
 }
 
-.list-image img.small-image:hover{
+img.small-image:hover{
     border: 1px solid #f39ac0;
     box-shadow: 0 0 4px #f39ac0;
 }
+
 
 /*==========================review-post==================================*/
 .review-post {
@@ -440,7 +471,7 @@ ul.promotion-list li::before {
 
 
 
-.other-product-item .item {
+.other-product-item .item-item {
     border: 1px solid #dedede;
     border-radius: 8px;
     transition: .3s;
@@ -448,7 +479,7 @@ ul.promotion-list li::before {
     padding-bottom: 50px;
 }
 
-.other-product-item div:hover.item{
+.other-product-item div:hover.item-item{
     border: 1px solid #ed1164;
     box-shadow: 0 0 4px #ed1164;
 }
@@ -528,7 +559,7 @@ ul.promotion-list li::before {
     padding: 0 5px;
 }
 
-.item .buy-btn button {
+.item-item .buy-btn button {
     align-items: center;
     border: 1px solid #cecece;
     border-radius: 8px;
@@ -543,7 +574,23 @@ ul.promotion-list li::before {
     right: 0;
 }
 
-.item .buy-btn button:hover{
+.item-item .buy-btn button:hover{
     background-color: #ed1164;
     color: #fff;
+}
+
+
+/*=====================owl-carouse=========================*/
+
+.owl-dots {
+    display: flex;
+}
+
+.owl-dot {
+    margin: 5px;
+}
+
+.owl-dot.active{
+    border-radius: 10px;
+    box-shadow: 0 0 5px #f39ac0;
 }
