@@ -88,19 +88,27 @@ body {
     border-radius: 20px;
 }
 
+.owl-nav button{
+    /*background-color: red !important;*/
+}
+
 .owl-prev{
     margin-right: 25px !important;
 }
+.owl-next {
+    
+}
 
 button:hover.owl-prev {
-    background-color: black !important;
+    background-color: rgb(3 169 244 / 39%) !important;
     color: white !important;
+    border-radius: 20px 0 0 20px !important;
 }
 
 button:hover.owl-next {
-    background-color: black !important;
+    background-color: rgb(3 169 244 / 39%) !important;
     color: white !important;
-
+    border-radius: 0 20px 20px 0 !important;
 }
 
 

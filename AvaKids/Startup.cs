@@ -49,8 +49,15 @@ namespace AvaKids
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
+                    name: "SanPham",
+                    pattern: "san-pham/id-{pid}",
+                    new { controller = "DoChoi", action = "SanPham"});
+
+                endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=DoChoi}/{action=DoChoiLego}/{id?}");
+
+                
             });
         }
     }
