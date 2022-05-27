@@ -2,7 +2,6 @@
 @using AvaKids.Models
 @{
     var format = System.Globalization.CultureInfo.GetCultureInfo("vi-VN");
-    var id = ViewBag.ID;
 
 }
 
@@ -121,8 +120,8 @@
                             <li>
                                 <p class="text01">Loại</p>
                                 <p class="text02">
-                                    <span>@Model.Type[0].dd</span>
-                                    <span>@Model.Type[1].dd</span>
+                                    @foreach (var type in Model.Type)
+                                    {<span>@type.dd</span>}
                                 </p>
                             </li>
                             <li>

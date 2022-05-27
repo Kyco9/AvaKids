@@ -39,12 +39,12 @@ namespace AvaKids.Models
     }
 
 
-    public class LegoCity
+    public class PageModel
     {
         public Product ProductMain { get; set; }
         public List<Product> ProductsList { get; set; }
 
-        public LegoCity()
+        public PageModel()
         {
             ProductMain = new Product()
             {

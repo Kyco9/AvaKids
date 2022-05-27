@@ -2,7 +2,7 @@
 
 
 @using AvaKids.Models;
-@model LegoCity
+@model PageModel
 
 
 @{
@@ -143,8 +143,8 @@
                             <li>
                                 <p class="text01">Loại</p>
                                 <p class="text02">
-                                    <span>@Model.ProductMain.Type[0].dd</span>
-                                    <span>@Model.ProductMain.Type[1].dd</span>
+                                    @foreach (var type in Model.ProductMain.Type)
+                                    {<span>@type.dd</span>}
                                 </p>
                             </li>
                             <li>

@@ -11,15 +11,15 @@ namespace AvaKids.Controllers
     {
         public IActionResult DoChoiLego()
         {
-            var legocity = new LegoCity();
-            return View(legocity);
+            var pageModel = new PageModel();
+            return View(pageModel);
         }
 
-        public IActionResult SanPham(int pid = 1)
+        public IActionResult SanPham(int pid = 2)
         {
             var allProduct = new ListAllProduct();
             
-            int i = 0, ID = 0;
+            int i = 0;
             while (true)
             {
                 if (i>=7)
@@ -28,13 +28,12 @@ namespace AvaKids.Controllers
                 }
                 else if (allProduct.AllProduct[i].ProductID == pid)
                 {
-                    ID = i;
-                    break;
+                    return View(allProduct.AllProduct[i]);
                 }
                 i++;
             }
             //ViewBag.ID += 1;
-            return View(allProduct.AllProduct[ID]);
+            
         }
     }
 }
