@@ -6,213 +6,210 @@
 }
 
 
-@*@{Layout = "_Layout"; }*@
 
-
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="~/favicon.ico">
-    <!-- Include Bootstrap-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="icon" href="~/favicon.ico">-->
+<!-- Include Bootstrap-->
+<!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link href="~/css/owl.carousel.min.css" rel="stylesheet" />
     <link href="~/css/owl.theme.default.min.css" rel="stylesheet" />
-    <link href="~/css/DoChoiLego.css" rel="stylesheet" />
+    <link href="~/css/main.css" rel="stylesheet" />
 
     <title>@Model.ProductName|AVAKids</title>
 </head>
-<body>
-    <div class="container">
-        <div class="header"></div>
-        <div class="breadcrumb">
-            <span><a href="#">Đồ chơi</a> > <a href="#">Đồ Chơi Lego</a></span>
-        </div>
-        <div class="detail-product">
-            <div class="product-left">
-                <div class="product-image">
-                    <div class="slider main-image owl-theme owl-carousel">
-                        @foreach (var x in Model.ThumbnailProduct)
-                        {
-                            <div class="item" data-dot="<img src='/img/@x.thumb' class='small-image' />">
-                                <img src="~/img/@x.thumb" />
-                            </div>
-                        }
-                    </div>
-                    <div class="slider-counter num-count"></div>
-                </div>
-                <div class="review-post">
-                    <h2>THÔNG TIN SẢN PHẨM</h2>
-                    <h3>Đặc điểm nổi bật</h3>
-                    <ul class="dacdiemnoibat">
-                        <li><a href="#">Đồ chơi trạm cảnh sát tuần tra và cứu hỏa biển Lego City 60308</a> bao gồm 297 chi tiết.</li>
-                        <li>Bé có thể sáng tạo và tưởng tượng câu chuyện của mình.</li>
-                        <li><a href="#">Đồ chơi lắp ráp</a> giúp rèn luyện tính rỉ mỉ, sáng tạo của bé khi lắp ráp.</li>
-                        <li><a href="#">Đồ chơi Lego City</a> không có góc nhọn, thành phần độc hại nên an toàn cho bé.</li>
-                    </ul>
-                    <h3>Hướng dẫn sử dụng</h3>
-                    <ul class="hdsd">
-                        <li><a href="#">Đồ chơi</a> không dùng pin.</li>
-                        <li>Lắp ráp các khớp nối với nhau theo hình trên bao bì.</li>
-                        <li>Có thể sáng tạo theo trí tưởng tượng của bé.</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="product-right">
-                <div class="product-info">
-                    <div class="product-title">
-                        <h3>@Model.ProductName</h3>
-                    </div>
-                    <div class="product-top">
-                        <div class="product-price">
-                            <span class="price-current">@String.Format(format, "{0:c0}", Model.Price)</span>
-                            <span class="price-old">@String.Format(format, "{0:c0}", Model.PriceOld)</span>
-                            <span class="price-percent">-20%</span>
-                        </div>
-                        <span class="product-code">#@Model.ProductID</span>
-                    </div>
-                    <div class="product-promotion">
-                        <p>Khuyến mãi  (Đến 31/05)</p>
-                        <ul class="promotion-list">
-                            <li>Nhập mã AVAKID giảm 10% tối đa 100.000đ cho đơn hàng từ 300.000đ trở lên khi thanh toán qua Ví Moca trên ứng dụng Grab <a href="#">(click xem chi tiết)</a> </li>
-                        </ul>
-                    </div>
-
-                    <div class="product-button">
-                        <button class="buy">MUA NGAY</button>
-                        <button class="showroom">XEM CỬA HÀNG CÒN HÀNG</button>
-                    </div>
-                </div>
-                <ul class="policy">
-                    <li>
-                        <div class="iconl">
-                            <i class="bi bi-arrow-repeat"></i>
-                        </div>
-                        <p>Không áp dụng đổi trả, bảo hành (Không bao gồm xe đồ chơi điều khiển) <a class="chitiet" href="#">Xem chi tiết</a></p>
-                    </li>
-                    <li>
-                        <div class="icon1">
-                            <i class="bi bi-truck"></i>
-                        </div>
-                        <p>Miễn phí giao hàng đơn từ 500.000đ trong 10km đầu tiên</p>
-                    </li>
-                    <li>
-                        <div class="icon1">
-                            <i class="bi bi-box-arrow-right"></i>
-                        </div>
-                        <p>Giao hàng thu tiền, thanh toán online nhiều phương thức</p>
-                    </li>
-                    <li>
-                        <div class="icon1">
-                            <i class="bi bi-headset"></i>
-                        </div>
-                        <p>Tổng đài: <a class="tongdai" href="#">1900.866.874</a><br>(7h30 - 22h00)</p>
-                    </li>
-                </ul>
-                <div class="product-detail-details">
-                    <h3>THÔNG TIN CHI TIẾT</h3>
-                    <div class="info-content">
-                        <ul class="info-article ">
-                            <li>
-                                <p class="text01">Thương hiệu</p>
-                                <p class="text02">@Model.Trademark</p>
-                            </li>
-
-                            <li>
-                                <p class="text01">Loại</p>
-                                <p class="text02">
-                                    @foreach (var type in Model.Type)
-                                    {<span>@type.dd</span>}
-                                </p>
-                            </li>
-                            <li>
-                                <p class="text01">Độ tuổi</p>
-                                <p class="text02">@Model.Age</p>
-                            </li>
-                            <li>
-                                <p class="text01">Chất liệu</p>
-                                <p class="text02">@Model.Material</p>
-                            </li>
-                            <li>
-                                <p class="text01">Kích thước hộp</p>
-                                <p class="text02">@Model.BoxSize</p>
-                            </li>
-                            <li>
-                                <p class="text01">Trọng lượng</p>
-                                <p class="text02">@Model.Weight g</p>
-                            </li>
-                            <li>
-                                <p class="text01">Lưu ý khi sử dụng</p>
-                                <p class="text02">@Model.Note</p>
-                            </li>
-                            <li>
-                                <p class="text01">Nơi sản xuất</p>
-                                <p class="text02">@Model.Manufacturing</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        @* ================================= *@
-
-        <div class="list-other-product">
-
-            @foreach (var listPro in Model.OtherProductList)
-            {
-                <div class="other-product-item">
-                    <div class="item-item">
-                        <a href="#">
-                            <div class="item-img">
-                                <img src="~/img/OtherToys/@listPro.Image" />
-                            </div>
-                            <div class="item-content">
-                                <h3>@listPro.ProductName</h3>
-                                <p class="item-price">@String.Format(format, "{0:c0}", listPro.Price)</p>
-                                <div class="boxprice">
-                                    <p class="price-old">@String.Format(format, "{0:c0}", listPro.PriceOld)</p>
-                                    <span class="percent">20%</span>
-                                </div>
-                            </div>
-                        </a>
-                        <div class="buy-btn">
-                            <button>Chọn mua</button>
-                        </div>
-                    </div>
-                </div>
-            }
-        </div>
-        @* ==================================== *@
-        <div class="comment" style="height:300px;"></div>
-        <div class="commitment"></div>
+<body>-->
+<div class="container">
+    <div class="breadcrumb">
+        <span><a href="#">Đồ chơi</a> > <a href="#">Đồ Chơi Lego</a></span>
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="~/js/owl.carousel.min.js"></script>
-    <script>
-        $('.slider').on('initialized.owl.carousel changed.owl.carousel', function (e) {
-            if (!e.namespace) {
-                return;
-            }
-            var carousel = e.relatedTarget;
-            $('.slider-counter').text(carousel.relative(carousel.current()) + 1 + '|' + carousel.items().length);
-        })
-        $('.owl-carousel').owlCarousel({
-            loop: false,
-            margin: 50,
-            nav: true,
-            navText: ["<i class='bi bi-chevron-left'></i>", "<i class='bi bi-chevron-right'></i>"],
-            items: 1,
-            dots: true,
-            dotsData: true
-        })
+    <div class="detail-product">
+        <div class="product-left">
+            <div class="product-image">
+                <div class="slider main-image owl-theme owl-carousel owl-product">
+                    @foreach (var x in Model.ThumbnailProduct)
+                    {
+                        <div class="item" data-dot="<img src='/img/@x.thumb' class='small-image' />">
+                            <img src="~/img/@x.thumb" />
+                        </div>
+                    }
+                </div>
+                <div class="slider-counter num-count"></div>
+            </div>
+            <div class="review-post">
+                <h2>THÔNG TIN SẢN PHẨM</h2>
+                <h3>Đặc điểm nổi bật</h3>
+                <ul class="dacdiemnoibat">
+                    <li><a href="#">Đồ chơi trạm cảnh sát tuần tra và cứu hỏa biển Lego City 60308</a> bao gồm 297 chi tiết.</li>
+                    <li>Bé có thể sáng tạo và tưởng tượng câu chuyện của mình.</li>
+                    <li><a href="#">Đồ chơi lắp ráp</a> giúp rèn luyện tính rỉ mỉ, sáng tạo của bé khi lắp ráp.</li>
+                    <li><a href="#">Đồ chơi Lego City</a> không có góc nhọn, thành phần độc hại nên an toàn cho bé.</li>
+                </ul>
+                <h3>Hướng dẫn sử dụng</h3>
+                <ul class="hdsd">
+                    <li><a href="#">Đồ chơi</a> không dùng pin.</li>
+                    <li>Lắp ráp các khớp nối với nhau theo hình trên bao bì.</li>
+                    <li>Có thể sáng tạo theo trí tưởng tượng của bé.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="product-right">
+            <div class="product-info">
+                <div class="product-title">
+                    <h3>@Model.ProductName</h3>
+                </div>
+                <div class="product-top">
+                    <div class="product-price">
+                        <span class="price-current">@String.Format(format, "{0:c0}", Model.Price)</span>
+                        <span class="price-old">@String.Format(format, "{0:c0}", Model.PriceOld)</span>
+                        <span class="price-percent">-20%</span>
+                    </div>
+                    <span class="product-code">#@Model.ProductID</span>
+                </div>
+                <div class="product-promotion">
+                    <p>Khuyến mãi  (Đến 31/05)</p>
+                    <ul class="promotion-list">
+                        <li>Nhập mã AVAKID giảm 10% tối đa 100.000đ cho đơn hàng từ 300.000đ trở lên khi thanh toán qua Ví Moca trên ứng dụng Grab <a href="#">(click xem chi tiết)</a> </li>
+                    </ul>
+                </div>
 
-        $('.owl-dot').click(function () {
-            $('.owl-dot').trigger('to.owl.carousel', [$(this).index(), 300]);
-        })
+                <div class="product-button">
+                    <button class="buy">MUA NGAY</button>
+                    <button class="showroom">XEM CỬA HÀNG CÒN HÀNG</button>
+                </div>
+            </div>
+            <ul class="policy">
+                <li>
+                    <div class="iconl">
+                        <i class="bi bi-arrow-repeat"></i>
+                    </div>
+                    <p>Không áp dụng đổi trả, bảo hành (Không bao gồm xe đồ chơi điều khiển) <a class="chitiet" href="#">Xem chi tiết</a></p>
+                </li>
+                <li>
+                    <div class="icon1">
+                        <i class="bi bi-truck"></i>
+                    </div>
+                    <p>Miễn phí giao hàng đơn từ 500.000đ trong 10km đầu tiên</p>
+                </li>
+                <li>
+                    <div class="icon1">
+                        <i class="bi bi-box-arrow-right"></i>
+                    </div>
+                    <p>Giao hàng thu tiền, thanh toán online nhiều phương thức</p>
+                </li>
+                <li>
+                    <div class="icon1">
+                        <i class="bi bi-headset"></i>
+                    </div>
+                    <p>Tổng đài: <a class="tongdai" href="#">1900.866.874</a><br>(7h30 - 22h00)</p>
+                </li>
+            </ul>
+            <div class="product-detail-details">
+                <h3>THÔNG TIN CHI TIẾT</h3>
+                <div class="info-content">
+                    <ul class="info-article ">
+                        <li>
+                            <p class="text01">Thương hiệu</p>
+                            <p class="text02">@Model.Trademark</p>
+                        </li>
+
+                        <li>
+                            <p class="text01">Loại</p>
+                            <p class="text02">
+                                @foreach (var type in Model.Type)
+                                {<span>@type.dd</span>}
+                            </p>
+                        </li>
+                        <li>
+                            <p class="text01">Độ tuổi</p>
+                            <p class="text02">@Model.Age</p>
+                        </li>
+                        <li>
+                            <p class="text01">Chất liệu</p>
+                            <p class="text02">@Model.Material</p>
+                        </li>
+                        <li>
+                            <p class="text01">Kích thước hộp</p>
+                            <p class="text02">@Model.BoxSize</p>
+                        </li>
+                        <li>
+                            <p class="text01">Trọng lượng</p>
+                            <p class="text02">@Model.Weight g</p>
+                        </li>
+                        <li>
+                            <p class="text01">Lưu ý khi sử dụng</p>
+                            <p class="text02">@Model.Note</p>
+                        </li>
+                        <li>
+                            <p class="text01">Nơi sản xuất</p>
+                            <p class="text02">@Model.Manufacturing</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    @* ================================= *@
+
+    <div class="list-other-product">
+
+        @foreach (var listPro in Model.OtherProductList)
+        {
+            <div class="other-product-item">
+                <div class="item-item">
+                    <a href="#">
+                        <div class="item-img">
+                            <img src="~/img/OtherToys/@listPro.Image" />
+                        </div>
+                        <div class="item-content">
+                            <h3>@listPro.ProductName</h3>
+                            <p class="item-price">@String.Format(format, "{0:c0}", listPro.Price)</p>
+                            <div class="boxprice">
+                                <p class="price-old">@String.Format(format, "{0:c0}", listPro.PriceOld)</p>
+                                <span class="percent">20%</span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="buy-btn">
+                        <button>Chọn mua</button>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+    @* ==================================== *@
+    <div class="comment" style="height:300px;"></div>
+    <div class="commitment"></div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="~/js/owl.carousel.min.js"></script>
+<script>
+    $('.slider').on('initialized.owl.carousel changed.owl.carousel', function (e) {
+        if (!e.namespace) {
+            return;
+        }
+        var carousel = e.relatedTarget;
+        $('.slider-counter').text(carousel.relative(carousel.current()) + 1 + '|' + carousel.items().length);
+    })
+    $('.owl-product').owlCarousel({
+        loop: false,
+        margin: 50,
+        nav: true,
+        navText: ["<i class='bi bi-chevron-left'></i>", "<i class='bi bi-chevron-right'></i>"],
+        items: 1,
+        dots: true,
+        dotsData: true
+    })
+
+    $('.owl-dot').click(function () {
+        $('.owl-dot').trigger('to.owl.carousel', [$(this).index(), 300]);
+    })
 
 
-    </script>
-</body>
-</html>
+</script>
+<!---</body>
+</html>-->

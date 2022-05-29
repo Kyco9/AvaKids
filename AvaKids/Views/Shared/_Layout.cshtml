@@ -1,46 +1,84 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - AvaKids</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="~/favicon.ico">
+    <!-- Include Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href="~/css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="~/css/owl.theme.default.min.css" rel="stylesheet" />
+    <link href="~/css/main.css" rel="stylesheet" />
+
+    <title>@Model.ProductName|AVAKids</title>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">AvaKids</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
+        <div class="header-top">
+            <div class="owl-carousel owl-theme owl-header" style="max-width:1200px;margin:auto;">
+                <div class="item">
+                    <img src="~/img/TopBanner/Topbanner4-6Desk-1200x44-1.png" />
+                </div>
+                <div class="item">
+                    <img src="~/img/TopBanner/TopBarDesk-1200x44-2.png" />
                 </div>
             </div>
-        </nav>
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
-
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2022 - AvaKids - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
-    </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
+        <div class="header-main">
+            <div class="hmain-one" style="height:54px;">
+                <a href="#" class="header-logo">
+                    <i class="icon-logo-newversion"></i>
+                </a>
+                <form class="header-search">
+                    <input type="text" placeholder="Tìm sản phẩm, nhóm hàng, hãng...">
+                    <button type="submit" class="submit-search">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </form>
+                <div class="header-boxright">
+                    <a href="#" class="header-cart">
+                        <div class="header-cart-icon">
+                            <i class="bi bi-bag"></i>
+                        </div>
+                        <p class="header-cart-money">
+                            Giỏ hàng
+                        </p>
+                    </a>
+                    <a href="#" class="header-hotline">
+                        Hotline (7h30 - 22h00)
+                        <br>
+                        <span>1900 866 874</span>
+                    </a>
+                    <a href="#" class="headertxt-left">
+                        CẨM NANG<br>MẸ VÀ BÉ
+                    </a>
+                </div>
+            </div>
+            <div class="main-two">
+                <nav class="header-menu">
+                    <ul class="list-menu">
+                        <li>a</li>
+                        <li>a</li>
+                        <li>a</li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    @RenderBody()
+    <div class="commitment"></div>
+    <footer></footer>
+
     @RenderSection("Scripts", required: false)
+    <script>
+        $('.owl-header').owlCarousel({
+            loop: true,
+            margin: 0,
+            nav: false,
+            items: 1,
+            dots: false
+        })
+    </script>
 </body>
 </html>

@@ -1,17 +1,4 @@
-﻿/** {
-    text-decoration: none;
-    font-family: Helvetica, Arial, sans-serif;
-}
-body{
-    min-width: 1024px;
-}
-
-a{
-    color: blue;
-}*/
-
-
-* {
+﻿* {
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -68,55 +55,15 @@ body {
 }
 .num-count {
     position: absolute;
-    top: 557px;
-    left: 514px;
+    top: 496px;
+    left: 452px;
     z-index: 1;
     padding: 5px 20px;
     color: white;
     opacity: .9;
 }
 
-.owl-nav {
-    position: absolute;
-    top: 540px;
-    left: 500px;
-    z-index: 1 !important;
-    font-size: 25px;
-    background-color: gray;
-    opacity: .7;
-    color: white;
-    border-radius: 20px;
-}
 
-.owl-nav button{
-    /*background-color: red !important;*/
-}
-
-.owl-prev{
-    margin-right: 25px !important;
-}
-.owl-next {
-    
-}
-
-button:hover.owl-prev {
-    background-color: rgb(3 169 244 / 39%) !important;
-    color: white !important;
-    border-radius: 20px 0 0 20px !important;
-}
-
-button:hover.owl-next {
-    background-color: rgb(3 169 244 / 39%) !important;
-    color: white !important;
-    border-radius: 0 20px 20px 0 !important;
-}
-
-
-.zoom-icon, .arrow-icon, owl-nav {
-    display: inline-block;
-    cursor: pointer;
-    opacity: .6;
-}
 
 .zoom-icon {
     background-color: #efefef;
@@ -601,4 +548,187 @@ ul.promotion-list li::before {
 .owl-dot.active{
     border-radius: 10px;
     box-shadow: 0 0 5px #f39ac0;
+}
+
+.owl-nav {
+    position: absolute;
+    display: flex;
+    top: 480px;
+    left: 438px;
+    z-index: 1 !important;
+    font-size: 25px;
+    background-color: gray;
+    opacity: .7;
+    color: white;
+    border-radius: 20px;
+}
+
+.owl-nav button{
+    /*background-color: red !important;*/
+}
+
+.owl-prev{
+    margin-right: 25px !important;
+}
+.owl-next {
+    
+}
+
+button:hover.owl-prev {
+    background-color: rgb(3 169 244 / 39%) !important;
+    color: white !important;
+    border-radius: 20px 0 0 20px !important;
+}
+
+button:hover.owl-next {
+    background-color: rgb(3 169 244 / 39%) !important;
+    color: white !important;
+    border-radius: 0 20px 20px 0 !important;
+}
+
+
+.zoom-icon, .arrow-icon, owl-nav {
+    display: inline-block;
+    cursor: pointer;
+    opacity: .6;
+}
+
+
+/*=======================TemplateLayout===========================*/
+
+header {
+    background-color: #ed1164;
+    height: 100%;
+}
+
+.header-top {
+    background-color: #f43c6d;
+}
+
+.header-main{
+    max-width: 1200px;
+    margin: auto;
+    width: 100%;
+}
+
+.hmain-one {
+    padding: 8px 0 0 0;
+}
+
+.header-logo{
+    float: left;
+}
+
+.icon-logo-newversion {
+    background-position: -105px -260px;
+    height: 41px;
+    width: 194px;
+    background-image: url(../img/icon_common@2x.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    background-size: 350px 350px;
+}
+
+.header-search {
+    float: left;
+    margin-left: 20px;
+    width: calc(100% - 655px);
+    background-color: #fff;
+    border-radius: 20px;
+    position: relative;
+    transition: .3s;
+
+}
+
+.header-search input{
+    background-color: transparent;
+    border: none;
+    color: #333;
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px;
+    padding: 10px 20px;
+    width: calc(100% - 40px);
+}
+
+.header-search input:focus{
+    outline-width: 0;
+}
+
+.header-search button{
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    height: 26px;
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+    width: 26px;
+    font-size: 20px;
+    color: #ed1164;
+}
+
+.header-boxright {
+    float: right;
+    padding: 2px 0;
+}
+
+.header-cart {
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.header-cart-icon {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 28px;    
+}
+
+p.header-cart-money {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.header-hotline {
+    margin-left: 22px;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 14px;
+}
+
+.header-hotline span {
+    color: #ffcb05;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.headertxt-left {
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 17px;
+    margin-left: 27px;
+    position: relative;
+    padding-left: 28px;
+    text-transform: uppercase;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.headertxt-left::before {
+    background-color: #f2f2f2;
+    content: '';
+    height: 28px;
+    left: 0;
+    position: absolute;
+    top: calc(50% - 14px);
+    width: 1px;
 }
