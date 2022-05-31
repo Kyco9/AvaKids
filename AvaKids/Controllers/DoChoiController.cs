@@ -15,7 +15,7 @@ namespace AvaKids.Controllers
             return View(pageModel);
         }
 
-        public IActionResult SanPham(int pid = 2)
+        public IActionResult SanPham(int pid = 1)
         {
             var allProduct = new ListAllProduct();
             

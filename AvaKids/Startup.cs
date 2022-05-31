@@ -55,7 +55,7 @@ namespace AvaKids
 
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=DoChoi}/{action=DoChoiLego}/{id?}");
+                    pattern: "{controller=DoChoi}/{action=SanPham}/{id?}");
             });
         }
     }
