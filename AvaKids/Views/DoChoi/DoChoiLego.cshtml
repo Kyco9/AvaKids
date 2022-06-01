@@ -7,27 +7,11 @@
 
 @{
     var format = System.Globalization.CultureInfo.GetCultureInfo("vi-VN");
-    //var otherpd = ViewBag.OtherProduct;
 }
 
-
-
-<!--<!DOCTYPE html>
-<html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="~/favicon.ico">-->
-<!-- Include Bootstrap-->
-<!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <link href="~/css/owl.carousel.min.css" rel="stylesheet" />
-    <link href="~/css/owl.theme.default.min.css" rel="stylesheet" />
-    <link href="~/css/main.css" rel="stylesheet" />
-
-    <title>Đồ chơi trạm cảnh sát tuần tra & cứu hỏa biển LEGO CITY 60308|AVAKids</title>
-</head>
-<body>-->
+@section TitleDoChoiLego{ 
+    <title>@Model.ProductMain.ProductName|AVAKids</title>
+}
 <div class="container">
     <div class="breadcrumb">
         <span><a href="#">Đồ chơi</a> > <a href="#">Đồ Chơi Lego</a></span>
@@ -36,15 +20,6 @@
         <div class="product-left">
             <div class="product-image">
                 <div class="slider main-image owl-theme owl-carousel owl-product">
-                    <!--<img src="~/img/Model.ProductMain.Image" alt="do-choi-tram-canh-sat-tuan-tra-cuu-hoa-bien-lego-city-60308-6" />
-                    <div class="icon-count-zoom">
-                        <div class="zoom-icon"><i class="bi bi-zoom-in"></i></div>
-                        <div class="arrow-icon">
-                            <i class='bi bi-chevron-left'></i>
-                            1 | 8
-                            <i class='bi bi-chevron-right'></i>
-                        </div>
-                    </div>-->
                     @foreach (var x in Model.ProductMain.ThumbnailProduct)
                     {
                         <div class="item" data-dot="<img src='/img/@x.thumb' class='small-image' />">
@@ -53,15 +28,6 @@
                     }
                 </div>
                 <div class="slider-counter num-count"></div>
-                <!--<div class="list-image">
-
-                    foreach (var x in Model.ProductMain.ThumbnailProduct)
-                    {
-                        <div>
-                            <img class="small-image" src="~/img/x.thumb" />
-                        </div>
-                    }
-                </div>-->
             </div>
             <div class="review-post">
                 <h2>THÔNG TIN SẢN PHẨM</h2>
@@ -204,134 +170,7 @@
                 </div>
             }
 
-            <!--
-              @* =====================đầu==================== *@
-              <div class="other-product-item">
-                  <div class="item">
-                      <a href="#">
-                          <div class="item-img">
-                              <img src="~/img/OtherToys/do-choi-xe-dia-hinh-cuu-ho-lego-city-60301-201121-124424-600x600.jpg" />
-                          </div>
-                          <div class="item-content">
-                              <h3>Đồ chơi xe địa hình cứu hộ Lego City 60301 (157 chi tiết)</h3>
-                              <p class="item-price">1.119.200₫</p>
-                              <div class="boxprice">
-                                  <p class="price-old">1.399.000₫</p>
-                                  <span class="percent">20%</span>
-                              </div>
-                          </div>
-                      </a>
-                      <div class="buy-btn">
-                          <button>Chọn mua</button>
-                      </div>
-                  </div>
-              </div>
-              @* ============================================ *@
-              <!--<div class="other-product-item">
-                  <div class="item">
-                      <a href="#">
-                          <div class="item-img">
-                              <img src="~/img/OtherToys/do-choi-mo-hinh-tram-rua-xe-thong-minh-tuyet-dinh-hot-wheels-ftb66-181121-105405-600x600.jpg" />
-                          </div>
-                          <div class="item-content">
-                              <h3>Đồ chơi xe địa hình cứu hộ Lego City 60301 (157 chi tiết)</h3>
-                              <p class="item-price">1.119.200₫</p>
-                              <div class="boxprice">
-                                  <p class="price-old">1.399.000₫</p>
-                                  <span class="percent">20%</span>
-                              </div>
-                          </div>
-                      </a>
-                      <div class="buy-btn">
-                          <button>Chọn mua</button>
-                      </div>
-                  </div>
-              </div>
-              @* ============================================ *@
-              <!--<div class="other-product-item">
-                  <div class="item">
-                      <a href="#">
-                          <div class="item-img">
-                              <img src="~/img/OtherToys/do-choi-thung-gach-duplo-sang-tao-lego-duplo-10913-070322-100629-600x600.jpg" />
-                          </div>
-                          <div class="item-content">
-                              <h3>Đồ chơi xe địa hình cứu hộ Lego City 60301 (157 chi tiết)</h3>
-                              <p class="item-price">1.119.200₫</p>
-                              <div class="boxprice">
-                                  <p class="price-old">1.399.000₫</p>
-                                  <span class="percent">20%</span>
-                              </div>
-                          </div>
-                      </a>
-                      <div class="buy-btn">
-                          <button>Chọn mua</button>
-                      </div>
-                  </div>
-              </div>
-              @* ============================================ *@
-              <!--<div class="other-product-item">
-                  <div class="item">
-                      <a href="#">
-                          <div class="item-img">
-                              <img src="~/img/OtherToys/do-choi-tau-chien-ham-bay-bounty-lego-ninjago-71749-070322-110850-600x600.jpg" />
-                          </div>
-                          <div class="item-content">
-                              <h3>Đồ chơi xe địa hình cứu hộ Lego City 60301 (157 chi tiết)</h3>
-                              <p class="item-price">1.119.200₫</p>
-                              <div class="boxprice">
-                                  <p class="price-old">1.399.000₫</p>
-                                  <span class="percent">20%</span>
-                              </div>
-                          </div>
-                      </a>
-                      <div class="buy-btn">
-                          <button>Chọn mua</button>
-                      </div>
-                  </div>
-              </div>
-              @* ============================================ *@
-              <!--<div class="other-product-item">
-                  <div class="item">
-                      <a href="#">
-                          <div class="item-img">
-                              <img src="~/img/OtherToys/do-choi-phi-co-chien-dau-cua-cole-lego-ninjago-71736-070322-111209-600x600.jpg" />
-                          </div>
-                          <div class="item-content">
-                              <h3>Đồ chơi xe địa hình cứu hộ Lego City 60301 (157 chi tiết)</h3>
-                              <p class="item-price">1.119.200₫</p>
-                              <div class="boxprice">
-                                  <p class="price-old">1.399.000₫</p>
-                                  <span class="percent">20%</span>
-                              </div>
-                          </div>
-                      </a>
-                      <div class="buy-btn">
-                          <button>Chọn mua</button>
-                      </div>
-                  </div>
-              </div>
-              @* ============================================ *@
-              <!--<div class="other-product-item">
-                  <div class="item">
-                      <a href="#">
-                          <div class="item-img">
-                              <img src="~/img/OtherToys/do-choi-cam-trai-ngoai-troi-lego-friends-41392lg-130322-112928-600x600.jpg" />
-                          </div>
-                          <div class="item-content">
-                              <h3>Đồ chơi xe địa hình cứu hộ Lego City 60301 (157 chi tiết)</h3>
-                              <p class="item-price">1.119.200₫</p>
-                              <div class="boxprice">
-                                  <p class="price-old">1.399.000₫</p>
-                                  <span class="percent">20%</span>
-                              </div>
-                          </div>
-                      </a>
-                      <div class="buy-btn">
-                          <button>Chọn mua</button>
-                      </div>
-                  </div>
-              </div>
-              @* ============================================ *@-->
+            
 
         </div>
     </div>
@@ -363,5 +202,3 @@
 
 
 </script>
-<!--</body>
-</html>-->

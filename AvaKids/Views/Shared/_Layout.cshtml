@@ -11,7 +11,17 @@
     <link href="~/css/owl.theme.default.min.css" rel="stylesheet" />
     <link href="~/css/main.css" rel="stylesheet" />
 
-    <title>@Model.ProductName|AVAKids</title>
+    @{
+        if (IsSectionDefined("TitleDoChoiLego"))
+        {
+            @RenderSection("TitleDoChoiLego", required: true)
+        }
+
+        if (IsSectionDefined("TitleSanPham"))
+        {
+            @RenderSection("TitleSanPham", required: true)
+        }
+    }
 </head>
 <body>
     <header>
