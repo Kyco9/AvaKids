@@ -1,0 +1,9 @@
+﻿
+
+
+@foreach (var x in Model.ThumbnailProduct)
+{
+    <div class="item" data-dot="<img src='/img/@x.thumb' class='small-image' />">
+        <img src="~/img/@x.thumb" />
+    </div>
+}

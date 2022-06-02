@@ -6,9 +6,9 @@
 }
 
 
-
 @section TitleSanPham{
-    <title>@Model.ProductName|AVAKids</title>
+    @*<title>@Model.ProductName|AVAKids</title>*@
+    @await Component.InvokeAsync("ProductTitle", ViewBag.Pid)
 }
 <div class="container">
     <div class="breadcrumb">
@@ -18,12 +18,14 @@
         <div class="product-left">
             <div class="product-image">
                 <div class="slider main-image owl-theme owl-carousel owl-product">
-                    @foreach (var x in Model.ThumbnailProduct)
+                    @await Component.InvokeAsync("MainProduct", ViewBag.Pid)
+                    <!--@*@foreach (var x in Model.ThumbnailProduct)
                     {
                         <div class="item" data-dot="<img src='/img/@x.thumb' class='small-image' />">
                             <img src="~/img/@x.thumb" />
                         </div>
-                    }
+                    }*@-->
+
                 </div>
                 <div class="slider-counter num-count"></div>
             </div>
@@ -46,7 +48,8 @@
         </div>
         <div class="product-right">
             <div class="product-info">
-                <div class="product-title">
+                @await Component.InvokeAsync("ProductInfo", ViewBag.Pid)
+                <!--@*<div class="product-title">
                     <h3>@Model.ProductName</h3>
                 </div>
                 <div class="product-top">
@@ -56,7 +59,10 @@
                         <span class="price-percent">-20%</span>
                     </div>
                     <span class="product-code">#@Model.ProductID</span>
-                </div>
+                </div>*@-->
+
+
+
                 <div class="product-promotion">
                     <p>Khuyến mãi  (Đến 31/05)</p>
                     <ul class="promotion-list">
@@ -98,7 +104,8 @@
             <div class="product-detail-details">
                 <h3>THÔNG TIN CHI TIẾT</h3>
                 <div class="info-content">
-                    <ul class="info-article ">
+                    @await Component.InvokeAsync("ProductInfoArticle", ViewBag.Pid)
+                    <!--@*<ul class="info-article ">
                         <li>
                             <p class="text01">Thương hiệu</p>
                             <p class="text02">@Model.Trademark</p>
@@ -135,16 +142,16 @@
                             <p class="text01">Nơi sản xuất</p>
                             <p class="text02">@Model.Manufacturing</p>
                         </li>
-                    </ul>
+                    </ul>*@-->
+
                 </div>
             </div>
         </div>
     </div>
-    @* ================================= *@
 
     <div class="list-other-product">
-
-        @foreach (var listPro in Model.OtherProductList)
+        @await Component.InvokeAsync("OtherProduct", ViewBag.Pid)
+        <!---@*@foreach (var listPro in Model.OtherProductList)
         {
             <div class="other-product-item">
                 <div class="item-item">
@@ -166,13 +173,11 @@
                     </div>
                 </div>
             </div>
-        }
+        }*@-->
     </div>
-    @* ==================================== *@
+  
+
     <div class="comment">
-        <b class="cmt-title">Hỏi đáp về @Model.ProductName</b>
-        <div class="group-cmt">
-            <textarea name="txtContent" rows="1" maxlength="1000" required="required" placeholder="Mời bạn bình luận hoặc đặt câu hỏi" class="extend"></textarea>
-        </div>
+        @await Component.InvokeAsync("Comment", ViewBag.Pid)
     </div>
 </div>

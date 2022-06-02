@@ -9,7 +9,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Views\Shared\Components\" />
     <Folder Include="wwwroot\img\footer\" />
   </ItemGroup>
 

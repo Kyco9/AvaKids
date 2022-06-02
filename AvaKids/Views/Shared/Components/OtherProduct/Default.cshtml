@@ -1,0 +1,28 @@
+﻿@{
+    var format = System.Globalization.CultureInfo.GetCultureInfo("vi-VN");
+
+}
+
+@foreach (var listPro in Model.OtherProductList)
+{
+    <div class="other-product-item">
+        <div class="item-item">
+            <a href="#">
+                <div class="item-img">
+                    <img src="~/img/OtherToys/@listPro.Image" />
+                </div>
+                <div class="item-content">
+                    <h3>@listPro.ProductName</h3>
+                    <p class="item-price">@String.Format(format, "{0:c0}", listPro.Price)</p>
+                    <div class="boxprice">
+                        <p class="price-old">@String.Format(format, "{0:c0}", listPro.PriceOld)</p>
+                        <span class="percent">20%</span>
+                    </div>
+                </div>
+            </a>
+            <div class="buy-btn">
+                <button>Chọn mua</button>
+            </div>
+        </div>
+    </div>
+}
