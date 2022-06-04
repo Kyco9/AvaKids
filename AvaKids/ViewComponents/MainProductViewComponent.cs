@@ -91,4 +91,45 @@ namespace AvaKids.ViewComponents
             }
         }
     }
+
+    public class HighlightsViewComponent : ViewComponent
+    {
+        public IViewComponentResult Invoke(int id)
+        {
+            var allProduct = new ListAllProduct();
+            int i = 0;
+            while (true)
+            {
+                if (i >= 7)
+                {
+                    return Content("Không có sản phẩm nào có id = " + id);
+                }
+                else if (allProduct.AllProduct[i].ProductID == id)
+                {
+                    return View(allProduct.AllProduct[i]);
+                }
+                i++;
+            }
+        }
+    }
+    public class ManualsViewComponent : ViewComponent
+    {
+        public IViewComponentResult Invoke(int id)
+        {
+            var allProduct = new ListAllProduct();
+            int i = 0;
+            while (true)
+            {
+                if (i >= 7)
+                {
+                    return Content("Không có sản phẩm nào có id = " + id);
+                }
+                else if (allProduct.AllProduct[i].ProductID == id)
+                {
+                    return View(allProduct.AllProduct[i]);
+                }
+                i++;
+            }
+        }
+    }
 }

@@ -15,7 +15,15 @@ namespace AvaKids.Models
         public string thumb { get; set; }
     }
 
+    public class Highlight
+    {
+        public string highlight { get; set; }
+    }
 
+    public class Manual
+    {
+        public string manual { get; set; }
+    }
 
     public class Product
     {
@@ -35,6 +43,8 @@ namespace AvaKids.Models
         public List<ThumbnailList> ThumbnailProduct { get; set; }
         public List<Product> OtherProductList { get; set; }
 
+        public List<Highlight> Highlights { get; set; }
+        public List<Manual> Manuals { get; set; }
 
     }
 
@@ -114,7 +124,7 @@ namespace AvaKids.Models
             {
                 new Product
                 {
-                    ProductID = 258927,
+                    ProductID = 2,
                     ProductName = "Đồ chơi xe địa hình cứu hộ Lego City 60301 (157 chi tiết)",
                     Price = 993200,
                     PriceOld = 1399000,
@@ -178,10 +188,6 @@ namespace AvaKids.Models
         }
 
     }
-
-
-
-
 
 
 
@@ -260,48 +266,87 @@ namespace AvaKids.Models
                     {
                         new Product
                         {
-                            ProductID = 258927,
+                            ProductID = 2,
                             ProductName = "Đồ chơi xe địa hình cứu hộ Lego City 60301 (157 chi tiết)",
                             Price = 993200,
                             PriceOld = 1399000,
-                            Image = "do-choi-xe-dia-hinh-cuu-ho-lego-city-60301-201121-124424-600x600.jpg",
+                            Image = "do-choi-xe-dia-hinh-cuu-ho-lego-city-60301-201121-124424-600x600.jpg"
                         },
                         new Product
                         {
+                            ProductID = 4,
                             ProductName="Đồ chơi trạm rửa xe thông minh Hot Wheels FTB66",
                             Price = 998200,
                             PriceOld = 1349000,
                             Image = "do-choi-mo-hinh-tram-rua-xe-thong-minh-tuyet-dinh-hot-wheels-ftb66-181121-105405-600x600.jpg"
-
-
                         },
                         new Product
                         {
-                            ProductName="Đồ chơi thùng gạch sáng tạo Lego Duplo 10913 (65 chi tiết)",
+                            ProductID = 5,
+                            ProductName="Đồ chơi phi cơ chiến đấu của Cole Lego Ninjago 71736 (449 chi tiết)",
                             Price = 1002400,
                             PriceOld = 1319000,
-                            Image = "do-choi-thung-gach-duplo-sang-tao-lego-duplo-10913-070322-100629-600x600.jpg"
-                        },
-                        new Product
-                        {
-                            ProductName="Đồ chơi phi cơ chiến đấu của Cole Lego Ninjago 71736 (449 chi tiết)",
-                            Price = 1000200,
-                            PriceOld = 1299000,
                             Image = "do-choi-phi-co-chien-dau-cua-cole-lego-ninjago-71736-070322-111209-600x600.jpg"
                         },
                         new Product
                         {
+                            ProductID = 6,
                             ProductName="Đồ chơi tàu chiến hạm bay Bounty Lego Ninjago 71749 (147 chi tiết)",
-                            Price = 1039200,
-                            PriceOld = 1269000,
+                            Price = 1000200,
+                            PriceOld = 1299000,
                             Image = "do-choi-tau-chien-ham-bay-bounty-lego-ninjago-71749-070322-110850-600x600.jpg"
                         },
                         new Product
                         {
+                            ProductID = 7,
                             ProductName="Đồ chơi cắm trại ngoài trời Lego Friends 41392LG (241 chi tiết)",
-                            Price = 1002500,
+                            Price = 1039200,
                             PriceOld = 1269000,
                             Image = "do-choi-cam-trai-ngoai-troi-lego-friends-41392lg-130322-112928-600x600.jpg"
+                        },
+                        new Product
+                        {
+                            ProductID = 3,
+                            ProductName="Đồ chơi trạm rửa xe thông minh Hot Wheels FTB66",
+                            Price = 998200,
+                            PriceOld = 1349000,
+                            Image = "do-choi-mo-hinh-tram-rua-xe-thong-minh-tuyet-dinh-hot-wheels-ftb66-181121-105405-600x600.jpg"
+                        }
+                    },
+
+                    Highlights = new List<Highlight>
+                    {
+                        new Highlight
+                        {
+                            highlight = "Đồ chơi trạm cảnh sát tuần tra và cứu hỏa biển Lego City 60308 bao gồm 297 chi tiết."
+                        },
+                        new Highlight
+                        {
+                            highlight = "Bé có thể sáng tạo và tưởng tượng câu chuyện của mình."
+                        },
+                        new Highlight
+                        {
+                            highlight = "Đồ chơi lắp ráp giúp rèn luyện tính rỉ mỉ, sáng tạo của bé khi lắp ráp."
+                        },
+                        new Highlight
+                        {
+                            highlight = "Đồ chơi Lego City không có góc nhọn, thành phần độc hại nên an toàn cho bé."
+                        }
+                    },
+
+                    Manuals = new List<Manual>
+                    {
+                        new Manual
+                        {
+                            manual = "Đồ chơi không dùng pin."
+                        },
+                        new Manual
+                        {
+                            manual = "Lắp ráp các khớp nối với nhau theo hình trên bao bì."
+                        },
+                        new Manual
+                        {
+                            manual = "Có thể sáng tạo theo trí tưởng tượng của bé."
                         }
                     }
                 },
@@ -372,48 +417,83 @@ namespace AvaKids.Models
                     {
                         new Product
                         {
-                            ProductID = 258927,
+                            ProductID = 2,
                             ProductName = "Đồ chơi xe địa hình cứu hộ Lego City 60301 (157 chi tiết)",
                             Price = 993200,
                             PriceOld = 1399000,
-                            Image = "do-choi-xe-dia-hinh-cuu-ho-lego-city-60301-201121-124424-600x600.jpg",
+                            Image = "do-choi-xe-dia-hinh-cuu-ho-lego-city-60301-201121-124424-600x600.jpg"
                         },
                         new Product
                         {
+                            ProductID = 4,
                             ProductName="Đồ chơi trạm rửa xe thông minh Hot Wheels FTB66",
                             Price = 998200,
                             PriceOld = 1349000,
                             Image = "do-choi-mo-hinh-tram-rua-xe-thong-minh-tuyet-dinh-hot-wheels-ftb66-181121-105405-600x600.jpg"
-
-
                         },
                         new Product
                         {
-                            ProductName="Đồ chơi thùng gạch sáng tạo Lego Duplo 10913 (65 chi tiết)",
+                            ProductID = 5,
+                            ProductName="Đồ chơi phi cơ chiến đấu của Cole Lego Ninjago 71736 (449 chi tiết)",
                             Price = 1002400,
                             PriceOld = 1319000,
-                            Image = "do-choi-thung-gach-duplo-sang-tao-lego-duplo-10913-070322-100629-600x600.jpg"
-                        },
-                        new Product
-                        {
-                            ProductName="Đồ chơi phi cơ chiến đấu của Cole Lego Ninjago 71736 (449 chi tiết)",
-                            Price = 1000200,
-                            PriceOld = 1299000,
                             Image = "do-choi-phi-co-chien-dau-cua-cole-lego-ninjago-71736-070322-111209-600x600.jpg"
                         },
                         new Product
                         {
+                            ProductID = 6,
                             ProductName="Đồ chơi tàu chiến hạm bay Bounty Lego Ninjago 71749 (147 chi tiết)",
-                            Price = 1039200,
-                            PriceOld = 1269000,
+                            Price = 1000200,
+                            PriceOld = 1299000,
                             Image = "do-choi-tau-chien-ham-bay-bounty-lego-ninjago-71749-070322-110850-600x600.jpg"
                         },
                         new Product
                         {
+                            ProductID = 7,
                             ProductName="Đồ chơi cắm trại ngoài trời Lego Friends 41392LG (241 chi tiết)",
-                            Price = 1002500,
+                            Price = 1039200,
                             PriceOld = 1269000,
                             Image = "do-choi-cam-trai-ngoai-troi-lego-friends-41392lg-130322-112928-600x600.jpg"
+                        },
+                        new Product
+                        {
+                            ProductID = 1,
+                            ProductName="Đồ chơi trạm cảnh sát tuần tra và cứu hỏa biển Lego City 60308 (297 chi tiết)",
+                            Price = 993200,
+                            PriceOld = 1399000,
+                            Image = "do-choi-tram-canh-sat-tuan-tra-cuu-hoa-bien-lego-city-60308-6.jpg"
+                        }
+                    },
+
+                    Highlights = new List<Highlight>
+                    {
+                        new Highlight
+                        {
+                            highlight = "Đồ chơi xe địa hình cứu hộ Lego City 60301 bao gồm 157 chi tiết."
+                        },
+                        new Highlight
+                        {
+                            highlight = "Đồ chơi giúp bé khám phá các bộ phận của xe địa hình cứu hộ."
+                        },
+                        new Highlight
+                        {
+                            highlight = "Đồ chơi lắp ráp giúp rèn luyện tính rỉ mỉ, sáng tạo của bé khi lắp ráp."
+                        },
+                        new Highlight
+                        {
+                            highlight = "Đồ chơi Lego City không có góc nhọn, thành phần độc hại nên an toàn cho bé."
+                        }
+                    },
+
+                    Manuals = new List<Manual>
+                    {
+                        new Manual
+                        {
+                            manual = "Lắp ráp các khớp nối với nhau theo hình trên bao bì."
+                        },
+                        new Manual
+                        {
+                            manual = "Có thể sáng tạo theo trí tưởng tượng của bé."
                         }
                     }
                 },
@@ -484,7 +564,7 @@ namespace AvaKids.Models
                     {
                         new Product
                         {
-                            ProductID = 258927,
+                            ProductID = 2,
                             ProductName = "Đồ chơi xe địa hình cứu hộ Lego City 60301 (157 chi tiết)",
                             Price = 993200,
                             PriceOld = 1399000,
@@ -492,15 +572,7 @@ namespace AvaKids.Models
                         },
                         new Product
                         {
-                            ProductName="Đồ chơi trạm rửa xe thông minh Hot Wheels FTB66",
-                            Price = 998200,
-                            PriceOld = 1349000,
-                            Image = "do-choi-mo-hinh-tram-rua-xe-thong-minh-tuyet-dinh-hot-wheels-ftb66-181121-105405-600x600.jpg"
-
-
-                        },
-                        new Product
-                        {
+                            ProductID = 4,
                             ProductName="Đồ chơi thùng gạch sáng tạo Lego Duplo 10913 (65 chi tiết)",
                             Price = 1002400,
                             PriceOld = 1319000,
@@ -508,24 +580,59 @@ namespace AvaKids.Models
                         },
                         new Product
                         {
+                            ProductID = 5,
                             ProductName="Đồ chơi phi cơ chiến đấu của Cole Lego Ninjago 71736 (449 chi tiết)",
-                            Price = 1000200,
-                            PriceOld = 1299000,
+                            Price = 1002400,
+                            PriceOld = 1319000,
                             Image = "do-choi-phi-co-chien-dau-cua-cole-lego-ninjago-71736-070322-111209-600x600.jpg"
                         },
                         new Product
                         {
+                            ProductID = 6,
                             ProductName="Đồ chơi tàu chiến hạm bay Bounty Lego Ninjago 71749 (147 chi tiết)",
-                            Price = 1039200,
-                            PriceOld = 1269000,
+                            Price = 1000200,
+                            PriceOld = 1299000,
                             Image = "do-choi-tau-chien-ham-bay-bounty-lego-ninjago-71749-070322-110850-600x600.jpg"
                         },
                         new Product
                         {
+                            ProductID = 7,
                             ProductName="Đồ chơi cắm trại ngoài trời Lego Friends 41392LG (241 chi tiết)",
-                            Price = 1002500,
+                            Price = 1039200,
                             PriceOld = 1269000,
                             Image = "do-choi-cam-trai-ngoai-troi-lego-friends-41392lg-130322-112928-600x600.jpg"
+                        },
+                        new Product
+                        {
+                            ProductID = 1,
+                            ProductName="Đồ chơi trạm cảnh sát tuần tra và cứu hỏa biển Lego City 60308 (297 chi tiết)",
+                            Price = 993200,
+                            PriceOld = 1399000,
+                            Image = "do-choi-tram-canh-sat-tuan-tra-cuu-hoa-bien-lego-city-60308-6.jpg"
+                        }
+                    },
+
+                    Highlights = new List<Highlight>
+                    {
+                        new Highlight
+                        {
+                            highlight = "Đồ chơi trạm rửa xe thông minh Hot Wheels FTB66 trang bị đầy đủ các tính năng rửa xe sống động."
+                        },
+                        new Highlight
+                        {
+                            highlight = "Đồ chơi Hot Wheels có thể kết hợp với nhiều mô hình khác giúp bé khám phá thế giới"
+                        },
+                        new Highlight
+                        {
+                            highlight = "Đồ chơi vận động không có góc nhọn, thành phần độc hại nên an toàn cho bé."
+                        }
+                    },
+
+                    Manuals = new List<Manual>
+                    {
+                        new Manual
+                        {
+                            manual = "Đồ chơi dùng để chơi và trưng bày."
                         }
                     }
                 },
@@ -600,7 +707,7 @@ namespace AvaKids.Models
                     {
                         new Product
                         {
-                            ProductID = 258927,
+                            ProductID = 2,
                             ProductName = "Đồ chơi xe địa hình cứu hộ Lego City 60301 (157 chi tiết)",
                             Price = 993200,
                             PriceOld = 1399000,
@@ -608,40 +715,75 @@ namespace AvaKids.Models
                         },
                         new Product
                         {
+                            ProductID = 3,
                             ProductName="Đồ chơi trạm rửa xe thông minh Hot Wheels FTB66",
                             Price = 998200,
                             PriceOld = 1349000,
                             Image = "do-choi-mo-hinh-tram-rua-xe-thong-minh-tuyet-dinh-hot-wheels-ftb66-181121-105405-600x600.jpg"
-
-
                         },
                         new Product
                         {
-                            ProductName="Đồ chơi thùng gạch sáng tạo Lego Duplo 10913 (65 chi tiết)",
+                            ProductID = 5,
+                            ProductName="Đồ chơi phi cơ chiến đấu của Cole Lego Ninjago 71736 (449 chi tiết)",
                             Price = 1002400,
                             PriceOld = 1319000,
-                            Image = "do-choi-thung-gach-duplo-sang-tao-lego-duplo-10913-070322-100629-600x600.jpg"
-                        },
-                        new Product
-                        {
-                            ProductName="Đồ chơi phi cơ chiến đấu của Cole Lego Ninjago 71736 (449 chi tiết)",
-                            Price = 1000200,
-                            PriceOld = 1299000,
                             Image = "do-choi-phi-co-chien-dau-cua-cole-lego-ninjago-71736-070322-111209-600x600.jpg"
                         },
                         new Product
                         {
+                            ProductID = 6,
                             ProductName="Đồ chơi tàu chiến hạm bay Bounty Lego Ninjago 71749 (147 chi tiết)",
-                            Price = 1039200,
-                            PriceOld = 1269000,
+                            Price = 1000200,
+                            PriceOld = 1299000,
                             Image = "do-choi-tau-chien-ham-bay-bounty-lego-ninjago-71749-070322-110850-600x600.jpg"
                         },
                         new Product
                         {
+                            ProductID = 7,
                             ProductName="Đồ chơi cắm trại ngoài trời Lego Friends 41392LG (241 chi tiết)",
-                            Price = 1002500,
+                            Price = 1039200,
                             PriceOld = 1269000,
                             Image = "do-choi-cam-trai-ngoai-troi-lego-friends-41392lg-130322-112928-600x600.jpg"
+                        },
+                        new Product
+                        {
+                            ProductID = 1,
+                            ProductName="Đồ chơi trạm cảnh sát tuần tra và cứu hỏa biển Lego City 60308 (297 chi tiết)",
+                            Price = 993200,
+                            PriceOld = 1399000,
+                            Image = "do-choi-tram-canh-sat-tuan-tra-cuu-hoa-bien-lego-city-60308-6.jpg"
+                        }
+                    },
+
+                    Highlights = new List<Highlight>
+                    {
+                        new Highlight
+                        {
+                            highlight = "Đồ chơi thùng gạch sáng tạo Lego Duplo 10913 bao gồm 65 chi tiết."
+                        },
+                        new Highlight
+                        {
+                            highlight = "Đồ chơi học tập giúp bé tập làm quen với các con số"
+                        },
+                        new Highlight
+                        {
+                            highlight = "Đồ chơi giúp bé phát triển tư duy, sáng tạo khi chơi."
+                        },
+                        new Highlight
+                        {
+                            highlight = "Đồ chơi Lego có các góc được bo tròn an toàn cho bé."
+                        }
+                    },
+
+                    Manuals = new List<Manual>
+                    {
+                        new Manual
+                        {
+                            manual = "Lắp ráp các khớp nối với nhau theo hình trên bao bì."
+                        },
+                        new Manual
+                        {
+                            manual = "Có thể sáng tạo theo trí tưởng tượng của bé."
                         }
                     }
                 },
@@ -712,7 +854,7 @@ namespace AvaKids.Models
                     {
                         new Product
                         {
-                            ProductID = 258927,
+                            ProductID = 2,
                             ProductName = "Đồ chơi xe địa hình cứu hộ Lego City 60301 (157 chi tiết)",
                             Price = 993200,
                             PriceOld = 1399000,
@@ -720,15 +862,15 @@ namespace AvaKids.Models
                         },
                         new Product
                         {
+                            ProductID = 3,
                             ProductName="Đồ chơi trạm rửa xe thông minh Hot Wheels FTB66",
                             Price = 998200,
                             PriceOld = 1349000,
                             Image = "do-choi-mo-hinh-tram-rua-xe-thong-minh-tuyet-dinh-hot-wheels-ftb66-181121-105405-600x600.jpg"
-
-
                         },
                         new Product
                         {
+                            ProductID = 4,
                             ProductName="Đồ chơi thùng gạch sáng tạo Lego Duplo 10913 (65 chi tiết)",
                             Price = 1002400,
                             PriceOld = 1319000,
@@ -736,24 +878,59 @@ namespace AvaKids.Models
                         },
                         new Product
                         {
-                            ProductName="Đồ chơi phi cơ chiến đấu của Cole Lego Ninjago 71736 (449 chi tiết)",
+                            ProductID = 6,
+                            ProductName="Đồ chơi tàu chiến hạm bay Bounty Lego Ninjago 71749 (147 chi tiết)",
                             Price = 1000200,
                             PriceOld = 1299000,
-                            Image = "do-choi-phi-co-chien-dau-cua-cole-lego-ninjago-71736-070322-111209-600x600.jpg"
-                        },
-                        new Product
-                        {
-                            ProductName="Đồ chơi tàu chiến hạm bay Bounty Lego Ninjago 71749 (147 chi tiết)",
-                            Price = 1039200,
-                            PriceOld = 1269000,
                             Image = "do-choi-tau-chien-ham-bay-bounty-lego-ninjago-71749-070322-110850-600x600.jpg"
                         },
                         new Product
                         {
+                            ProductID = 7,
                             ProductName="Đồ chơi cắm trại ngoài trời Lego Friends 41392LG (241 chi tiết)",
-                            Price = 1002500,
+                            Price = 1039200,
                             PriceOld = 1269000,
                             Image = "do-choi-cam-trai-ngoai-troi-lego-friends-41392lg-130322-112928-600x600.jpg"
+                        },
+                        new Product
+                        {
+                            ProductID = 1,
+                            ProductName="Đồ chơi trạm cảnh sát tuần tra và cứu hỏa biển Lego City 60308 (297 chi tiết)",
+                            Price = 993200,
+                            PriceOld = 1399000,
+                            Image = "do-choi-tram-canh-sat-tuan-tra-cuu-hoa-bien-lego-city-60308-6.jpg"
+                        }
+                    },
+
+                    Highlights = new List<Highlight>
+                    {
+                        new Highlight
+                        {
+                            highlight = "Đồ chơi phi cơ chiến đấu của Cole Lego Ninjago 71736 bao gồm 449 chi tiết."
+                        },
+                        new Highlight
+                        {
+                            highlight = "Đồ chơi lắp ráp giúp bé có thể sáng tạo và tưởng tượng câu chuyện của mình."
+                        },
+                        new Highlight
+                        {
+                            highlight = "Đồ chơi Lego giúp bé rèn luyện tính rỉ mỉ, sáng tạo khi lắp ráp."
+                        },
+                        new Highlight
+                        {
+                            highlight = "Đồ chơi không có góc nhọn, thành phần độc hại nên an toàn cho bé."
+                        }
+                    },
+
+                    Manuals = new List<Manual>
+                    {
+                        new Manual
+                        {
+                            manual = "Lắp ráp các khớp nối với nhau theo hình trên bao bì."
+                        },
+                        new Manual
+                        {
+                            manual = "Có thể sáng tạo theo trí tưởng tượng của bé."
                         }
                     }
                 },
@@ -824,7 +1001,7 @@ namespace AvaKids.Models
                     {
                         new Product
                         {
-                            ProductID = 258927,
+                            ProductID = 2,
                             ProductName = "Đồ chơi xe địa hình cứu hộ Lego City 60301 (157 chi tiết)",
                             Price = 993200,
                             PriceOld = 1399000,
@@ -832,15 +1009,15 @@ namespace AvaKids.Models
                         },
                         new Product
                         {
+                            ProductID = 3,
                             ProductName="Đồ chơi trạm rửa xe thông minh Hot Wheels FTB66",
                             Price = 998200,
                             PriceOld = 1349000,
                             Image = "do-choi-mo-hinh-tram-rua-xe-thong-minh-tuyet-dinh-hot-wheels-ftb66-181121-105405-600x600.jpg"
-
-
                         },
                         new Product
                         {
+                            ProductID = 4,
                             ProductName="Đồ chơi thùng gạch sáng tạo Lego Duplo 10913 (65 chi tiết)",
                             Price = 1002400,
                             PriceOld = 1319000,
@@ -848,6 +1025,7 @@ namespace AvaKids.Models
                         },
                         new Product
                         {
+                            ProductID = 5,
                             ProductName="Đồ chơi phi cơ chiến đấu của Cole Lego Ninjago 71736 (449 chi tiết)",
                             Price = 1000200,
                             PriceOld = 1299000,
@@ -855,17 +1033,51 @@ namespace AvaKids.Models
                         },
                         new Product
                         {
-                            ProductName="Đồ chơi tàu chiến hạm bay Bounty Lego Ninjago 71749 (147 chi tiết)",
+                            ProductID = 7,
+                            ProductName="Đồ chơi cắm trại ngoài trời Lego Friends 41392LG (241 chi tiết)",
                             Price = 1039200,
                             PriceOld = 1269000,
-                            Image = "do-choi-tau-chien-ham-bay-bounty-lego-ninjago-71749-070322-110850-600x600.jpg"
+                            Image = "do-choi-cam-trai-ngoai-troi-lego-friends-41392lg-130322-112928-600x600.jpg"
                         },
                         new Product
                         {
-                            ProductName="Đồ chơi cắm trại ngoài trời Lego Friends 41392LG (241 chi tiết)",
-                            Price = 1002500,
-                            PriceOld = 1269000,
-                            Image = "do-choi-cam-trai-ngoai-troi-lego-friends-41392lg-130322-112928-600x600.jpg"
+                            ProductID = 1,
+                            ProductName="Đồ chơi trạm cảnh sát tuần tra và cứu hỏa biển Lego City 60308 (297 chi tiết)",
+                            Price = 993200,
+                            PriceOld = 1399000,
+                            Image = "do-choi-tram-canh-sat-tuan-tra-cuu-hoa-bien-lego-city-60308-6.jpg"
+                        }
+                    },
+
+                    Highlights = new List<Highlight>
+                    {
+                        new Highlight
+                        {
+                            highlight = "Đồ chơi tàu chiến hạm bay Bounty Lego Ninjago 71749 bao gồm 147 chi tiết."
+                        },
+                        new Highlight
+                        {
+                            highlight = "Đồ chơi lắp ráp giúp bé có thể sáng tạo và tưởng tượng câu chuyện của mình."
+                        },
+                        new Highlight
+                        {
+                            highlight = "Đồ chơi Lego giúp bé rèn luyện tính rỉ mỉ, sáng tạo khi lắp ráp."
+                        },
+                        new Highlight
+                        {
+                            highlight = "Đồ chơi không có góc nhọn, thành phần độc hại nên an toàn cho bé."
+                        }
+                    },
+
+                    Manuals = new List<Manual>
+                    {
+                        new Manual
+                        {
+                            manual = "Lắp ráp các khớp nối với nhau theo hình trên bao bì."
+                        },
+                        new Manual
+                        {
+                            manual = "Có thể sáng tạo theo trí tưởng tượng của bé."
                         }
                     }
                 },
@@ -936,7 +1148,7 @@ namespace AvaKids.Models
                     {
                         new Product
                         {
-                            ProductID = 258927,
+                            ProductID = 2,
                             ProductName = "Đồ chơi xe địa hình cứu hộ Lego City 60301 (157 chi tiết)",
                             Price = 993200,
                             PriceOld = 1399000,
@@ -944,6 +1156,7 @@ namespace AvaKids.Models
                         },
                         new Product
                         {
+                            ProductID = 3,
                             ProductName="Đồ chơi trạm rửa xe thông minh Hot Wheels FTB66",
                             Price = 998200,
                             PriceOld = 1349000,
@@ -953,6 +1166,7 @@ namespace AvaKids.Models
                         },
                         new Product
                         {
+                            ProductID = 4,
                             ProductName="Đồ chơi thùng gạch sáng tạo Lego Duplo 10913 (65 chi tiết)",
                             Price = 1002400,
                             PriceOld = 1319000,
@@ -960,6 +1174,7 @@ namespace AvaKids.Models
                         },
                         new Product
                         {
+                            ProductID = 5,
                             ProductName="Đồ chơi phi cơ chiến đấu của Cole Lego Ninjago 71736 (449 chi tiết)",
                             Price = 1000200,
                             PriceOld = 1299000,
@@ -967,6 +1182,7 @@ namespace AvaKids.Models
                         },
                         new Product
                         {
+                            ProductID = 6,
                             ProductName="Đồ chơi tàu chiến hạm bay Bounty Lego Ninjago 71749 (147 chi tiết)",
                             Price = 1039200,
                             PriceOld = 1269000,
@@ -974,10 +1190,43 @@ namespace AvaKids.Models
                         },
                         new Product
                         {
-                            ProductName="Đồ chơi cắm trại ngoài trời Lego Friends 41392LG (241 chi tiết)",
-                            Price = 1002500,
-                            PriceOld = 1269000,
-                            Image = "do-choi-cam-trai-ngoai-troi-lego-friends-41392lg-130322-112928-600x600.jpg"
+                            ProductID = 1,
+                            ProductName="Đồ chơi trạm cảnh sát tuần tra và cứu hỏa biển Lego City 60308 (297 chi tiết)",
+                            Price = 993200,
+                            PriceOld = 1399000,
+                            Image = "do-choi-tram-canh-sat-tuan-tra-cuu-hoa-bien-lego-city-60308-6.jpg"
+                        }
+                    },
+
+                    Highlights = new List<Highlight>
+                    {
+                        new Highlight
+                        {
+                            highlight = "Đồ chơi cắm trại ngoài trời Lego Friends 41392LG bao gồm 241 chi tiết."
+                        },
+                        new Highlight
+                        {
+                            highlight = "Đồ chơi lắp ráp giúp bé có thể sáng tạo và tưởng tượng câu chuyện của mình."
+                        },
+                        new Highlight
+                        {
+                            highlight = "Đồ chơi Lego giúp bé rèn luyện tính tỉ mỉ, sáng tạo khi lắp ráp."
+                        },
+                        new Highlight
+                        {
+                            highlight = "Đồ chơi không có góc nhọn, thành phần độc hại nên an toàn cho bé."
+                        }
+                    },
+
+                    Manuals = new List<Manual>
+                    {
+                        new Manual
+                        {
+                            manual = "Lắp ráp các khớp nối với nhau theo hình trên bao bì."
+                        },
+                        new Manual
+                        {
+                            manual = "Có thể sáng tạo theo trí tưởng tượng của bé."
                         }
                     }
                 }

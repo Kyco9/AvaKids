@@ -25,25 +25,26 @@
                             <img src="~/img/@x.thumb" />
                         </div>
                     }*@-->
-
                 </div>
                 <div class="slider-counter num-count"></div>
             </div>
             <div class="review-post">
                 <h2>THÔNG TIN SẢN PHẨM</h2>
-                <h3>Đặc điểm nổi bật</h3>
+                @await Component.InvokeAsync("Highlights", ViewBag.Pid)
+                <!--<h3>Đặc điểm nổi bật</h3>
                 <ul class="dacdiemnoibat">
                     <li><a href="#">Đồ chơi trạm cảnh sát tuần tra và cứu hỏa biển Lego City 60308</a> bao gồm 297 chi tiết.</li>
                     <li>Bé có thể sáng tạo và tưởng tượng câu chuyện của mình.</li>
                     <li><a href="#">Đồ chơi lắp ráp</a> giúp rèn luyện tính rỉ mỉ, sáng tạo của bé khi lắp ráp.</li>
                     <li><a href="#">Đồ chơi Lego City</a> không có góc nhọn, thành phần độc hại nên an toàn cho bé.</li>
-                </ul>
-                <h3>Hướng dẫn sử dụng</h3>
+                </ul>-->
+                @await Component.InvokeAsync("Manuals", ViewBag.Pid)
+                <!--<h3>Hướng dẫn sử dụng</h3>
                 <ul class="hdsd">
                     <li><a href="#">Đồ chơi</a> không dùng pin.</li>
                     <li>Lắp ráp các khớp nối với nhau theo hình trên bao bì.</li>
                     <li>Có thể sáng tạo theo trí tưởng tượng của bé.</li>
-                </ul>
+                </ul>-->
             </div>
         </div>
         <div class="product-right">
@@ -64,10 +65,11 @@
 
 
                 <div class="product-promotion">
-                    <p>Khuyến mãi  (Đến 31/05)</p>
+                    @await Html.PartialAsync("__ProductPromotion")
+                    <!--@*<p>Khuyến mãi  (Đến 31/05)</p>
                     <ul class="promotion-list">
                         <li>Nhập mã AVAKID giảm 10% tối đa 100.000đ cho đơn hàng từ 300.000đ trở lên khi thanh toán qua Ví Moca trên ứng dụng Grab <a href="#">(click xem chi tiết)</a> </li>
-                    </ul>
+                    </ul>*@-->
                 </div>
 
                 <div class="product-button">
@@ -75,7 +77,8 @@
                     <button class="showroom">XEM CỬA HÀNG CÒN HÀNG</button>
                 </div>
             </div>
-            <ul class="policy">
+            @await Html.PartialAsync("__Policy")
+            <!--<ul class="policy">
                 <li>
                     <div class="iconl">
                         <i class="bi bi-arrow-repeat"></i>
@@ -100,7 +103,7 @@
                     </div>
                     <p>Tổng đài: <a class="tongdai" href="#">1900.866.874</a><br>(7h30 - 22h00)</p>
                 </li>
-            </ul>
+            </ul>-->
             <div class="product-detail-details">
                 <h3>THÔNG TIN CHI TIẾT</h3>
                 <div class="info-content">
@@ -143,13 +146,12 @@
                             <p class="text02">@Model.Manufacturing</p>
                         </li>
                     </ul>*@-->
-
                 </div>
             </div>
         </div>
     </div>
-
     <div class="list-other-product">
+
         @await Component.InvokeAsync("OtherProduct", ViewBag.Pid)
         <!---@*@foreach (var listPro in Model.OtherProductList)
         {
@@ -175,7 +177,7 @@
             </div>
         }*@-->
     </div>
-  
+
 
     <div class="comment">
         @await Component.InvokeAsync("Comment", ViewBag.Pid)
