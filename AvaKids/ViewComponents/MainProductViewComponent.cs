@@ -12,19 +12,30 @@ namespace AvaKids.ViewComponents
         public IViewComponentResult Invoke(int id)
         {
             var allProduct = new ListAllProduct();
-            int i = 0;
-            while (true)
+            int j = 0;
+            #region old loop
+            //while (true)
+            //{
+            //    if (i >= 7)
+            //    {
+            //        break;
+            //    }
+            //    else if (allProduct.AllProduct[i].ProductID == id)
+            //    {
+            //        return View(allProduct.AllProduct[i]);
+            //    }
+            //    i++;
+            //}
+            #endregion
+            for (int i = 0; i <= allProduct.AllProduct.Count();i++)
             {
-                if (i >= 7)
+                if (allProduct.AllProduct[i].ProductID == id)
                 {
-                    return Content("Không có sản phẩm nào có id = " + id);
+                    j = i;
+                    break;
                 }
-                else if (allProduct.AllProduct[i].ProductID == id)
-                {
-                    return View(allProduct.AllProduct[i]);
-                }
-                i++;
             }
+            return View(allProduct.AllProduct[j]);
         }
     }
 
@@ -33,19 +44,16 @@ namespace AvaKids.ViewComponents
         public IViewComponentResult Invoke(int id)
         {
             var allProduct = new ListAllProduct();
-            int i = 0;
-            while (true)
+            int j = 0;
+            for (int i = 0; i <= allProduct.AllProduct.Count(); i++)
             {
-                if (i >= 7)
+                if (allProduct.AllProduct[i].ProductID == id)
                 {
-                    return Content("Không có sản phẩm nào có id = " + id);
+                    j = i;
+                    break;
                 }
-                else if (allProduct.AllProduct[i].ProductID == id)
-                {
-                    return View(allProduct.AllProduct[i]);
-                }
-                i++;
             }
+            return View(allProduct.AllProduct[j]);
         }
     }
 
@@ -54,20 +62,16 @@ namespace AvaKids.ViewComponents
         public IViewComponentResult Invoke(int id)
         {
             var allProduct = new ListAllProduct();
-            int i = 0;
-            while (true)
+            int j = 0;
+            for (int i = 0; i <= allProduct.AllProduct.Count(); i++)
             {
-                if (i >= 7)
+                if (allProduct.AllProduct[i].ProductID == id)
                 {
-                    //return Content("Không có sản phẩm nào có id = " + id);
-                    return View("~/Views/Shared/Error.cshtml");
+                    j = i;
+                    break;
                 }
-                else if (allProduct.AllProduct[i].ProductID == id)
-                {
-                    return View(allProduct.AllProduct[i]);
-                }
-                i++;
             }
+            return View(allProduct.AllProduct[j]);
         }
     }
 
@@ -76,19 +80,16 @@ namespace AvaKids.ViewComponents
         public IViewComponentResult Invoke(int id)
         {
             var allProduct = new ListAllProduct();
-            int i = 0;
-            while (true)
+            int j = 0;
+            for (int i = 0; i <= allProduct.AllProduct.Count(); i++)
             {
-                if (i >= 7)
+                if (allProduct.AllProduct[i].ProductID == id)
                 {
-                    return Content("Không có sản phẩm nào có id = " + id);
+                    j = i;
+                    break;
                 }
-                else if (allProduct.AllProduct[i].ProductID == id)
-                {
-                    return View(allProduct.AllProduct[i]);
-                }
-                i++;
             }
+            return View(allProduct.AllProduct[j]);
         }
     }
 
@@ -97,19 +98,16 @@ namespace AvaKids.ViewComponents
         public IViewComponentResult Invoke(int id)
         {
             var allProduct = new ListAllProduct();
-            int i = 0;
-            while (true)
+            int j = 0;
+            for (int i = 0; i <= allProduct.AllProduct.Count(); i++)
             {
-                if (i >= 7)
+                if (allProduct.AllProduct[i].ProductID == id)
                 {
-                    return Content("Không có sản phẩm nào có id = " + id);
+                    j = i;
+                    break;
                 }
-                else if (allProduct.AllProduct[i].ProductID == id)
-                {
-                    return View(allProduct.AllProduct[i]);
-                }
-                i++;
             }
+            return View(allProduct.AllProduct[j]);
         }
     }
     public class ManualsViewComponent : ViewComponent
@@ -117,19 +115,16 @@ namespace AvaKids.ViewComponents
         public IViewComponentResult Invoke(int id)
         {
             var allProduct = new ListAllProduct();
-            int i = 0;
-            while (true)
+            int j = 0;
+            for (int i = 0; i <= allProduct.AllProduct.Count(); i++)
             {
-                if (i >= 7)
+                if (allProduct.AllProduct[i].ProductID == id)
                 {
-                    return Content("Không có sản phẩm nào có id = " + id);
+                    j = i;
+                    break;
                 }
-                else if (allProduct.AllProduct[i].ProductID == id)
-                {
-                    return View(allProduct.AllProduct[i]);
-                }
-                i++;
             }
+            return View(allProduct.AllProduct[j]);
         }
     }
 }

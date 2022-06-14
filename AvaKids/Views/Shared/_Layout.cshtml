@@ -10,7 +10,6 @@
     <link href="~/css/owl.carousel.min.css" rel="stylesheet" />
     <link href="~/css/owl.theme.default.min.css" rel="stylesheet" />
     <link href="~/css/main.css" rel="stylesheet" />
-
     @{
         if (IsSectionDefined("TitleDoChoiLego"))
         {
@@ -21,12 +20,13 @@
         {
             @RenderSection("TitleSanPham", required: true)
         }
+        var format = System.Globalization.CultureInfo.GetCultureInfo("vi-VN");
     }
 </head>
 <body>
     <header>
         <div class="header-top">
-            <div class="owl-carousel owl-theme owl-header" style="max-width:1200px;margin:auto;">
+            <div class="owl-carousel owl-theme owl-header">
                 <div class="item">
                     <img src="~/img/TopBanner/Topbanner4-6Desk-1200x44-1.png" />
                 </div>
@@ -36,12 +36,20 @@
             </div>
         </div>
         <div class="header-main">
-            <div class="hmain-one" style="height:54px;">
+            <div class="hmain-one">
                 <a href="/" class="header-logo">
                     <i class="icon-logo-newversion"></i>
                 </a>
                 <form class="header-search">
-                    <input type="text" placeholder="Tìm sản phẩm, nhóm hàng, hãng...">
+                    <input type="text" id="keyword" placeholder="Tìm sản phẩm, nhóm hàng, hãng...">
+                    @* ------------------- *@
+                    <div class="search-show">
+                        <div class="search-result"></div>
+                    </div>
+                    <div class="clear-search" onclick="ClearSearch()">
+                        <i class="bi bi-x"></i>
+                    </div>
+                    @* ------------------- *@
                     <button type="submit" class="submit-search">
                         <i class="bi bi-search"></i>
                     </button>
@@ -261,7 +269,8 @@
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="~/js/jquerry-3.6.0.min.js"></script>
+    <script src="~/js/AjaxSearch.js"></script>
     <script src="~/js/owl.carousel.min.js"></script>
     <script src="~/js/OwlCarouselSlider.js"></script>
 </body>

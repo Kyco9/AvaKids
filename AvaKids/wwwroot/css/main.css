@@ -579,6 +579,131 @@ ul.promotion-list li::before {
 .group-cmt textarea:focus{
     outline-width: 0;
 }
+/*======================hidden-comment=====================*/
+.info-form-cmt {
+    display: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.gendercomment {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.gendercomment label {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    color: #222b45;
+    margin: 10px 10px 5px 0;
+    line-height: 18px;
+    padding-right: 5px;
+}
+
+.gendercomment label .radio {
+    border: 1px solid #cfcfcf;
+    border-radius: 20px;
+    display: inline-block;
+    height: 18px;
+    margin-right: 5px;
+    position: relative;
+    vertical-align: bottom;
+    width: 18px;
+}
+
+.gendercomment label .radio:after {
+    content: '';
+    width: 0;
+    height: 0;
+    background-color: #003e8d;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    transition: .3s;
+}
+
+.group-cm {
+    position: relative;
+    width: 100%;
+}
+
+.box-cmt-item {
+    margin-right: 5px;
+    margin-bottom: 5px;
+    width: 49%;
+}
+
+.group-cm > input {
+    padding: 18px 14px 6px;
+    border-radius: 8px;
+    border: 1px solid #d7d7d7;
+    margin-top: 10px;
+    width: 91%;
+}
+
+label.material-cm {
+    color: #8f9bb3;
+    font-size: 16px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 15px;
+    top: 12px;
+    font-size: 12px;
+    transition: 300ms ease all;
+}
+
+.material-cm span {
+    color: #e64949;
+}
+
+.form .box-cmt-item {
+    margin-right: 5px;
+    margin-bottom: 5px;
+    width: 49%;
+}
+
+.info-form-cmt > button {
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 600;
+    float: right;
+    height: 44px;
+    line-height: 44px;
+    margin-top: 10px;
+    width: 99%;
+}
+
+.info-form-cmt .box-cmt-item {
+    margin-right: 5px;
+    margin-bottom: 5px;
+    width: 49%;
+}
+
+.info-form-cmt > button {
+    background-color: #ed1164;
+    border: 1px solid #ed1164;
+}
+
+
+
+
+
+
+
+
+
 /*=====================owl-carouse=========================*/
 
 .owl-dots {
@@ -649,6 +774,11 @@ header {
     background-color: #f43c6d;
 }
 
+.owl-header {
+    max-width: 1200px;
+    margin: auto;
+}
+
 .header-main{
     max-width: 1200px;
     margin: auto;
@@ -657,6 +787,7 @@ header {
 
 .hmain-one {
     padding: 8px 0 0 0;
+    height: 54px;
 }
 
 .header-logo{
@@ -700,6 +831,15 @@ header {
     outline-width: 0;
 }
 
+.clear-search {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    right: 30px;
+    bottom: 7px;
+    font-size: 25px;
+}
+
 .header-search button{
     align-items: center;
     border: none;
@@ -715,6 +855,96 @@ header {
     font-size: 20px;
     color: var(--maincolor);
 }
+
+/*--------------------search-result-------------------------*/
+.search-show {
+    display: none;
+    background-color: #fff;
+    border-radius: 0 0 20px 20px;
+    left: 0;
+    position: absolute;
+    padding-bottom: 25px;
+    top: 40px;
+    width: 100%;
+    z-index: 6;
+}
+
+.search-result {
+    display: none;
+    border-top: 1px solid #dfdfdf;
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
+}
+
+.search-product {
+    margin: 0 32px;
+}
+
+.search-product ul li {
+    margin-top: 12px;
+}
+
+.search-product ul a {
+    align-items: center;
+    display: flex;
+}
+
+
+
+.search-product ul .img {
+    width: 60px;
+}
+
+.search-product ul img {
+    width: 100%;
+}
+
+.search-product ul .ct {
+    padding-left: 15px;
+    width: calc(100% - 60px);
+}
+
+.search-product ul h3 {
+    line-height: 19px;
+    transition: .3s;
+    font-size: 14px;
+    font-weight: 500;
+    color: #444;
+}
+
+.search-product ul a:hover h3 {
+    color: var(--maincolor);
+}
+
+.search-product ul .Sprice {
+    color: #222;
+}
+
+.search-product ul .Sprice-current {
+    font-weight: bold;
+    line-height: 24px;
+    margin-right: 5px;
+    font-size: 14px;
+}
+
+.search-product ul .Sprice-old {
+    color: #444;
+    font-size: 14px;
+    line-height: 16px;
+    margin-right: 5px;
+    text-decoration-line: line-through;
+}
+
+.search-product ul .Sprice-percent {
+    background-color: #ed1164;
+    border-radius: 17px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 15px;
+    padding: 2px 3px;
+}
+
+/*----------------------------------------------------------*/
 
 .header-boxright {
     float: right;
