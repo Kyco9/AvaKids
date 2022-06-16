@@ -2,14 +2,15 @@
     var format = System.Globalization.CultureInfo.GetCultureInfo("vi-VN");
 
 }
+
 <div class="list-other-product">
-    @foreach (var listPro in Model.OtherProductList)
+    @foreach (var listPro in Model)
     {
         <div class="other-product-item">
             <div class="item-item">
                 <a href="/san-pham/id-@listPro.ProductID">
                     <div class="item-img">
-                        <img src="~/img/OtherToys/@listPro.Image" />
+                        <img src="@listPro.Image" />
                     </div>
                     <div class="item-content">
                         <h3>@listPro.ProductName</h3>

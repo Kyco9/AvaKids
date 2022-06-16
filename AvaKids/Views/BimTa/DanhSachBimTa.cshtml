@@ -1,0 +1,128 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="count-proc">
+        <h2>@ViewBag.SoLuong SẢN PHẨM TÃ CHO BÉ</h2>
+    </div>
+    <div class="filter-contain">
+        <div class="filter">
+            <div class="filter-item">
+
+                <div class="filter-title">
+                    <i class="bi bi-funnel"></i>
+                    <span>Lọc</span>
+                </div>
+            </div>
+            <div class="filter-item filter-trademark">
+                <div class="filter-title">
+                    <span>Hãng</span>
+                </div>
+                <div class="filter-show">
+                    <div class="filter-show2">
+                        <div class="filter-list">
+                            <a href="#" data-trademark="Bobby">
+                                <img src="~/img/BimTa/filter/Bobby-200x120.png" />
+                            </a>
+                        </div>
+                        <div class="filter-list">
+                            <a href="#" data-trademark="Huggies">
+                                <img src="~/img/BimTa/filter/Huggies-200x120-1.png" />
+                            </a>
+                        </div>
+                        <div class="filter-list" >
+                            <a href="#" data-trademark="Moony">
+                                <img src="~/img/BimTa/filter/Moony-200x120.png" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filter-item filter-price">
+                <div class="filter-title">
+                    <span>Giá</span>
+                </div>
+                <div class="filter-show3">
+                    <div class="filter-show2">
+                    </div>
+                </div>
+            </div>
+
+            <div class="filter-item filter-type">
+                <div class="filter-title">
+                    <span>Loại</span>
+                </div>
+                <div class="filter-show4" >
+                    <div class="filter-show2">
+                        <div class="filter-list">
+                            <a href="#">Miếng lót sơ sinh</a>
+                        </div>
+                        <div class="filter-list">
+                            <<a href="#">Tã quần</a>
+                        </div>
+                        <div class="filter-list">
+                            <a href="#">Tã dán</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filter-item filter-weight">
+                <div class="filter-title">
+                    <span>Cân nặng</span>
+                </div>
+                <div class="filter-show5">
+                    <div class="filter-show2">
+                        <div class="filter-list">
+                            <a href="#">Dưới 5kg</a>
+                        </div>
+                        <div class="filter-list">
+                            <a href="#">Từ 5 - 10kg</a>
+                        </div>
+                        <div class="filter-list">
+                            <a href="#">Từ 10 - 13kgh</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filter-item filter-size">
+                <div class="filter-title">
+                    <span>Size</span>
+                </div>
+                <div class="filter-show6">
+                    <div class="filter-show2">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sort">
+            <span>Xếp theo: </span>
+            <span class="change-sort">Nổi bật</span>
+            <div class="list-sort">
+                <ul>
+                    <li>% Giảm nhiều</li>
+                    <li>Giá cao đến thấp</li>
+                    <li>Giá thấp đến cao</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    @*@foreach(var i in Model)
+    {
+        <div>@i.ProductName</div>
+    }*@
+    @*@await Component.InvokeAsync("FilterTest")*@
+
+<div class="myPartialViewDiv">
+    @await Html.PartialAsync("FilteredTest")
+</div>
+</div>
+
+@section ScriptBimTa{
+    <script src="~/js/bimta.js"></script>
+}

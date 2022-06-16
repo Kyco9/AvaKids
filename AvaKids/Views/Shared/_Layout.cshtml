@@ -270,8 +270,16 @@
     </footer>
 
     <script src="~/js/jquerry-3.6.0.min.js"></script>
-    <script src="~/js/AjaxSearch.js"></script>
+
     <script src="~/js/owl.carousel.min.js"></script>
     <script src="~/js/OwlCarouselSlider.js"></script>
+    @{
+        if (IsSectionDefined("ScriptBimTa"))
+        {
+            @RenderSection("ScriptBimTa", required: true)
+        }
+    }
+
+    <script src="~/js/AjaxSearch.js"></script>
 </body>
 </html>
