@@ -1474,6 +1474,10 @@ footer {
     display: flex;
 }
 
+.filter-list a {
+    color: #000;
+}
+
 .filter-list a img {
     width: 60px;
 }

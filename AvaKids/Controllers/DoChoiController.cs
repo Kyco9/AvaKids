@@ -35,29 +35,30 @@ namespace AvaKids.Controllers
 
         public JsonResult Search(string searchText)
         {
-            //var SearchProduct = new ListAllProduct();
-            //object SearchedProduct = from sp in SearchProduct.AllProduct
-            //                         select sp;
-            //string value = string.Empty;
-            //value = JsonConvert.SerializeObject(SearchProduct, Formatting.Indented, new JsonSerializerSettings {
-            //    ReferenceLoopHandling = ReferenceLoopHandling.Ignore
-            //});
-            //return Json(value);
-
-
-            var products = new ListAllProduct().AllProduct;
-            productsSearched = from product in products
-                               where product.ProductName.StartsWith(searchText)
-                               || product.ProductName.EndsWith(searchText)
-                               || product.ProductName.Contains(searchText)
-                               select product;
+            var SearchProduct = new ListAllProduct();
+            object SearchedProduct = from sp in SearchProduct.AllProduct
+                                     select sp;
             string value = string.Empty;
-            value = JsonConvert.SerializeObject(productsSearched, Formatting.Indented, new JsonSerializerSettings
+            value = JsonConvert.SerializeObject(SearchProduct, Formatting.Indented, new JsonSerializerSettings
             {
                 ReferenceLoopHandling = ReferenceLoopHandling.Ignore
             });
-
             return Json(value);
+
+
+            //var products = new ListAllProduct().AllProduct;
+            //productsSearched = from product in products
+            //                   where product.ProductName.StartsWith(searchText)
+            //                   || product.ProductName.EndsWith(searchText)
+            //                   || product.ProductName.Contains(searchText)
+            //                   select product;
+            //string value = string.Empty;
+            //value = JsonConvert.SerializeObject(productsSearched, Formatting.Indented, new JsonSerializerSettings
+            //{
+            //    ReferenceLoopHandling = ReferenceLoopHandling.Ignore
+            //});
+
+            //return Json(value);
         }
     }
 }

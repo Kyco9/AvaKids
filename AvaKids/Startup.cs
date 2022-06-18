@@ -52,6 +52,7 @@ namespace AvaKids
                     name: "default",
                     pattern: "{controller=BimTa}/{action=DanhSachBimTa}/{id?}");
 
+
                 endpoints.MapControllerRoute(
                     name: "SanPham",
                     pattern: "san-pham/id-{pid}",

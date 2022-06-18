@@ -1805,7 +1805,7 @@ namespace AvaKids.Models
                     Price = 278000,
                     PriceOld = 504000,
                     Image = "/img/BimTa/bobby/9.jpg",
-                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
                 },
                 new Product
                 {
@@ -1823,7 +1823,7 @@ namespace AvaKids.Models
                     Price = 278000,
                     PriceOld = 504000,
                     Image = "/img/BimTa/bobby/9.jpg",
-                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
                 },
                 new Product
                 {
@@ -1832,7 +1832,7 @@ namespace AvaKids.Models
                     Price = 274400,
                     PriceOld = 344000,
                     Image = "/img/BimTa/bobby/10.png",
-                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
                 },
 
                 //Huggies
