@@ -3,9 +3,10 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+
 <div class="container">
     <div class="count-proc">
-        <h2>@ViewBag.SoLuong SẢN PHẨM TÃ CHO BÉ</h2>
+        <h2>@ViewBag.TongSoLuong SẢN PHẨM TÃ CHO BÉ</h2>
     </div>
     <div class="filter-contain">
         <div class="filter">
@@ -32,7 +33,7 @@
                                 <img src="~/img/BimTa/filter/Huggies-200x120-1.png" />
                             </a>
                         </div>
-                        <div class="filter-list" >
+                        <div class="filter-list">
                             <a href="#" data-trademark="Moony">
                                 <img src="~/img/BimTa/filter/Moony-200x120.png" />
                             </a>
@@ -55,7 +56,7 @@
                 <div class="filter-title">
                     <span>Loại</span>
                 </div>
-                <div class="filter-show4" >
+                <div class="filter-show4">
                     <div class="filter-show2">
                         <div class="filter-list">
                             <a href="#">Miếng lót sơ sinh</a>
@@ -112,15 +113,10 @@
             </div>
         </div>
     </div>
-    @*@foreach(var i in Model)
-    {
-        <div>@i.ProductName</div>
-    }*@
-    @*@await Component.InvokeAsync("FilterTest")*@
 
-<div class="myPartialViewDiv">
-    @await Html.PartialAsync("FilteredTest")
-</div>
+    <div class="filtered-qr">
+        @await Html.PartialAsync("FilteredTestQR")
+    </div>
 </div>
 
 @section ScriptBimTa{

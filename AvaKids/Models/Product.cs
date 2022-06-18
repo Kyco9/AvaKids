@@ -63,9 +63,10 @@ namespace AvaKids.Models
         public int Order { get; set; }
 
 
-        public Query() {
+        public Query()
+        {
             TrademarkQR = null;
-            PrriceForm = -1;
+            PriceForm = -1;
             TypeQR = null;
             WeightQR = null;
             SizeQR = null;
@@ -1809,6 +1810,24 @@ namespace AvaKids.Models
                 new Product
                 {
                     ProductID = 10,
+                    ProductName="Tã quần Bobby Extra Soft-Dry size XL 46 miếng (12 - 17 kg)",
+                    Price = 274400,
+                    PriceOld = 344000,
+                    Image = "/img/BimTa/bobby/10.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 11,
+                    ProductName="Tã quần Bobby size M 76 miếng (6 - 11 kg)",
+                    Price = 278000,
+                    PriceOld = 504000,
+                    Image = "/img/BimTa/bobby/9.jpg",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 12,
                     ProductName="Tã quần Bobby Extra Soft-Dry size XL 46 miếng (12 - 17 kg)",
                     Price = 274400,
                     PriceOld = 344000,

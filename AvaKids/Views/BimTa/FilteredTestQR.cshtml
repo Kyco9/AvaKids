@@ -1,11 +1,14 @@
-﻿@{
+﻿
+@{
     var format = System.Globalization.CultureInfo.GetCultureInfo("vi-VN");
 
 }
-@model ListBimTa
+
+
+@model List<Product>
 
 <div class="list-other-product">
-    @foreach (var listPro in Model.BimTa)
+    @foreach (var listPro in Model)
     {
         <div class="other-product-item">
             <div class="item-item">
@@ -29,3 +32,10 @@
         </div>
     }
 </div>
+
+
+
+
+
+
+

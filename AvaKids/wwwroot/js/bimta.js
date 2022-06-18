@@ -1,14 +1,18 @@
-﻿$('.filter-list a').click(function () {
+﻿$('.filter-show .filter-list a').click(function () {
     var tm = $(this).attr("data-trademark");
-    var payload = {trademark : tm}; 
+
+
+    var model = {
+        TrademarkQR: tm,
+    };
+
     $.ajax({
-        url: 'bimta/filteredTest',
-        method: 'POST',
-        dataType: 'JSON',
-        data: payload,
-        success: function (data) {
-            $("#myPartialViewDiv").html(data);
-            console.log(data);
+        type: "POST",
+        data: JSON.stringify(model),
+        url: 'BimTa/FilteredTestQR',
+        contentType: "application/json",
+        success: function (HTMLfiltered) {
+            $('.filtered-qr').html(HTMLfiltered);
         }
     })
 });
