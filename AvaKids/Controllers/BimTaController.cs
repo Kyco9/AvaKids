@@ -13,7 +13,6 @@ namespace AvaKids.Controllers
         public IActionResult DanhSachBimTa()
         {
             var bimta = new ListBimTa().BimTa; 
-            ViewBag.TongSoLuong = bimta.Count();
             return View(bimta);
         }
         //[HttpGet]
@@ -152,13 +151,13 @@ namespace AvaKids.Controllers
             {
                 query = query.Where(x => x.Trademark == qr.TrademarkQR);
             }
-            if (qr.PriceForm != -1)
+            if (qr.PriceForm != "-1")
             {
-                if (qr.PriceForm == 1)
+                if (qr.PriceForm == "1")
                 {
                     query = query.Where(x => x.Price >= 100000 && x.Price <= 200000);
                 }
-                if (qr.PriceForm == 2)
+                if (qr.PriceForm == "2")
                 {
                     query = query.Where(x => x.Price > 200000 && x.Price <= 300000);
                 }
@@ -169,7 +168,7 @@ namespace AvaKids.Controllers
             }
 
             List<Product> Filtered = query.ToList();
-            ViewBag.Filtered = Filtered;
+            ViewBag.TongSoLuong = Filtered.Count();
             return PartialView("FilteredTestQR",Filtered);
         }
 

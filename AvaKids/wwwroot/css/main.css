@@ -1430,17 +1430,17 @@ footer {
     position: relative;
 }
 
-    .filter-title span::before {
-        border-left: 4px solid transparent;
-        border-right: 4px solid transparent;
-        border-top: 4px solid #333;
-        content: '';
-        height: 0;
-        position: absolute;
-        top: 16px;
-        right: 6px;
-        width: 0;
-    }
+.filter-title span::before {
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid #333;
+    content: '';
+    height: 0;
+    position: absolute;
+    top: 16px;
+    right: 6px;
+    width: 0;
+}
 
 
 .list-sort ul {
@@ -1491,3 +1491,4 @@ footer {
     transform: rotate(-180deg);
     border-top: 4px solid #ed1164 !important;
 }
+

@@ -56,21 +56,11 @@ namespace AvaKids.Models
     public class Query
     {
         public string TrademarkQR { get; set; }
-        public int PriceForm { get; set; }
+        public string PriceForm { get; set; }
         public string TypeQR { get; set; }
         public string SizeQR { get; set; }
         public string WeightQR { get; set; }
         public int Order { get; set; }
-
-
-        public Query()
-        {
-            TrademarkQR = null;
-            PriceForm = -1;
-            TypeQR = null;
-            WeightQR = null;
-            SizeQR = null;
-        }
     }
 
 
