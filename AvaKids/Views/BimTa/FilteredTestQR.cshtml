@@ -1,14 +1,15 @@
-﻿
-@{
+﻿@{
     var format = System.Globalization.CultureInfo.GetCultureInfo("vi-VN");
 
 }
 
 
-@model List<Product>
+@*@model List<Product>*@
+@model Query
+
 
 <div class="list-other-product">
-    @foreach (var listPro in Model)
+    @foreach (var listPro in Model.Filtered)
     {
         <div class="other-product-item">
             <div class="item-item">
@@ -32,6 +33,79 @@
         </div>
     }
 </div>
+
+<div class="paging">
+
+
+    <a href="#"
+       class="btn btn-default">
+        &laquo; Prev
+    </a>
+
+    <ul class="ul-page" style="display: flex">
+        @for (int pageNumber = 1; pageNumber <= Model.PageMax; pageNumber++)
+        {
+            <li style="margin-left: 10px;">
+                <a id="pageNum" data-page="@pageNumber">@pageNumber</a>
+            </li>
+
+        }
+    </ul>
+
+
+    <a href="#"
+       class="btn btn-default">
+        Next &raquo;
+    </a>
+
+</div>
+
+
+@*<div class="list-other-product">
+    @for (int i = 0; i < Model.Bimta.Count(); i++)
+    {
+
+        <div class="other-product-item">
+            <div class="item-item">
+                <a href="/san-pham/id-@Model.Bimta[i].ProductID">
+                    <div class="item-img">
+                        <img src="@Model.Bimta[i].Image" />
+                    </div>
+                    <div class="item-content">
+                        <h3>@Model.Bimta[i].ProductName</h3>
+                        <p class="item-price">@String.Format(format, "{0:c0}", Model.Bimta[i].Price)</p>
+                        <div class="boxprice">
+                            <p class="price-old">@String.Format(format, "{0:c0}", Model.Bimta[i].PriceOld)</p>
+                            <span class="percent">20%</span>
+                        </div>
+                    </div>
+                </a>
+                <div class="buy-btn">
+                    <button>Chọn mua</button>
+                </div>
+            </div>
+        </div>
+    }
+</div>*@
+@*<div class="paging">
+        @if (Model.Page > 0)
+        {
+
+            <a href="@Url.Action("DanhSachBimTa", new { page = Model.Page - 1 })"
+               class="btn btn-default">
+                &laquo; Prev
+            </a>
+        }
+
+        <a href="@Url.Action("DanhSachBimTa", new { page = Model.PageCur})">@Model.PageCur</a>
+        @if (ViewBag.Page < ViewBag.MaxPage)
+        {
+            <a href="@Url.Action("DanhSachBimTa", new { page = Model.PageCur + 1 })"
+               class="btn btn-default">
+                Next &raquo;
+            </a>
+        }
+    </div>*@
 
 
 

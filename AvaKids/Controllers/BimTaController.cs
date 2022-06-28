@@ -10,11 +10,25 @@ namespace AvaKids.Controllers
 {
     public class BimTaController : Controller
     {
-        public IActionResult DanhSachBimTa()
+        public IActionResult DanhSachBimTa(Query qr)
         {
-            var bimta = new ListBimTa().BimTa; 
-            return View(bimta);
+            qr.Filtered = FilterLinQ(qr.TrademarkQR, qr.PriceForm, qr.WeightQR);
+
+            var data = FilterLinQ(qr.TrademarkQR, qr.PriceForm, qr.WeightQR);
+
+            qr.PageSize = 12;
+            var count = data.Count();
+            qr.PageMax = (count / qr.PageSize) - (count % qr.PageSize == 0 ? 1 : 0);
+
+            ViewBag.PageMax = qr.PageMax;
+            ViewBag.Page = qr.Page;
+
+            qr.Filtered = data.Skip(qr.Page * qr.PageSize).Take(qr.PageSize).ToList();
+            qr.CountSP = data.Count();
+            return View(qr);
         }
+
+
         //[HttpGet]
         //public IActionResult DanhSachBimTa(Query qr)
         //{
@@ -143,37 +157,69 @@ namespace AvaKids.Controllers
         //    return PartialView("FilteredTest", Filtered);
         //}
 
-        [HttpPost]
-        public PartialViewResult FilteredTestQR([FromBody] Query qr)
+
+
+        private List<Product> FilterLinQ(string t, string p, string w)
         {
+
             IEnumerable<Product> query = new ListBimTa().BimTa;
-            if (qr.TrademarkQR != null)
+
+            if (t != null)
             {
-                query = query.Where(x => x.Trademark == qr.TrademarkQR);
+                query = query.Where(x => x.Trademark == t);
             }
-            if (qr.PriceForm != "-1")
+            if (p != "-1")
             {
-                if (qr.PriceForm == "1")
+                if (p == "1")
                 {
                     query = query.Where(x => x.Price >= 100000 && x.Price <= 200000);
                 }
-                if (qr.PriceForm == "2")
+                if (p == "2")
                 {
                     query = query.Where(x => x.Price > 200000 && x.Price <= 300000);
                 }
             }
-            if (qr.WeightQR != null)
+            if (w != null)
             {
-                query = query.Where(x => x.WeighDiapers == qr.WeightQR);
+                query = query.Where(x => x.WeighDiapers == w);
             }
-
-            List<Product> Filtered = query.ToList();
-            ViewBag.TongSoLuong = Filtered.Count();
-            return PartialView("FilteredTestQR",Filtered);
+            return query.ToList(); ;
         }
 
+        public IActionResult FilteredTestQR()
+        {
+            var qr = new Query();
+
+            return PartialView(qr);
+        }
+
+        [HttpPost]
+        public IActionResult FilteredTestQR([FromBody] Query qr)
+        {
+            //int count = Filtered.Count();
+            //qr.PageSize = 12;
+            //var data = Filtered.Skip(qr.Page * qr.PageSize).Take(qr.PageSize).ToList();
+            //this.ViewBag.MaxPage = (count / qr.PageSize) - (count % qr.PageSize == 0 ? 1 : 0);
+            //this.ViewBag.Page = qr.Page;
+            //double pageCount = (double)((decimal)Filtered.Count() / Convert.ToDecimal(qr.PageSize));
+            //qr.PageCount = (int)Math.Ceiling(pageCount);
+            //qr.PageCur = qr.Page;
+
+
+            var data = FilterLinQ(qr.TrademarkQR, qr.PriceForm, qr.WeightQR);
+
+            qr.PageSize = 12;
+            var count = data.Count();
+            qr.PageMax = (count / qr.PageSize) - (count % qr.PageSize == 0 ? 1 : 0);
+            
+
+            qr.Filtered = data.Skip(qr.Page * qr.PageSize).Take(qr.PageSize).ToList();
+            return PartialView("FilteredTestQR", qr);
+        }
+
+        
 
     }
 
-    
+
 }

@@ -1,22 +1,31 @@
-﻿////$('.filter-show .filter-list a').click(function () {
-////    var tm = $(this).attr("data-trademark");
+﻿/*
+$('.filter-show .filter-list a').click(function () {
+    var tm = $(this).attr("data-trademark");
 
 
-////    var model = {
-////        TrademarkQR: tm,
-////    };
+    var model = {
+        TrademarkQR: tm,
+    };
 
-////    $.ajax({
-////        type: "POST",
-////        data: JSON.stringify(model),
-////        url: 'BimTa/FilteredTestQR',
-////        contentType: "application/json",
-////        success: function (HTMLfiltered) {
-////            $('.filtered-qr').html(HTMLfiltered);
-////        }
-////    })
-////});
+    $.ajax({
+        type: "POST",
+        data: JSON.stringify(model),
+        url: 'BimTa/FilteredTestQR',
+        contentType: "application/json",
+        success: function (HTMLfiltered) {
+            $('.filtered-qr').html(HTMLfiltered);
+        }
+    })
+});
+*/
 
+//$('.filter-trademark').click(function () {
+//    if ($('.filter-show').css("display") == ("none")) {
+//        $('.filter-show').css("display", "block")
+//    } else {
+//        $('.filter-show').css("display", "none")
+//    }
+//})
 
 
 $('.filter-trademark').click(function () {
@@ -51,18 +60,26 @@ $('.filter-size').click(function () {
 var qr = {
     TrademarkQR: null,
     PriceForm: "-1",
-    WeightQR: null
+    WeightQR: null,
+    Page: 0
 };
 
-//$('.filter-trademark').click(function () {
-//    if ($('.filter-show').css("display") == ("none")) {
-//        $('.filter-show').css("display", "block")
-//    } else {
-//        $('.filter-show').css("display", "none")
-//    }
-//})
+$('.ul-page li a').unbind().click(function () {
 
+    var p = $(this).attr("data-page");
+    qr.Page = parseInt(p);
+    console.log(qr.Page);
 
+    $.ajax({
+        type: "POST",
+        data: JSON.stringify(qr),
+        url: 'BimTa/FilteredTestQR',
+        contentType: "application/json",
+        success: function (HTMLfiltered) {
+            $('.filtered-qr').html(HTMLfiltered);
+        }
+    })
+});
 
 $('.filter-show .filter-list a').click(function () {
     var tm = $(this).attr("data-trademark");
@@ -77,7 +94,7 @@ $('.filter-show3 .filter-list a').click(function () {
     qr.PriceForm = pf;
 });
 $(".clear-filter-price").click(function () {
-    qr.PriceForm = null;
+    qr.PriceForm = "-1";
 })
 
 $('.filter-show5 .filter-list a').click(function () {
@@ -87,6 +104,8 @@ $('.filter-show5 .filter-list a').click(function () {
 $(".clear-filter-weight").click(function () {
     qr.WeightQR = null;
 })
+
+
 
 $(".btn-loc button").click(function () {
     console.log(qr);
@@ -100,6 +119,35 @@ $(".btn-loc button").click(function () {
         }
     })
 })
+
+//$(function () {
+//    $.ajax({
+//        type: "POST",
+//        data: JSON.stringify(qr),
+//        url: 'BimTa/FilteredTestQR',
+//        contentType: "application/json",
+//        success: function (HTMLfiltered) {
+//            $('.filtered-qr').html(HTMLfiltered);
+//        }
+//    })
+//})
+
+
+$(document).ready(function () {
+    $('#price-range').slider({
+        range: true,
+        min: 0,
+        max: 1000000,
+        values: [0, 800000],
+        step: 10000,
+        slide: function (event, ui) {
+            $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
+        }
+    })
+})
+
+
+
 
 
 

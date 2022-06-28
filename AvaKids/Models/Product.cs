@@ -53,6 +53,1836 @@ namespace AvaKids.Models
 
     }
 
+
+    public class ListBimTa
+    {
+        public List<Product> BimTa { get; set; }
+
+        public ListBimTa()
+        {
+            BimTa = new List<Product>()
+            {
+                //Bobby
+                new Product
+                {
+                    ProductID = 1,
+                    ProductName="Tã quần Bobby size M 76 miếng (6 - 11 kg)",
+                    Price = 343400,
+                    PriceOld = 404000,
+                    Image = "/img/BimTa/bobby/1.jpg",
+                    Trademark = "Bobby",
+                    TypeDiapers = "Miếng lót sơ sinh",
+                    WeighDiapers = "Dưới 5kg",
+                    Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 2,
+                    ProductName="Tã quần Bobby size XL 62 miếng (12 - 17 kg)",
+                    Price = 243400,
+                    PriceOld = 304000,
+                    Image = "/img/BimTa/bobby/2.jpg",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5kg - 10kg",Size = "S"
+                },
+                new Product
+                {
+                    ProductID = 3,
+                    ProductName="Tã quần Bobby size L 68 miếng (9 - 13 kg)",
+                    Price = 143400,
+                    PriceOld = 204000,
+                    Image = "/img/BimTa/bobby/3.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 4,
+                    ProductName="Tã quần Bobby size XXL 56 miếng (15 - 25 kg)",
+                    Price = 323100,
+                    PriceOld = 359000,
+                    Image = "/img/BimTa/bobby/4.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 5,
+                    ProductName="Tã quần Bobby Extra Soft-Dry size L 52 miếng (9 - 13 kg)",
+                    Price = 291500,
+                    PriceOld = 304000,
+                    Image = "/img/BimTa/bobby/5.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 6,
+                    ProductName="Tã quần Bobby Extra Soft-Dry size XXL 42 miếng (Trên 16 kg)",
+                    Price = 2915000,
+                    PriceOld = 434000,
+                    Image = "/img/BimTa/bobby/6.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 7,
+                    ProductName="Tã quần Bobby Extra Soft-Dry size M 60 miếng (6 - 11 kg)",
+                    Price = 291500,
+                    PriceOld = 343000,
+                    Image = "/img/BimTa/bobby/7.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 8,
+                    ProductName="Tã dán Bobby siêu mỏng size XXL 56 miếng (Trên 16 kg)",
+                    Price = 289000,
+                    PriceOld = 340000,
+                    Image = "/img/BimTa/bobby/8.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 9,
+                    ProductName="Tã quần Bobby size M 76 miếng (6 - 11 kg)",
+                    Price = 278000,
+                    PriceOld = 504000,
+                    Image = "/img/BimTa/bobby/9.jpg",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 10,
+                    ProductName="Tã quần Bobby Extra Soft-Dry size XL 46 miếng (12 - 17 kg)",
+                    Price = 274400,
+                    PriceOld = 344000,
+                    Image = "/img/BimTa/bobby/10.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 11,
+                    ProductName="Tã quần Bobby size M 76 miếng (6 - 11 kg)",
+                    Price = 278000,
+                    PriceOld = 504000,
+                    Image = "/img/BimTa/bobby/9.jpg",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 12,
+                    ProductName="Tã quần Bobby Extra Soft-Dry size XL 46 miếng (12 - 17 kg)",
+                    Price = 274400,
+                    PriceOld = 344000,
+                    Image = "/img/BimTa/bobby/10.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 1,
+                    ProductName="Sản phẩm đầu tiên page 1",
+                    Price = 343400,
+                    PriceOld = 404000,
+                    Image = "/img/BimTa/bobby/1.jpg",
+                    Trademark = "Bobby",
+                    TypeDiapers = "Miếng lót sơ sinh",
+                    WeighDiapers = "Dưới 5kg",
+                    Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 2,
+                    ProductName="Tã quần Bobby size XL 62 miếng (12 - 17 kg)",
+                    Price = 243400,
+                    PriceOld = 304000,
+                    Image = "/img/BimTa/bobby/2.jpg",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5kg - 10kg",Size = "S"
+                },
+                new Product
+                {
+                    ProductID = 3,
+                    ProductName="Tã quần Bobby size L 68 miếng (9 - 13 kg)",
+                    Price = 143400,
+                    PriceOld = 204000,
+                    Image = "/img/BimTa/bobby/3.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 4,
+                    ProductName="Tã quần Bobby size XXL 56 miếng (15 - 25 kg)",
+                    Price = 323100,
+                    PriceOld = 359000,
+                    Image = "/img/BimTa/bobby/4.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 5,
+                    ProductName="Tã quần Bobby Extra Soft-Dry size L 52 miếng (9 - 13 kg)",
+                    Price = 291500,
+                    PriceOld = 304000,
+                    Image = "/img/BimTa/bobby/5.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 6,
+                    ProductName="Tã quần Bobby Extra Soft-Dry size XXL 42 miếng (Trên 16 kg)",
+                    Price = 2915000,
+                    PriceOld = 434000,
+                    Image = "/img/BimTa/bobby/6.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 7,
+                    ProductName="Tã quần Bobby Extra Soft-Dry size M 60 miếng (6 - 11 kg)",
+                    Price = 291500,
+                    PriceOld = 343000,
+                    Image = "/img/BimTa/bobby/7.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 8,
+                    ProductName="Tã dán Bobby siêu mỏng size XXL 56 miếng (Trên 16 kg)",
+                    Price = 289000,
+                    PriceOld = 340000,
+                    Image = "/img/BimTa/bobby/8.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 9,
+                    ProductName="Tã quần Bobby size M 76 miếng (6 - 11 kg)",
+                    Price = 278000,
+                    PriceOld = 504000,
+                    Image = "/img/BimTa/bobby/9.jpg",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 10,
+                    ProductName="Tã quần Bobby Extra Soft-Dry size XL 46 miếng (12 - 17 kg)",
+                    Price = 274400,
+                    PriceOld = 344000,
+                    Image = "/img/BimTa/bobby/10.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 11,
+                    ProductName="Tã quần Bobby size M 76 miếng (6 - 11 kg)",
+                    Price = 278000,
+                    PriceOld = 504000,
+                    Image = "/img/BimTa/bobby/9.jpg",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 12,
+                    ProductName="Tã quần Bobby Extra Soft-Dry size XL 46 miếng (12 - 17 kg)",
+                    Price = 274400,
+                    PriceOld = 344000,
+                    Image = "/img/BimTa/bobby/10.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+
+                //Huggies
+                new Product
+                {
+                    ProductID = 11,
+                    ProductName="Tã quần Huggies Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 342400,
+                    PriceOld = 380000,
+                    Image = "/img/BimTa/huggies/11.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 12,
+                    ProductName="Tã quần Huggies Dry size XXL 56 miếng (Trên 15 kg)",
+                    Price = 342400,
+                    PriceOld = 380000,
+                    Image = "/img/BimTa/huggies/12.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 13,
+                    ProductName="Tã quần Huggies Dry size L",
+                    Price = 442400,
+                    PriceOld = 580000,
+                    Image = "/img/BimTa/huggies/13.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 14,
+                    ProductName="Tã quần Huggies Platinum nature made siêu cao cấp size L 44 miếng (9 - 14 kg)",
+                    Price = 337500,
+                    PriceOld = 375000,
+                    Image = "/img/BimTa/huggies/14.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 15,
+                    ProductName="Tã dán Huggies Platinum nature made siêu cao cấp size L 54 miếng (9 - 14 kg)",
+                    Price = 618000,
+                    PriceOld = 780000,
+                    Image = "/img/BimTa/huggies/15.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 16,
+                    ProductName="Tã dán Huggies Platinum nature made siêu cao cấp size NB 60 miếng (Dưới 5 kg)",
+                    Price = 189900,
+                    PriceOld = 211000,
+                    Image = "/img/BimTa/huggies/16.jpg",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 17,
+                    ProductName="Tã lót Huggies size NB2 60 miếng (4 - 7 kg)",
+                    Price = 94300,
+                    PriceOld = 111000,
+                    Image = "/img/BimTa/huggies/17.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 18,
+                    ProductName="Tã dán Huggies Dry size S 56 miếng (4 - 8 kg)",
+                    Price = 242400,
+                    PriceOld = 380000,
+                    Image = "/img/BimTa/huggies/18.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 19,
+                    ProductName="Tã quần Huggies Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 842400,
+                    PriceOld = 980000,
+                    Image = "/img/BimTa/huggies/19.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 20,
+                    ProductName="Tã quần Huggies Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 1042400,
+                    PriceOld = 1180000,
+                    Image = "/img/BimTa/huggies/20.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 11,
+                    ProductName="Tã quần Huggies Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 342400,
+                    PriceOld = 380000,
+                    Image = "/img/BimTa/huggies/11.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 12,
+                    ProductName="Tã quần Huggies Dry size XXL 56 miếng (Trên 15 kg)",
+                    Price = 342400,
+                    PriceOld = 380000,
+                    Image = "/img/BimTa/huggies/12.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 13,
+                    ProductName="Tã quần Huggies Dry size L",
+                    Price = 442400,
+                    PriceOld = 580000,
+                    Image = "/img/BimTa/huggies/13.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 14,
+                    ProductName="Tã quần Huggies Platinum nature made siêu cao cấp size L 44 miếng (9 - 14 kg)",
+                    Price = 337500,
+                    PriceOld = 375000,
+                    Image = "/img/BimTa/huggies/14.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 15,
+                    ProductName="Tã dán Huggies Platinum nature made siêu cao cấp size L 54 miếng (9 - 14 kg)",
+                    Price = 618000,
+                    PriceOld = 780000,
+                    Image = "/img/BimTa/huggies/15.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 16,
+                    ProductName="Tã dán Huggies Platinum nature made siêu cao cấp size NB 60 miếng (Dưới 5 kg)",
+                    Price = 189900,
+                    PriceOld = 211000,
+                    Image = "/img/BimTa/huggies/16.jpg",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 17,
+                    ProductName="Tã lót Huggies size NB2 60 miếng (4 - 7 kg)",
+                    Price = 94300,
+                    PriceOld = 111000,
+                    Image = "/img/BimTa/huggies/17.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 18,
+                    ProductName="Tã dán Huggies Dry size S 56 miếng (4 - 8 kg)",
+                    Price = 242400,
+                    PriceOld = 380000,
+                    Image = "/img/BimTa/huggies/18.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 19,
+                    ProductName="Tã quần Huggies Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 842400,
+                    PriceOld = 980000,
+                    Image = "/img/BimTa/huggies/19.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 20,
+                    ProductName="Tã quần Huggies Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 1042400,
+                    PriceOld = 1180000,
+                    Image = "/img/BimTa/huggies/20.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+
+                //moony
+                new Product
+                {
+                    ProductID = 21,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 378000,
+                    PriceOld = 445000,
+                    Image = "/img/BimTa/moony/21.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 22,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 578000,
+                    PriceOld = 645000,
+                    Image = "/img/BimTa/moony/22.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 23,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 778000,
+                    PriceOld = 845000,
+                    Image = "/img/BimTa/moony/23.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 24,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 978000,
+                    PriceOld = 999000,
+                    Image = "/img/BimTa/moony/24.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 25,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 278000,
+                    PriceOld = 345000,
+                    Image = "/img/BimTa/moony/25.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 26,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 878000,
+                    PriceOld = 945000,
+                    Image = "/img/BimTa/moony/26.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 27,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 778000,
+                    PriceOld = 945000,
+                    Image = "/img/BimTa/moony/27.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 28,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 278000,
+                    PriceOld = 545000,
+                    Image = "/img/BimTa/moony/28.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 29,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 178000,
+                    PriceOld = 195000,
+                    Image = "/img/BimTa/moony/29.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 30,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 1878000,
+                    PriceOld = 1445000,
+                    Image = "/img/BimTa/moony/30.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 21,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 378000,
+                    PriceOld = 445000,
+                    Image = "/img/BimTa/moony/21.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 22,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 578000,
+                    PriceOld = 645000,
+                    Image = "/img/BimTa/moony/22.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 23,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 778000,
+                    PriceOld = 845000,
+                    Image = "/img/BimTa/moony/23.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 24,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 978000,
+                    PriceOld = 999000,
+                    Image = "/img/BimTa/moony/24.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 25,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 278000,
+                    PriceOld = 345000,
+                    Image = "/img/BimTa/moony/25.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 26,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 878000,
+                    PriceOld = 945000,
+                    Image = "/img/BimTa/moony/26.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 27,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 778000,
+                    PriceOld = 945000,
+                    Image = "/img/BimTa/moony/27.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 28,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 278000,
+                    PriceOld = 545000,
+                    Image = "/img/BimTa/moony/28.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 29,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 178000,
+                    PriceOld = 195000,
+                    Image = "/img/BimTa/moony/29.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 30,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 1878000,
+                    PriceOld = 1445000,
+                    Image = "/img/BimTa/moony/30.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 29,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 178000,
+                    PriceOld = 195000,
+                    Image = "/img/BimTa/moony/29.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 30,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 1878000,
+                    PriceOld = 1445000,
+                    Image = "/img/BimTa/moony/30.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+
+                //Bobby
+                new Product
+                {
+                    ProductID = 1,
+                    ProductName="Tã quần Bobby size M 76 miếng (6 - 11 kg)",
+                    Price = 343400,
+                    PriceOld = 404000,
+                    Image = "/img/BimTa/bobby/1.jpg",
+                    Trademark = "Bobby",
+                    TypeDiapers = "Miếng lót sơ sinh",
+                    WeighDiapers = "Dưới 5kg",
+                    Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 2,
+                    ProductName="Tã quần Bobby size XL 62 miếng (12 - 17 kg)",
+                    Price = 243400,
+                    PriceOld = 304000,
+                    Image = "/img/BimTa/bobby/2.jpg",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5kg - 10kg",Size = "S"
+                },
+                new Product
+                {
+                    ProductID = 3,
+                    ProductName="Tã quần Bobby size L 68 miếng (9 - 13 kg)",
+                    Price = 143400,
+                    PriceOld = 204000,
+                    Image = "/img/BimTa/bobby/3.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 4,
+                    ProductName="Tã quần Bobby size XXL 56 miếng (15 - 25 kg)",
+                    Price = 323100,
+                    PriceOld = 359000,
+                    Image = "/img/BimTa/bobby/4.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 5,
+                    ProductName="Tã quần Bobby Extra Soft-Dry size L 52 miếng (9 - 13 kg)",
+                    Price = 291500,
+                    PriceOld = 304000,
+                    Image = "/img/BimTa/bobby/5.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 6,
+                    ProductName="Tã quần Bobby Extra Soft-Dry size XXL 42 miếng (Trên 16 kg)",
+                    Price = 2915000,
+                    PriceOld = 434000,
+                    Image = "/img/BimTa/bobby/6.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 7,
+                    ProductName="Tã quần Bobby Extra Soft-Dry size M 60 miếng (6 - 11 kg)",
+                    Price = 291500,
+                    PriceOld = 343000,
+                    Image = "/img/BimTa/bobby/7.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 8,
+                    ProductName="Tã dán Bobby siêu mỏng size XXL 56 miếng (Trên 16 kg)",
+                    Price = 289000,
+                    PriceOld = 340000,
+                    Image = "/img/BimTa/bobby/8.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 9,
+                    ProductName="Tã quần Bobby size M 76 miếng (6 - 11 kg)",
+                    Price = 278000,
+                    PriceOld = 504000,
+                    Image = "/img/BimTa/bobby/9.jpg",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 10,
+                    ProductName="Tã quần Bobby Extra Soft-Dry size XL 46 miếng (12 - 17 kg)",
+                    Price = 274400,
+                    PriceOld = 344000,
+                    Image = "/img/BimTa/bobby/10.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 11,
+                    ProductName="Tã quần Bobby size M 76 miếng (6 - 11 kg)",
+                    Price = 278000,
+                    PriceOld = 504000,
+                    Image = "/img/BimTa/bobby/9.jpg",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 12,
+                    ProductName="Tã quần Bobby Extra Soft-Dry size XL 46 miếng (12 - 17 kg)",
+                    Price = 274400,
+                    PriceOld = 344000,
+                    Image = "/img/BimTa/bobby/10.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 1,
+                    ProductName="Tã quần Bobby size M 76 miếng (6 - 11 kg)",
+                    Price = 343400,
+                    PriceOld = 404000,
+                    Image = "/img/BimTa/bobby/1.jpg",
+                    Trademark = "Bobby",
+                    TypeDiapers = "Miếng lót sơ sinh",
+                    WeighDiapers = "Dưới 5kg",
+                    Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 2,
+                    ProductName="Tã quần Bobby size XL 62 miếng (12 - 17 kg)",
+                    Price = 243400,
+                    PriceOld = 304000,
+                    Image = "/img/BimTa/bobby/2.jpg",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5kg - 10kg",Size = "S"
+                },
+                new Product
+                {
+                    ProductID = 3,
+                    ProductName="Tã quần Bobby size L 68 miếng (9 - 13 kg)",
+                    Price = 143400,
+                    PriceOld = 204000,
+                    Image = "/img/BimTa/bobby/3.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 4,
+                    ProductName="Tã quần Bobby size XXL 56 miếng (15 - 25 kg)",
+                    Price = 323100,
+                    PriceOld = 359000,
+                    Image = "/img/BimTa/bobby/4.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 5,
+                    ProductName="Tã quần Bobby Extra Soft-Dry size L 52 miếng (9 - 13 kg)",
+                    Price = 291500,
+                    PriceOld = 304000,
+                    Image = "/img/BimTa/bobby/5.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 6,
+                    ProductName="Tã quần Bobby Extra Soft-Dry size XXL 42 miếng (Trên 16 kg)",
+                    Price = 2915000,
+                    PriceOld = 434000,
+                    Image = "/img/BimTa/bobby/6.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 7,
+                    ProductName="Tã quần Bobby Extra Soft-Dry size M 60 miếng (6 - 11 kg)",
+                    Price = 291500,
+                    PriceOld = 343000,
+                    Image = "/img/BimTa/bobby/7.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 8,
+                    ProductName="Tã dán Bobby siêu mỏng size XXL 56 miếng (Trên 16 kg)",
+                    Price = 289000,
+                    PriceOld = 340000,
+                    Image = "/img/BimTa/bobby/8.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 9,
+                    ProductName="Tã quần Bobby size M 76 miếng (6 - 11 kg)",
+                    Price = 278000,
+                    PriceOld = 504000,
+                    Image = "/img/BimTa/bobby/9.jpg",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 10,
+                    ProductName="Tã quần Bobby Extra Soft-Dry size XL 46 miếng (12 - 17 kg)",
+                    Price = 274400,
+                    PriceOld = 344000,
+                    Image = "/img/BimTa/bobby/10.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 11,
+                    ProductName="Tã quần Bobby size M 76 miếng (6 - 11 kg)",
+                    Price = 278000,
+                    PriceOld = 504000,
+                    Image = "/img/BimTa/bobby/9.jpg",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 12,
+                    ProductName="Tã quần Bobby Extra Soft-Dry size XL 46 miếng (12 - 17 kg)",
+                    Price = 274400,
+                    PriceOld = 344000,
+                    Image = "/img/BimTa/bobby/10.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+
+                //Huggies
+                new Product
+                {
+                    ProductID = 11,
+                    ProductName="Tã quần Huggies Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 342400,
+                    PriceOld = 380000,
+                    Image = "/img/BimTa/huggies/11.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 12,
+                    ProductName="Tã quần Huggies Dry size XXL 56 miếng (Trên 15 kg)",
+                    Price = 342400,
+                    PriceOld = 380000,
+                    Image = "/img/BimTa/huggies/12.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 13,
+                    ProductName="Tã quần Huggies Dry size L",
+                    Price = 442400,
+                    PriceOld = 580000,
+                    Image = "/img/BimTa/huggies/13.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 14,
+                    ProductName="Tã quần Huggies Platinum nature made siêu cao cấp size L 44 miếng (9 - 14 kg)",
+                    Price = 337500,
+                    PriceOld = 375000,
+                    Image = "/img/BimTa/huggies/14.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 15,
+                    ProductName="Tã dán Huggies Platinum nature made siêu cao cấp size L 54 miếng (9 - 14 kg)",
+                    Price = 618000,
+                    PriceOld = 780000,
+                    Image = "/img/BimTa/huggies/15.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 16,
+                    ProductName="Tã dán Huggies Platinum nature made siêu cao cấp size NB 60 miếng (Dưới 5 kg)",
+                    Price = 189900,
+                    PriceOld = 211000,
+                    Image = "/img/BimTa/huggies/16.jpg",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 17,
+                    ProductName="Tã lót Huggies size NB2 60 miếng (4 - 7 kg)",
+                    Price = 94300,
+                    PriceOld = 111000,
+                    Image = "/img/BimTa/huggies/17.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 18,
+                    ProductName="Tã dán Huggies Dry size S 56 miếng (4 - 8 kg)",
+                    Price = 242400,
+                    PriceOld = 380000,
+                    Image = "/img/BimTa/huggies/18.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 19,
+                    ProductName="Tã quần Huggies Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 842400,
+                    PriceOld = 980000,
+                    Image = "/img/BimTa/huggies/19.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 20,
+                    ProductName="Tã quần Huggies Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 1042400,
+                    PriceOld = 1180000,
+                    Image = "/img/BimTa/huggies/20.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 11,
+                    ProductName="Tã quần Huggies Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 342400,
+                    PriceOld = 380000,
+                    Image = "/img/BimTa/huggies/11.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 12,
+                    ProductName="Tã quần Huggies Dry size XXL 56 miếng (Trên 15 kg)",
+                    Price = 342400,
+                    PriceOld = 380000,
+                    Image = "/img/BimTa/huggies/12.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 13,
+                    ProductName="Tã quần Huggies Dry size L",
+                    Price = 442400,
+                    PriceOld = 580000,
+                    Image = "/img/BimTa/huggies/13.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 14,
+                    ProductName="Tã quần Huggies Platinum nature made siêu cao cấp size L 44 miếng (9 - 14 kg)",
+                    Price = 337500,
+                    PriceOld = 375000,
+                    Image = "/img/BimTa/huggies/14.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 15,
+                    ProductName="Tã dán Huggies Platinum nature made siêu cao cấp size L 54 miếng (9 - 14 kg)",
+                    Price = 618000,
+                    PriceOld = 780000,
+                    Image = "/img/BimTa/huggies/15.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 16,
+                    ProductName="Tã dán Huggies Platinum nature made siêu cao cấp size NB 60 miếng (Dưới 5 kg)",
+                    Price = 189900,
+                    PriceOld = 211000,
+                    Image = "/img/BimTa/huggies/16.jpg",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 17,
+                    ProductName="Tã lót Huggies size NB2 60 miếng (4 - 7 kg)",
+                    Price = 94300,
+                    PriceOld = 111000,
+                    Image = "/img/BimTa/huggies/17.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 18,
+                    ProductName="Tã dán Huggies Dry size S 56 miếng (4 - 8 kg)",
+                    Price = 242400,
+                    PriceOld = 380000,
+                    Image = "/img/BimTa/huggies/18.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 19,
+                    ProductName="Tã quần Huggies Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 842400,
+                    PriceOld = 980000,
+                    Image = "/img/BimTa/huggies/19.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 20,
+                    ProductName="Tã quần Huggies Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 1042400,
+                    PriceOld = 1180000,
+                    Image = "/img/BimTa/huggies/20.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+
+                //moony
+                new Product
+                {
+                    ProductID = 21,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 378000,
+                    PriceOld = 445000,
+                    Image = "/img/BimTa/moony/21.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 22,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 578000,
+                    PriceOld = 645000,
+                    Image = "/img/BimTa/moony/22.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 23,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 778000,
+                    PriceOld = 845000,
+                    Image = "/img/BimTa/moony/23.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 24,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 978000,
+                    PriceOld = 999000,
+                    Image = "/img/BimTa/moony/24.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 25,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 278000,
+                    PriceOld = 345000,
+                    Image = "/img/BimTa/moony/25.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 26,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 878000,
+                    PriceOld = 945000,
+                    Image = "/img/BimTa/moony/26.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 27,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 778000,
+                    PriceOld = 945000,
+                    Image = "/img/BimTa/moony/27.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 28,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 278000,
+                    PriceOld = 545000,
+                    Image = "/img/BimTa/moony/28.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 29,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 178000,
+                    PriceOld = 195000,
+                    Image = "/img/BimTa/moony/29.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 30,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 1878000,
+                    PriceOld = 1445000,
+                    Image = "/img/BimTa/moony/30.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 21,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 378000,
+                    PriceOld = 445000,
+                    Image = "/img/BimTa/moony/21.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 22,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 578000,
+                    PriceOld = 645000,
+                    Image = "/img/BimTa/moony/22.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 23,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 778000,
+                    PriceOld = 845000,
+                    Image = "/img/BimTa/moony/23.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 24,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 978000,
+                    PriceOld = 999000,
+                    Image = "/img/BimTa/moony/24.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 25,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 278000,
+                    PriceOld = 345000,
+                    Image = "/img/BimTa/moony/25.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 26,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 878000,
+                    PriceOld = 945000,
+                    Image = "/img/BimTa/moony/26.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 27,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 778000,
+                    PriceOld = 945000,
+                    Image = "/img/BimTa/moony/27.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 28,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 278000,
+                    PriceOld = 545000,
+                    Image = "/img/BimTa/moony/28.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 29,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 178000,
+                    PriceOld = 195000,
+                    Image = "/img/BimTa/moony/29.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 30,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 1878000,
+                    PriceOld = 1445000,
+                    Image = "/img/BimTa/moony/30.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 29,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 178000,
+                    PriceOld = 195000,
+                    Image = "/img/BimTa/moony/29.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 30,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 1878000,
+                    PriceOld = 1445000,
+                    Image = "/img/BimTa/moony/30.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+
+                //Bobby
+                new Product
+                {
+                    ProductID = 1,
+                    ProductName="Tã quần Bobby size M 76 miếng (6 - 11 kg)",
+                    Price = 343400,
+                    PriceOld = 404000,
+                    Image = "/img/BimTa/bobby/1.jpg",
+                    Trademark = "Bobby",
+                    TypeDiapers = "Miếng lót sơ sinh",
+                    WeighDiapers = "Dưới 5kg",
+                    Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 2,
+                    ProductName="Tã quần Bobby size XL 62 miếng (12 - 17 kg)",
+                    Price = 243400,
+                    PriceOld = 304000,
+                    Image = "/img/BimTa/bobby/2.jpg",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5kg - 10kg",Size = "S"
+                },
+                new Product
+                {
+                    ProductID = 3,
+                    ProductName="Tã quần Bobby size L 68 miếng (9 - 13 kg)",
+                    Price = 143400,
+                    PriceOld = 204000,
+                    Image = "/img/BimTa/bobby/3.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 4,
+                    ProductName="Tã quần Bobby size XXL 56 miếng (15 - 25 kg)",
+                    Price = 323100,
+                    PriceOld = 359000,
+                    Image = "/img/BimTa/bobby/4.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 5,
+                    ProductName="Tã quần Bobby Extra Soft-Dry size L 52 miếng (9 - 13 kg)",
+                    Price = 291500,
+                    PriceOld = 304000,
+                    Image = "/img/BimTa/bobby/5.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 6,
+                    ProductName="Tã quần Bobby Extra Soft-Dry size XXL 42 miếng (Trên 16 kg)",
+                    Price = 2915000,
+                    PriceOld = 434000,
+                    Image = "/img/BimTa/bobby/6.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 7,
+                    ProductName="Tã quần Bobby Extra Soft-Dry size M 60 miếng (6 - 11 kg)",
+                    Price = 291500,
+                    PriceOld = 343000,
+                    Image = "/img/BimTa/bobby/7.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 8,
+                    ProductName="Tã dán Bobby siêu mỏng size XXL 56 miếng (Trên 16 kg)",
+                    Price = 289000,
+                    PriceOld = 340000,
+                    Image = "/img/BimTa/bobby/8.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 9,
+                    ProductName="Tã quần Bobby size M 76 miếng (6 - 11 kg)",
+                    Price = 278000,
+                    PriceOld = 504000,
+                    Image = "/img/BimTa/bobby/9.jpg",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 10,
+                    ProductName="Tã quần Bobby Extra Soft-Dry size XL 46 miếng (12 - 17 kg)",
+                    Price = 274400,
+                    PriceOld = 344000,
+                    Image = "/img/BimTa/bobby/10.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 11,
+                    ProductName="Tã quần Bobby size M 76 miếng (6 - 11 kg)",
+                    Price = 278000,
+                    PriceOld = 504000,
+                    Image = "/img/BimTa/bobby/9.jpg",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 12,
+                    ProductName="Tã quần Bobby Extra Soft-Dry size XL 46 miếng (12 - 17 kg)",
+                    Price = 274400,
+                    PriceOld = 344000,
+                    Image = "/img/BimTa/bobby/10.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 1,
+                    ProductName="Tã quần Bobby size M 76 miếng (6 - 11 kg)",
+                    Price = 343400,
+                    PriceOld = 404000,
+                    Image = "/img/BimTa/bobby/1.jpg",
+                    Trademark = "Bobby",
+                    TypeDiapers = "Miếng lót sơ sinh",
+                    WeighDiapers = "Dưới 5kg",
+                    Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 2,
+                    ProductName="Tã quần Bobby size XL 62 miếng (12 - 17 kg)",
+                    Price = 243400,
+                    PriceOld = 304000,
+                    Image = "/img/BimTa/bobby/2.jpg",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5kg - 10kg",Size = "S"
+                },
+                new Product
+                {
+                    ProductID = 3,
+                    ProductName="Tã quần Bobby size L 68 miếng (9 - 13 kg)",
+                    Price = 143400,
+                    PriceOld = 204000,
+                    Image = "/img/BimTa/bobby/3.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 4,
+                    ProductName="Tã quần Bobby size XXL 56 miếng (15 - 25 kg)",
+                    Price = 323100,
+                    PriceOld = 359000,
+                    Image = "/img/BimTa/bobby/4.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 5,
+                    ProductName="Tã quần Bobby Extra Soft-Dry size L 52 miếng (9 - 13 kg)",
+                    Price = 291500,
+                    PriceOld = 304000,
+                    Image = "/img/BimTa/bobby/5.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 6,
+                    ProductName="Tã quần Bobby Extra Soft-Dry size XXL 42 miếng (Trên 16 kg)",
+                    Price = 2915000,
+                    PriceOld = 434000,
+                    Image = "/img/BimTa/bobby/6.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 7,
+                    ProductName="Tã quần Bobby Extra Soft-Dry size M 60 miếng (6 - 11 kg)",
+                    Price = 291500,
+                    PriceOld = 343000,
+                    Image = "/img/BimTa/bobby/7.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 8,
+                    ProductName="Tã dán Bobby siêu mỏng size XXL 56 miếng (Trên 16 kg)",
+                    Price = 289000,
+                    PriceOld = 340000,
+                    Image = "/img/BimTa/bobby/8.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 9,
+                    ProductName="Tã quần Bobby size M 76 miếng (6 - 11 kg)",
+                    Price = 278000,
+                    PriceOld = 504000,
+                    Image = "/img/BimTa/bobby/9.jpg",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 10,
+                    ProductName="Tã quần Bobby Extra Soft-Dry size XL 46 miếng (12 - 17 kg)",
+                    Price = 274400,
+                    PriceOld = 344000,
+                    Image = "/img/BimTa/bobby/10.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 11,
+                    ProductName="Tã quần Bobby size M 76 miếng (6 - 11 kg)",
+                    Price = 278000,
+                    PriceOld = 504000,
+                    Image = "/img/BimTa/bobby/9.jpg",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 12,
+                    ProductName="Tã quần Bobby Extra Soft-Dry size XL 46 miếng (12 - 17 kg)",
+                    Price = 274400,
+                    PriceOld = 344000,
+                    Image = "/img/BimTa/bobby/10.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+
+                //Huggies
+                new Product
+                {
+                    ProductID = 11,
+                    ProductName="Tã quần Huggies Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 342400,
+                    PriceOld = 380000,
+                    Image = "/img/BimTa/huggies/11.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 12,
+                    ProductName="Tã quần Huggies Dry size XXL 56 miếng (Trên 15 kg)",
+                    Price = 342400,
+                    PriceOld = 380000,
+                    Image = "/img/BimTa/huggies/12.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 13,
+                    ProductName="Tã quần Huggies Dry size L",
+                    Price = 442400,
+                    PriceOld = 580000,
+                    Image = "/img/BimTa/huggies/13.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 14,
+                    ProductName="Tã quần Huggies Platinum nature made siêu cao cấp size L 44 miếng (9 - 14 kg)",
+                    Price = 337500,
+                    PriceOld = 375000,
+                    Image = "/img/BimTa/huggies/14.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 15,
+                    ProductName="Tã dán Huggies Platinum nature made siêu cao cấp size L 54 miếng (9 - 14 kg)",
+                    Price = 618000,
+                    PriceOld = 780000,
+                    Image = "/img/BimTa/huggies/15.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 16,
+                    ProductName="Tã dán Huggies Platinum nature made siêu cao cấp size NB 60 miếng (Dưới 5 kg)",
+                    Price = 189900,
+                    PriceOld = 211000,
+                    Image = "/img/BimTa/huggies/16.jpg",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 17,
+                    ProductName="Tã lót Huggies size NB2 60 miếng (4 - 7 kg)",
+                    Price = 94300,
+                    PriceOld = 111000,
+                    Image = "/img/BimTa/huggies/17.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 18,
+                    ProductName="Tã dán Huggies Dry size S 56 miếng (4 - 8 kg)",
+                    Price = 242400,
+                    PriceOld = 380000,
+                    Image = "/img/BimTa/huggies/18.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 19,
+                    ProductName="Tã quần Huggies Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 842400,
+                    PriceOld = 980000,
+                    Image = "/img/BimTa/huggies/19.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 20,
+                    ProductName="Tã quần Huggies Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 1042400,
+                    PriceOld = 1180000,
+                    Image = "/img/BimTa/huggies/20.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 11,
+                    ProductName="Tã quần Huggies Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 342400,
+                    PriceOld = 380000,
+                    Image = "/img/BimTa/huggies/11.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 12,
+                    ProductName="Tã quần Huggies Dry size XXL 56 miếng (Trên 15 kg)",
+                    Price = 342400,
+                    PriceOld = 380000,
+                    Image = "/img/BimTa/huggies/12.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 13,
+                    ProductName="Tã quần Huggies Dry size L",
+                    Price = 442400,
+                    PriceOld = 580000,
+                    Image = "/img/BimTa/huggies/13.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 14,
+                    ProductName="Tã quần Huggies Platinum nature made siêu cao cấp size L 44 miếng (9 - 14 kg)",
+                    Price = 337500,
+                    PriceOld = 375000,
+                    Image = "/img/BimTa/huggies/14.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 15,
+                    ProductName="Tã dán Huggies Platinum nature made siêu cao cấp size L 54 miếng (9 - 14 kg)",
+                    Price = 618000,
+                    PriceOld = 780000,
+                    Image = "/img/BimTa/huggies/15.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 16,
+                    ProductName="Tã dán Huggies Platinum nature made siêu cao cấp size NB 60 miếng (Dưới 5 kg)",
+                    Price = 189900,
+                    PriceOld = 211000,
+                    Image = "/img/BimTa/huggies/16.jpg",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 17,
+                    ProductName="Tã lót Huggies size NB2 60 miếng (4 - 7 kg)",
+                    Price = 94300,
+                    PriceOld = 111000,
+                    Image = "/img/BimTa/huggies/17.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 18,
+                    ProductName="Tã dán Huggies Dry size S 56 miếng (4 - 8 kg)",
+                    Price = 242400,
+                    PriceOld = 380000,
+                    Image = "/img/BimTa/huggies/18.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 19,
+                    ProductName="Tã quần Huggies Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 842400,
+                    PriceOld = 980000,
+                    Image = "/img/BimTa/huggies/19.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 20,
+                    ProductName="Tã quần Huggies Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 1042400,
+                    PriceOld = 1180000,
+                    Image = "/img/BimTa/huggies/20.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+
+                //moony
+                new Product
+                {
+                    ProductID = 21,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 378000,
+                    PriceOld = 445000,
+                    Image = "/img/BimTa/moony/21.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 22,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 578000,
+                    PriceOld = 645000,
+                    Image = "/img/BimTa/moony/22.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 23,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 778000,
+                    PriceOld = 845000,
+                    Image = "/img/BimTa/moony/23.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 24,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 978000,
+                    PriceOld = 999000,
+                    Image = "/img/BimTa/moony/24.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 25,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 278000,
+                    PriceOld = 345000,
+                    Image = "/img/BimTa/moony/25.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 26,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 878000,
+                    PriceOld = 945000,
+                    Image = "/img/BimTa/moony/26.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 27,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 778000,
+                    PriceOld = 945000,
+                    Image = "/img/BimTa/moony/27.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 28,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 278000,
+                    PriceOld = 545000,
+                    Image = "/img/BimTa/moony/28.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 29,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 178000,
+                    PriceOld = 195000,
+                    Image = "/img/BimTa/moony/29.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 30,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 1878000,
+                    PriceOld = 1445000,
+                    Image = "/img/BimTa/moony/30.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 21,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 378000,
+                    PriceOld = 445000,
+                    Image = "/img/BimTa/moony/21.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 22,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 578000,
+                    PriceOld = 645000,
+                    Image = "/img/BimTa/moony/22.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 23,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 778000,
+                    PriceOld = 845000,
+                    Image = "/img/BimTa/moony/23.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 24,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 978000,
+                    PriceOld = 999000,
+                    Image = "/img/BimTa/moony/24.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 25,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 278000,
+                    PriceOld = 345000,
+                    Image = "/img/BimTa/moony/25.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 26,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 878000,
+                    PriceOld = 945000,
+                    Image = "/img/BimTa/moony/26.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 27,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 778000,
+                    PriceOld = 945000,
+                    Image = "/img/BimTa/moony/27.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 28,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 278000,
+                    PriceOld = 545000,
+                    Image = "/img/BimTa/moony/28.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 29,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 178000,
+                    PriceOld = 195000,
+                    Image = "/img/BimTa/moony/29.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 30,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 1878000,
+                    PriceOld = 1445000,
+                    Image = "/img/BimTa/moony/30.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 29,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 178000,
+                    PriceOld = 195000,
+                    Image = "/img/BimTa/moony/29.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 30,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 1878000,
+                    PriceOld = 1445000,
+                    Image = "/img/BimTa/moony/30.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+            };
+        }
+    }
+
     public class Query
     {
         public string TrademarkQR { get; set; }
@@ -61,6 +1891,2445 @@ namespace AvaKids.Models
         public string SizeQR { get; set; }
         public string WeightQR { get; set; }
         public int Order { get; set; }
+        public int Page { get; set; }
+        public int PageSize { get; set; }
+        public int PageMax { get; set; }
+        public int CountSP { get; set; }
+
+        public List<Product> Bimta { get; set; }
+        public List<Product> Filtered { get; set; }
+
+        public Query()
+        {
+            Bimta = new List<Product>()
+            {
+                //Bobby
+                new Product
+                {
+                    ProductID = 1,
+                    ProductName="Tã quần Bobby size M 76 miếng (6 - 11 kg)",
+                    Price = 343400,
+                    PriceOld = 404000,
+                    Image = "/img/BimTa/bobby/1.jpg",
+                    Trademark = "Bobby",
+                    TypeDiapers = "Miếng lót sơ sinh",
+                    WeighDiapers = "Dưới 5kg",
+                    Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 2,
+                    ProductName="Tã quần Bobby size XL 62 miếng (12 - 17 kg)",
+                    Price = 243400,
+                    PriceOld = 304000,
+                    Image = "/img/BimTa/bobby/2.jpg",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5kg - 10kg",Size = "S"
+                },
+                new Product
+                {
+                    ProductID = 3,
+                    ProductName="Tã quần Bobby size L 68 miếng (9 - 13 kg)",
+                    Price = 143400,
+                    PriceOld = 204000,
+                    Image = "/img/BimTa/bobby/3.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 4,
+                    ProductName="Tã quần Bobby size XXL 56 miếng (15 - 25 kg)",
+                    Price = 323100,
+                    PriceOld = 359000,
+                    Image = "/img/BimTa/bobby/4.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 5,
+                    ProductName="Tã quần Bobby Extra Soft-Dry size L 52 miếng (9 - 13 kg)",
+                    Price = 291500,
+                    PriceOld = 304000,
+                    Image = "/img/BimTa/bobby/5.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 6,
+                    ProductName="Tã quần Bobby Extra Soft-Dry size XXL 42 miếng (Trên 16 kg)",
+                    Price = 2915000,
+                    PriceOld = 434000,
+                    Image = "/img/BimTa/bobby/6.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 7,
+                    ProductName="Tã quần Bobby Extra Soft-Dry size M 60 miếng (6 - 11 kg)",
+                    Price = 291500,
+                    PriceOld = 343000,
+                    Image = "/img/BimTa/bobby/7.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 8,
+                    ProductName="Tã dán Bobby siêu mỏng size XXL 56 miếng (Trên 16 kg)",
+                    Price = 289000,
+                    PriceOld = 340000,
+                    Image = "/img/BimTa/bobby/8.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 9,
+                    ProductName="Tã quần Bobby size M 76 miếng (6 - 11 kg)",
+                    Price = 278000,
+                    PriceOld = 504000,
+                    Image = "/img/BimTa/bobby/9.jpg",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 10,
+                    ProductName="Tã quần Bobby Extra Soft-Dry size XL 46 miếng (12 - 17 kg)",
+                    Price = 274400,
+                    PriceOld = 344000,
+                    Image = "/img/BimTa/bobby/10.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 11,
+                    ProductName="Tã quần Bobby size M 76 miếng (6 - 11 kg)",
+                    Price = 278000,
+                    PriceOld = 504000,
+                    Image = "/img/BimTa/bobby/9.jpg",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 12,
+                    ProductName="Tã quần Bobby Extra Soft-Dry size XL 46 miếng (12 - 17 kg)",
+                    Price = 274400,
+                    PriceOld = 344000,
+                    Image = "/img/BimTa/bobby/10.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 1,
+                    ProductName="Tã quần Bobby size M 76 miếng (6 - 11 kg)",
+                    Price = 343400,
+                    PriceOld = 404000,
+                    Image = "/img/BimTa/bobby/1.jpg",
+                    Trademark = "Bobby",
+                    TypeDiapers = "Miếng lót sơ sinh",
+                    WeighDiapers = "Dưới 5kg",
+                    Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 2,
+                    ProductName="Tã quần Bobby size XL 62 miếng (12 - 17 kg)",
+                    Price = 243400,
+                    PriceOld = 304000,
+                    Image = "/img/BimTa/bobby/2.jpg",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5kg - 10kg",Size = "S"
+                },
+                new Product
+                {
+                    ProductID = 3,
+                    ProductName="Tã quần Bobby size L 68 miếng (9 - 13 kg)",
+                    Price = 143400,
+                    PriceOld = 204000,
+                    Image = "/img/BimTa/bobby/3.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 4,
+                    ProductName="Tã quần Bobby size XXL 56 miếng (15 - 25 kg)",
+                    Price = 323100,
+                    PriceOld = 359000,
+                    Image = "/img/BimTa/bobby/4.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 5,
+                    ProductName="Tã quần Bobby Extra Soft-Dry size L 52 miếng (9 - 13 kg)",
+                    Price = 291500,
+                    PriceOld = 304000,
+                    Image = "/img/BimTa/bobby/5.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 6,
+                    ProductName="Tã quần Bobby Extra Soft-Dry size XXL 42 miếng (Trên 16 kg)",
+                    Price = 2915000,
+                    PriceOld = 434000,
+                    Image = "/img/BimTa/bobby/6.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 7,
+                    ProductName="Tã quần Bobby Extra Soft-Dry size M 60 miếng (6 - 11 kg)",
+                    Price = 291500,
+                    PriceOld = 343000,
+                    Image = "/img/BimTa/bobby/7.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 8,
+                    ProductName="Tã dán Bobby siêu mỏng size XXL 56 miếng (Trên 16 kg)",
+                    Price = 289000,
+                    PriceOld = 340000,
+                    Image = "/img/BimTa/bobby/8.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 9,
+                    ProductName="Tã quần Bobby size M 76 miếng (6 - 11 kg)",
+                    Price = 278000,
+                    PriceOld = 504000,
+                    Image = "/img/BimTa/bobby/9.jpg",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 10,
+                    ProductName="Tã quần Bobby Extra Soft-Dry size XL 46 miếng (12 - 17 kg)",
+                    Price = 274400,
+                    PriceOld = 344000,
+                    Image = "/img/BimTa/bobby/10.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 11,
+                    ProductName="Tã quần Bobby size M 76 miếng (6 - 11 kg)",
+                    Price = 278000,
+                    PriceOld = 504000,
+                    Image = "/img/BimTa/bobby/9.jpg",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 12,
+                    ProductName="Tã quần Bobby Extra Soft-Dry size XL 46 miếng (12 - 17 kg)",
+                    Price = 274400,
+                    PriceOld = 344000,
+                    Image = "/img/BimTa/bobby/10.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+
+                //Huggies
+                new Product
+                {
+                    ProductID = 11,
+                    ProductName="Tã quần Huggies Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 342400,
+                    PriceOld = 380000,
+                    Image = "/img/BimTa/huggies/11.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 12,
+                    ProductName="Tã quần Huggies Dry size XXL 56 miếng (Trên 15 kg)",
+                    Price = 342400,
+                    PriceOld = 380000,
+                    Image = "/img/BimTa/huggies/12.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 13,
+                    ProductName="Tã quần Huggies Dry size L",
+                    Price = 442400,
+                    PriceOld = 580000,
+                    Image = "/img/BimTa/huggies/13.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 14,
+                    ProductName="Tã quần Huggies Platinum nature made siêu cao cấp size L 44 miếng (9 - 14 kg)",
+                    Price = 337500,
+                    PriceOld = 375000,
+                    Image = "/img/BimTa/huggies/14.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 15,
+                    ProductName="Tã dán Huggies Platinum nature made siêu cao cấp size L 54 miếng (9 - 14 kg)",
+                    Price = 618000,
+                    PriceOld = 780000,
+                    Image = "/img/BimTa/huggies/15.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 16,
+                    ProductName="Tã dán Huggies Platinum nature made siêu cao cấp size NB 60 miếng (Dưới 5 kg)",
+                    Price = 189900,
+                    PriceOld = 211000,
+                    Image = "/img/BimTa/huggies/16.jpg",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 17,
+                    ProductName="Tã lót Huggies size NB2 60 miếng (4 - 7 kg)",
+                    Price = 94300,
+                    PriceOld = 111000,
+                    Image = "/img/BimTa/huggies/17.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 18,
+                    ProductName="Tã dán Huggies Dry size S 56 miếng (4 - 8 kg)",
+                    Price = 242400,
+                    PriceOld = 380000,
+                    Image = "/img/BimTa/huggies/18.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 19,
+                    ProductName="Tã quần Huggies Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 842400,
+                    PriceOld = 980000,
+                    Image = "/img/BimTa/huggies/19.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 20,
+                    ProductName="Tã quần Huggies Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 1042400,
+                    PriceOld = 1180000,
+                    Image = "/img/BimTa/huggies/20.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 11,
+                    ProductName="Tã quần Huggies Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 342400,
+                    PriceOld = 380000,
+                    Image = "/img/BimTa/huggies/11.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 12,
+                    ProductName="Tã quần Huggies Dry size XXL 56 miếng (Trên 15 kg)",
+                    Price = 342400,
+                    PriceOld = 380000,
+                    Image = "/img/BimTa/huggies/12.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 13,
+                    ProductName="Tã quần Huggies Dry size L",
+                    Price = 442400,
+                    PriceOld = 580000,
+                    Image = "/img/BimTa/huggies/13.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 14,
+                    ProductName="Tã quần Huggies Platinum nature made siêu cao cấp size L 44 miếng (9 - 14 kg)",
+                    Price = 337500,
+                    PriceOld = 375000,
+                    Image = "/img/BimTa/huggies/14.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 15,
+                    ProductName="Tã dán Huggies Platinum nature made siêu cao cấp size L 54 miếng (9 - 14 kg)",
+                    Price = 618000,
+                    PriceOld = 780000,
+                    Image = "/img/BimTa/huggies/15.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 16,
+                    ProductName="Tã dán Huggies Platinum nature made siêu cao cấp size NB 60 miếng (Dưới 5 kg)",
+                    Price = 189900,
+                    PriceOld = 211000,
+                    Image = "/img/BimTa/huggies/16.jpg",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 17,
+                    ProductName="Tã lót Huggies size NB2 60 miếng (4 - 7 kg)",
+                    Price = 94300,
+                    PriceOld = 111000,
+                    Image = "/img/BimTa/huggies/17.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 18,
+                    ProductName="Tã dán Huggies Dry size S 56 miếng (4 - 8 kg)",
+                    Price = 242400,
+                    PriceOld = 380000,
+                    Image = "/img/BimTa/huggies/18.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 19,
+                    ProductName="Tã quần Huggies Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 842400,
+                    PriceOld = 980000,
+                    Image = "/img/BimTa/huggies/19.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 20,
+                    ProductName="Tã quần Huggies Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 1042400,
+                    PriceOld = 1180000,
+                    Image = "/img/BimTa/huggies/20.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+
+                //moony
+                new Product
+                {
+                    ProductID = 21,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 378000,
+                    PriceOld = 445000,
+                    Image = "/img/BimTa/moony/21.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 22,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 578000,
+                    PriceOld = 645000,
+                    Image = "/img/BimTa/moony/22.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 23,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 778000,
+                    PriceOld = 845000,
+                    Image = "/img/BimTa/moony/23.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 24,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 978000,
+                    PriceOld = 999000,
+                    Image = "/img/BimTa/moony/24.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 25,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 278000,
+                    PriceOld = 345000,
+                    Image = "/img/BimTa/moony/25.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 26,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 878000,
+                    PriceOld = 945000,
+                    Image = "/img/BimTa/moony/26.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 27,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 778000,
+                    PriceOld = 945000,
+                    Image = "/img/BimTa/moony/27.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 28,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 278000,
+                    PriceOld = 545000,
+                    Image = "/img/BimTa/moony/28.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 29,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 178000,
+                    PriceOld = 195000,
+                    Image = "/img/BimTa/moony/29.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 30,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 1878000,
+                    PriceOld = 1445000,
+                    Image = "/img/BimTa/moony/30.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 21,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 378000,
+                    PriceOld = 445000,
+                    Image = "/img/BimTa/moony/21.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 22,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 578000,
+                    PriceOld = 645000,
+                    Image = "/img/BimTa/moony/22.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 23,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 778000,
+                    PriceOld = 845000,
+                    Image = "/img/BimTa/moony/23.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 24,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 978000,
+                    PriceOld = 999000,
+                    Image = "/img/BimTa/moony/24.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 25,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 278000,
+                    PriceOld = 345000,
+                    Image = "/img/BimTa/moony/25.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 26,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 878000,
+                    PriceOld = 945000,
+                    Image = "/img/BimTa/moony/26.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 27,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 778000,
+                    PriceOld = 945000,
+                    Image = "/img/BimTa/moony/27.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 28,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 278000,
+                    PriceOld = 545000,
+                    Image = "/img/BimTa/moony/28.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 29,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 178000,
+                    PriceOld = 195000,
+                    Image = "/img/BimTa/moony/29.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 30,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 1878000,
+                    PriceOld = 1445000,
+                    Image = "/img/BimTa/moony/30.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 29,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 178000,
+                    PriceOld = 195000,
+                    Image = "/img/BimTa/moony/29.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 30,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 1878000,
+                    PriceOld = 1445000,
+                    Image = "/img/BimTa/moony/30.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+
+                //Bobby
+                new Product
+                {
+                    ProductID = 1,
+                    ProductName="Tã quần Bobby size M 76 miếng (6 - 11 kg)",
+                    Price = 343400,
+                    PriceOld = 404000,
+                    Image = "/img/BimTa/bobby/1.jpg",
+                    Trademark = "Bobby",
+                    TypeDiapers = "Miếng lót sơ sinh",
+                    WeighDiapers = "Dưới 5kg",
+                    Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 2,
+                    ProductName="Tã quần Bobby size XL 62 miếng (12 - 17 kg)",
+                    Price = 243400,
+                    PriceOld = 304000,
+                    Image = "/img/BimTa/bobby/2.jpg",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5kg - 10kg",Size = "S"
+                },
+                new Product
+                {
+                    ProductID = 3,
+                    ProductName="Tã quần Bobby size L 68 miếng (9 - 13 kg)",
+                    Price = 143400,
+                    PriceOld = 204000,
+                    Image = "/img/BimTa/bobby/3.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 4,
+                    ProductName="Tã quần Bobby size XXL 56 miếng (15 - 25 kg)",
+                    Price = 323100,
+                    PriceOld = 359000,
+                    Image = "/img/BimTa/bobby/4.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 5,
+                    ProductName="Tã quần Bobby Extra Soft-Dry size L 52 miếng (9 - 13 kg)",
+                    Price = 291500,
+                    PriceOld = 304000,
+                    Image = "/img/BimTa/bobby/5.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 6,
+                    ProductName="Tã quần Bobby Extra Soft-Dry size XXL 42 miếng (Trên 16 kg)",
+                    Price = 2915000,
+                    PriceOld = 434000,
+                    Image = "/img/BimTa/bobby/6.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 7,
+                    ProductName="Tã quần Bobby Extra Soft-Dry size M 60 miếng (6 - 11 kg)",
+                    Price = 291500,
+                    PriceOld = 343000,
+                    Image = "/img/BimTa/bobby/7.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 8,
+                    ProductName="Tã dán Bobby siêu mỏng size XXL 56 miếng (Trên 16 kg)",
+                    Price = 289000,
+                    PriceOld = 340000,
+                    Image = "/img/BimTa/bobby/8.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 9,
+                    ProductName="Tã quần Bobby size M 76 miếng (6 - 11 kg)",
+                    Price = 278000,
+                    PriceOld = 504000,
+                    Image = "/img/BimTa/bobby/9.jpg",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 10,
+                    ProductName="Tã quần Bobby Extra Soft-Dry size XL 46 miếng (12 - 17 kg)",
+                    Price = 274400,
+                    PriceOld = 344000,
+                    Image = "/img/BimTa/bobby/10.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 11,
+                    ProductName="Tã quần Bobby size M 76 miếng (6 - 11 kg)",
+                    Price = 278000,
+                    PriceOld = 504000,
+                    Image = "/img/BimTa/bobby/9.jpg",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 12,
+                    ProductName="Tã quần Bobby Extra Soft-Dry size XL 46 miếng (12 - 17 kg)",
+                    Price = 274400,
+                    PriceOld = 344000,
+                    Image = "/img/BimTa/bobby/10.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 1,
+                    ProductName="Tã quần Bobby size M 76 miếng (6 - 11 kg)",
+                    Price = 343400,
+                    PriceOld = 404000,
+                    Image = "/img/BimTa/bobby/1.jpg",
+                    Trademark = "Bobby",
+                    TypeDiapers = "Miếng lót sơ sinh",
+                    WeighDiapers = "Dưới 5kg",
+                    Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 2,
+                    ProductName="Tã quần Bobby size XL 62 miếng (12 - 17 kg)",
+                    Price = 243400,
+                    PriceOld = 304000,
+                    Image = "/img/BimTa/bobby/2.jpg",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5kg - 10kg",Size = "S"
+                },
+                new Product
+                {
+                    ProductID = 3,
+                    ProductName="Tã quần Bobby size L 68 miếng (9 - 13 kg)",
+                    Price = 143400,
+                    PriceOld = 204000,
+                    Image = "/img/BimTa/bobby/3.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 4,
+                    ProductName="Tã quần Bobby size XXL 56 miếng (15 - 25 kg)",
+                    Price = 323100,
+                    PriceOld = 359000,
+                    Image = "/img/BimTa/bobby/4.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 5,
+                    ProductName="Tã quần Bobby Extra Soft-Dry size L 52 miếng (9 - 13 kg)",
+                    Price = 291500,
+                    PriceOld = 304000,
+                    Image = "/img/BimTa/bobby/5.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 6,
+                    ProductName="Tã quần Bobby Extra Soft-Dry size XXL 42 miếng (Trên 16 kg)",
+                    Price = 2915000,
+                    PriceOld = 434000,
+                    Image = "/img/BimTa/bobby/6.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 7,
+                    ProductName="Tã quần Bobby Extra Soft-Dry size M 60 miếng (6 - 11 kg)",
+                    Price = 291500,
+                    PriceOld = 343000,
+                    Image = "/img/BimTa/bobby/7.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 8,
+                    ProductName="Tã dán Bobby siêu mỏng size XXL 56 miếng (Trên 16 kg)",
+                    Price = 289000,
+                    PriceOld = 340000,
+                    Image = "/img/BimTa/bobby/8.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 9,
+                    ProductName="Tã quần Bobby size M 76 miếng (6 - 11 kg)",
+                    Price = 278000,
+                    PriceOld = 504000,
+                    Image = "/img/BimTa/bobby/9.jpg",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 10,
+                    ProductName="Tã quần Bobby Extra Soft-Dry size XL 46 miếng (12 - 17 kg)",
+                    Price = 274400,
+                    PriceOld = 344000,
+                    Image = "/img/BimTa/bobby/10.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 11,
+                    ProductName="Tã quần Bobby size M 76 miếng (6 - 11 kg)",
+                    Price = 278000,
+                    PriceOld = 504000,
+                    Image = "/img/BimTa/bobby/9.jpg",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 12,
+                    ProductName="Tã quần Bobby Extra Soft-Dry size XL 46 miếng (12 - 17 kg)",
+                    Price = 274400,
+                    PriceOld = 344000,
+                    Image = "/img/BimTa/bobby/10.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+
+                //Huggies
+                new Product
+                {
+                    ProductID = 11,
+                    ProductName="Tã quần Huggies Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 342400,
+                    PriceOld = 380000,
+                    Image = "/img/BimTa/huggies/11.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 12,
+                    ProductName="Tã quần Huggies Dry size XXL 56 miếng (Trên 15 kg)",
+                    Price = 342400,
+                    PriceOld = 380000,
+                    Image = "/img/BimTa/huggies/12.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 13,
+                    ProductName="Tã quần Huggies Dry size L",
+                    Price = 442400,
+                    PriceOld = 580000,
+                    Image = "/img/BimTa/huggies/13.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 14,
+                    ProductName="Tã quần Huggies Platinum nature made siêu cao cấp size L 44 miếng (9 - 14 kg)",
+                    Price = 337500,
+                    PriceOld = 375000,
+                    Image = "/img/BimTa/huggies/14.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 15,
+                    ProductName="Tã dán Huggies Platinum nature made siêu cao cấp size L 54 miếng (9 - 14 kg)",
+                    Price = 618000,
+                    PriceOld = 780000,
+                    Image = "/img/BimTa/huggies/15.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 16,
+                    ProductName="Tã dán Huggies Platinum nature made siêu cao cấp size NB 60 miếng (Dưới 5 kg)",
+                    Price = 189900,
+                    PriceOld = 211000,
+                    Image = "/img/BimTa/huggies/16.jpg",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 17,
+                    ProductName="Tã lót Huggies size NB2 60 miếng (4 - 7 kg)",
+                    Price = 94300,
+                    PriceOld = 111000,
+                    Image = "/img/BimTa/huggies/17.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 18,
+                    ProductName="Tã dán Huggies Dry size S 56 miếng (4 - 8 kg)",
+                    Price = 242400,
+                    PriceOld = 380000,
+                    Image = "/img/BimTa/huggies/18.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 19,
+                    ProductName="Tã quần Huggies Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 842400,
+                    PriceOld = 980000,
+                    Image = "/img/BimTa/huggies/19.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 20,
+                    ProductName="Tã quần Huggies Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 1042400,
+                    PriceOld = 1180000,
+                    Image = "/img/BimTa/huggies/20.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 11,
+                    ProductName="Tã quần Huggies Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 342400,
+                    PriceOld = 380000,
+                    Image = "/img/BimTa/huggies/11.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 12,
+                    ProductName="Tã quần Huggies Dry size XXL 56 miếng (Trên 15 kg)",
+                    Price = 342400,
+                    PriceOld = 380000,
+                    Image = "/img/BimTa/huggies/12.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 13,
+                    ProductName="Tã quần Huggies Dry size L",
+                    Price = 442400,
+                    PriceOld = 580000,
+                    Image = "/img/BimTa/huggies/13.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 14,
+                    ProductName="Tã quần Huggies Platinum nature made siêu cao cấp size L 44 miếng (9 - 14 kg)",
+                    Price = 337500,
+                    PriceOld = 375000,
+                    Image = "/img/BimTa/huggies/14.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 15,
+                    ProductName="Tã dán Huggies Platinum nature made siêu cao cấp size L 54 miếng (9 - 14 kg)",
+                    Price = 618000,
+                    PriceOld = 780000,
+                    Image = "/img/BimTa/huggies/15.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 16,
+                    ProductName="Tã dán Huggies Platinum nature made siêu cao cấp size NB 60 miếng (Dưới 5 kg)",
+                    Price = 189900,
+                    PriceOld = 211000,
+                    Image = "/img/BimTa/huggies/16.jpg",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 17,
+                    ProductName="Tã lót Huggies size NB2 60 miếng (4 - 7 kg)",
+                    Price = 94300,
+                    PriceOld = 111000,
+                    Image = "/img/BimTa/huggies/17.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 18,
+                    ProductName="Tã dán Huggies Dry size S 56 miếng (4 - 8 kg)",
+                    Price = 242400,
+                    PriceOld = 380000,
+                    Image = "/img/BimTa/huggies/18.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 19,
+                    ProductName="Tã quần Huggies Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 842400,
+                    PriceOld = 980000,
+                    Image = "/img/BimTa/huggies/19.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 20,
+                    ProductName="Tã quần Huggies Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 1042400,
+                    PriceOld = 1180000,
+                    Image = "/img/BimTa/huggies/20.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+
+                //moony
+                new Product
+                {
+                    ProductID = 21,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 378000,
+                    PriceOld = 445000,
+                    Image = "/img/BimTa/moony/21.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 22,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 578000,
+                    PriceOld = 645000,
+                    Image = "/img/BimTa/moony/22.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 23,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 778000,
+                    PriceOld = 845000,
+                    Image = "/img/BimTa/moony/23.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 24,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 978000,
+                    PriceOld = 999000,
+                    Image = "/img/BimTa/moony/24.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 25,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 278000,
+                    PriceOld = 345000,
+                    Image = "/img/BimTa/moony/25.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 26,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 878000,
+                    PriceOld = 945000,
+                    Image = "/img/BimTa/moony/26.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 27,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 778000,
+                    PriceOld = 945000,
+                    Image = "/img/BimTa/moony/27.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 28,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 278000,
+                    PriceOld = 545000,
+                    Image = "/img/BimTa/moony/28.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 29,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 178000,
+                    PriceOld = 195000,
+                    Image = "/img/BimTa/moony/29.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 30,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 1878000,
+                    PriceOld = 1445000,
+                    Image = "/img/BimTa/moony/30.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 21,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 378000,
+                    PriceOld = 445000,
+                    Image = "/img/BimTa/moony/21.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 22,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 578000,
+                    PriceOld = 645000,
+                    Image = "/img/BimTa/moony/22.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 23,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 778000,
+                    PriceOld = 845000,
+                    Image = "/img/BimTa/moony/23.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 24,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 978000,
+                    PriceOld = 999000,
+                    Image = "/img/BimTa/moony/24.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 25,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 278000,
+                    PriceOld = 345000,
+                    Image = "/img/BimTa/moony/25.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 26,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 878000,
+                    PriceOld = 945000,
+                    Image = "/img/BimTa/moony/26.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 27,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 778000,
+                    PriceOld = 945000,
+                    Image = "/img/BimTa/moony/27.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 28,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 278000,
+                    PriceOld = 545000,
+                    Image = "/img/BimTa/moony/28.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 29,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 178000,
+                    PriceOld = 195000,
+                    Image = "/img/BimTa/moony/29.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 30,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 1878000,
+                    PriceOld = 1445000,
+                    Image = "/img/BimTa/moony/30.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 29,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 178000,
+                    PriceOld = 195000,
+                    Image = "/img/BimTa/moony/29.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 30,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 1878000,
+                    PriceOld = 1445000,
+                    Image = "/img/BimTa/moony/30.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+
+                //Bobby
+                new Product
+                {
+                    ProductID = 1,
+                    ProductName="Tã quần Bobby size M 76 miếng (6 - 11 kg)",
+                    Price = 343400,
+                    PriceOld = 404000,
+                    Image = "/img/BimTa/bobby/1.jpg",
+                    Trademark = "Bobby",
+                    TypeDiapers = "Miếng lót sơ sinh",
+                    WeighDiapers = "Dưới 5kg",
+                    Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 2,
+                    ProductName="Tã quần Bobby size XL 62 miếng (12 - 17 kg)",
+                    Price = 243400,
+                    PriceOld = 304000,
+                    Image = "/img/BimTa/bobby/2.jpg",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5kg - 10kg",Size = "S"
+                },
+                new Product
+                {
+                    ProductID = 3,
+                    ProductName="Tã quần Bobby size L 68 miếng (9 - 13 kg)",
+                    Price = 143400,
+                    PriceOld = 204000,
+                    Image = "/img/BimTa/bobby/3.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 4,
+                    ProductName="Tã quần Bobby size XXL 56 miếng (15 - 25 kg)",
+                    Price = 323100,
+                    PriceOld = 359000,
+                    Image = "/img/BimTa/bobby/4.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 5,
+                    ProductName="Tã quần Bobby Extra Soft-Dry size L 52 miếng (9 - 13 kg)",
+                    Price = 291500,
+                    PriceOld = 304000,
+                    Image = "/img/BimTa/bobby/5.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 6,
+                    ProductName="Tã quần Bobby Extra Soft-Dry size XXL 42 miếng (Trên 16 kg)",
+                    Price = 2915000,
+                    PriceOld = 434000,
+                    Image = "/img/BimTa/bobby/6.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 7,
+                    ProductName="Tã quần Bobby Extra Soft-Dry size M 60 miếng (6 - 11 kg)",
+                    Price = 291500,
+                    PriceOld = 343000,
+                    Image = "/img/BimTa/bobby/7.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 8,
+                    ProductName="Tã dán Bobby siêu mỏng size XXL 56 miếng (Trên 16 kg)",
+                    Price = 289000,
+                    PriceOld = 340000,
+                    Image = "/img/BimTa/bobby/8.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 9,
+                    ProductName="Tã quần Bobby size M 76 miếng (6 - 11 kg)",
+                    Price = 278000,
+                    PriceOld = 504000,
+                    Image = "/img/BimTa/bobby/9.jpg",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 10,
+                    ProductName="Tã quần Bobby Extra Soft-Dry size XL 46 miếng (12 - 17 kg)",
+                    Price = 274400,
+                    PriceOld = 344000,
+                    Image = "/img/BimTa/bobby/10.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 11,
+                    ProductName="Tã quần Bobby size M 76 miếng (6 - 11 kg)",
+                    Price = 278000,
+                    PriceOld = 504000,
+                    Image = "/img/BimTa/bobby/9.jpg",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 12,
+                    ProductName="Tã quần Bobby Extra Soft-Dry size XL 46 miếng (12 - 17 kg)",
+                    Price = 274400,
+                    PriceOld = 344000,
+                    Image = "/img/BimTa/bobby/10.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 1,
+                    ProductName="Tã quần Bobby size M 76 miếng (6 - 11 kg)",
+                    Price = 343400,
+                    PriceOld = 404000,
+                    Image = "/img/BimTa/bobby/1.jpg",
+                    Trademark = "Bobby",
+                    TypeDiapers = "Miếng lót sơ sinh",
+                    WeighDiapers = "Dưới 5kg",
+                    Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 2,
+                    ProductName="Tã quần Bobby size XL 62 miếng (12 - 17 kg)",
+                    Price = 243400,
+                    PriceOld = 304000,
+                    Image = "/img/BimTa/bobby/2.jpg",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5kg - 10kg",Size = "S"
+                },
+                new Product
+                {
+                    ProductID = 3,
+                    ProductName="Tã quần Bobby size L 68 miếng (9 - 13 kg)",
+                    Price = 143400,
+                    PriceOld = 204000,
+                    Image = "/img/BimTa/bobby/3.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 4,
+                    ProductName="Tã quần Bobby size XXL 56 miếng (15 - 25 kg)",
+                    Price = 323100,
+                    PriceOld = 359000,
+                    Image = "/img/BimTa/bobby/4.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 5,
+                    ProductName="Tã quần Bobby Extra Soft-Dry size L 52 miếng (9 - 13 kg)",
+                    Price = 291500,
+                    PriceOld = 304000,
+                    Image = "/img/BimTa/bobby/5.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 6,
+                    ProductName="Tã quần Bobby Extra Soft-Dry size XXL 42 miếng (Trên 16 kg)",
+                    Price = 2915000,
+                    PriceOld = 434000,
+                    Image = "/img/BimTa/bobby/6.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 7,
+                    ProductName="Tã quần Bobby Extra Soft-Dry size M 60 miếng (6 - 11 kg)",
+                    Price = 291500,
+                    PriceOld = 343000,
+                    Image = "/img/BimTa/bobby/7.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 8,
+                    ProductName="Tã dán Bobby siêu mỏng size XXL 56 miếng (Trên 16 kg)",
+                    Price = 289000,
+                    PriceOld = 340000,
+                    Image = "/img/BimTa/bobby/8.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 9,
+                    ProductName="Tã quần Bobby size M 76 miếng (6 - 11 kg)",
+                    Price = 278000,
+                    PriceOld = 504000,
+                    Image = "/img/BimTa/bobby/9.jpg",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 10,
+                    ProductName="Tã quần Bobby Extra Soft-Dry size XL 46 miếng (12 - 17 kg)",
+                    Price = 274400,
+                    PriceOld = 344000,
+                    Image = "/img/BimTa/bobby/10.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 11,
+                    ProductName="Tã quần Bobby size M 76 miếng (6 - 11 kg)",
+                    Price = 278000,
+                    PriceOld = 504000,
+                    Image = "/img/BimTa/bobby/9.jpg",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 12,
+                    ProductName="Tã quần Bobby Extra Soft-Dry size XL 46 miếng (12 - 17 kg)",
+                    Price = 274400,
+                    PriceOld = 344000,
+                    Image = "/img/BimTa/bobby/10.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+
+                //Huggies
+                new Product
+                {
+                    ProductID = 11,
+                    ProductName="Tã quần Huggies Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 342400,
+                    PriceOld = 380000,
+                    Image = "/img/BimTa/huggies/11.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 12,
+                    ProductName="Tã quần Huggies Dry size XXL 56 miếng (Trên 15 kg)",
+                    Price = 342400,
+                    PriceOld = 380000,
+                    Image = "/img/BimTa/huggies/12.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 13,
+                    ProductName="Tã quần Huggies Dry size L",
+                    Price = 442400,
+                    PriceOld = 580000,
+                    Image = "/img/BimTa/huggies/13.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 14,
+                    ProductName="Tã quần Huggies Platinum nature made siêu cao cấp size L 44 miếng (9 - 14 kg)",
+                    Price = 337500,
+                    PriceOld = 375000,
+                    Image = "/img/BimTa/huggies/14.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 15,
+                    ProductName="Tã dán Huggies Platinum nature made siêu cao cấp size L 54 miếng (9 - 14 kg)",
+                    Price = 618000,
+                    PriceOld = 780000,
+                    Image = "/img/BimTa/huggies/15.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 16,
+                    ProductName="Tã dán Huggies Platinum nature made siêu cao cấp size NB 60 miếng (Dưới 5 kg)",
+                    Price = 189900,
+                    PriceOld = 211000,
+                    Image = "/img/BimTa/huggies/16.jpg",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 17,
+                    ProductName="Tã lót Huggies size NB2 60 miếng (4 - 7 kg)",
+                    Price = 94300,
+                    PriceOld = 111000,
+                    Image = "/img/BimTa/huggies/17.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 18,
+                    ProductName="Tã dán Huggies Dry size S 56 miếng (4 - 8 kg)",
+                    Price = 242400,
+                    PriceOld = 380000,
+                    Image = "/img/BimTa/huggies/18.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 19,
+                    ProductName="Tã quần Huggies Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 842400,
+                    PriceOld = 980000,
+                    Image = "/img/BimTa/huggies/19.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 20,
+                    ProductName="Tã quần Huggies Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 1042400,
+                    PriceOld = 1180000,
+                    Image = "/img/BimTa/huggies/20.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 11,
+                    ProductName="Tã quần Huggies Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 342400,
+                    PriceOld = 380000,
+                    Image = "/img/BimTa/huggies/11.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 12,
+                    ProductName="Tã quần Huggies Dry size XXL 56 miếng (Trên 15 kg)",
+                    Price = 342400,
+                    PriceOld = 380000,
+                    Image = "/img/BimTa/huggies/12.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 13,
+                    ProductName="Tã quần Huggies Dry size L",
+                    Price = 442400,
+                    PriceOld = 580000,
+                    Image = "/img/BimTa/huggies/13.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 14,
+                    ProductName="Tã quần Huggies Platinum nature made siêu cao cấp size L 44 miếng (9 - 14 kg)",
+                    Price = 337500,
+                    PriceOld = 375000,
+                    Image = "/img/BimTa/huggies/14.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 15,
+                    ProductName="Tã dán Huggies Platinum nature made siêu cao cấp size L 54 miếng (9 - 14 kg)",
+                    Price = 618000,
+                    PriceOld = 780000,
+                    Image = "/img/BimTa/huggies/15.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 16,
+                    ProductName="Tã dán Huggies Platinum nature made siêu cao cấp size NB 60 miếng (Dưới 5 kg)",
+                    Price = 189900,
+                    PriceOld = 211000,
+                    Image = "/img/BimTa/huggies/16.jpg",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 17,
+                    ProductName="Tã lót Huggies size NB2 60 miếng (4 - 7 kg)",
+                    Price = 94300,
+                    PriceOld = 111000,
+                    Image = "/img/BimTa/huggies/17.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 18,
+                    ProductName="Tã dán Huggies Dry size S 56 miếng (4 - 8 kg)",
+                    Price = 242400,
+                    PriceOld = 380000,
+                    Image = "/img/BimTa/huggies/18.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 19,
+                    ProductName="Tã quần Huggies Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 842400,
+                    PriceOld = 980000,
+                    Image = "/img/BimTa/huggies/19.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 20,
+                    ProductName="Tã quần Huggies Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 1042400,
+                    PriceOld = 1180000,
+                    Image = "/img/BimTa/huggies/20.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+
+                //moony
+                new Product
+                {
+                    ProductID = 21,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 378000,
+                    PriceOld = 445000,
+                    Image = "/img/BimTa/moony/21.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 22,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 578000,
+                    PriceOld = 645000,
+                    Image = "/img/BimTa/moony/22.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 23,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 778000,
+                    PriceOld = 845000,
+                    Image = "/img/BimTa/moony/23.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 24,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 978000,
+                    PriceOld = 999000,
+                    Image = "/img/BimTa/moony/24.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 25,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 278000,
+                    PriceOld = 345000,
+                    Image = "/img/BimTa/moony/25.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 26,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 878000,
+                    PriceOld = 945000,
+                    Image = "/img/BimTa/moony/26.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 27,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 778000,
+                    PriceOld = 945000,
+                    Image = "/img/BimTa/moony/27.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 28,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 278000,
+                    PriceOld = 545000,
+                    Image = "/img/BimTa/moony/28.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 29,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 178000,
+                    PriceOld = 195000,
+                    Image = "/img/BimTa/moony/29.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 30,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 1878000,
+                    PriceOld = 1445000,
+                    Image = "/img/BimTa/moony/30.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 21,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 378000,
+                    PriceOld = 445000,
+                    Image = "/img/BimTa/moony/21.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 22,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 578000,
+                    PriceOld = 645000,
+                    Image = "/img/BimTa/moony/22.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 23,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 778000,
+                    PriceOld = 845000,
+                    Image = "/img/BimTa/moony/23.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 24,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 978000,
+                    PriceOld = 999000,
+                    Image = "/img/BimTa/moony/24.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 25,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 278000,
+                    PriceOld = 345000,
+                    Image = "/img/BimTa/moony/25.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 26,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 878000,
+                    PriceOld = 945000,
+                    Image = "/img/BimTa/moony/26.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 27,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 778000,
+                    PriceOld = 945000,
+                    Image = "/img/BimTa/moony/27.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 28,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 278000,
+                    PriceOld = 545000,
+                    Image = "/img/BimTa/moony/28.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 29,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 178000,
+                    PriceOld = 195000,
+                    Image = "/img/BimTa/moony/29.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 30,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 1878000,
+                    PriceOld = 1445000,
+                    Image = "/img/BimTa/moony/30.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 29,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 178000,
+                    PriceOld = 195000,
+                    Image = "/img/BimTa/moony/29.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 30,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 1878000,
+                    PriceOld = 1445000,
+                    Image = "/img/BimTa/moony/30.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+
+                //Bobby
+                new Product
+                {
+                    ProductID = 1,
+                    ProductName="Tã quần Bobby size M 76 miếng (6 - 11 kg)",
+                    Price = 343400,
+                    PriceOld = 404000,
+                    Image = "/img/BimTa/bobby/1.jpg",
+                    Trademark = "Bobby",
+                    TypeDiapers = "Miếng lót sơ sinh",
+                    WeighDiapers = "Dưới 5kg",
+                    Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 2,
+                    ProductName="Tã quần Bobby size XL 62 miếng (12 - 17 kg)",
+                    Price = 243400,
+                    PriceOld = 304000,
+                    Image = "/img/BimTa/bobby/2.jpg",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5kg - 10kg",Size = "S"
+                },
+                new Product
+                {
+                    ProductID = 3,
+                    ProductName="Tã quần Bobby size L 68 miếng (9 - 13 kg)",
+                    Price = 143400,
+                    PriceOld = 204000,
+                    Image = "/img/BimTa/bobby/3.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 4,
+                    ProductName="Tã quần Bobby size XXL 56 miếng (15 - 25 kg)",
+                    Price = 323100,
+                    PriceOld = 359000,
+                    Image = "/img/BimTa/bobby/4.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 5,
+                    ProductName="Tã quần Bobby Extra Soft-Dry size L 52 miếng (9 - 13 kg)",
+                    Price = 291500,
+                    PriceOld = 304000,
+                    Image = "/img/BimTa/bobby/5.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 6,
+                    ProductName="Tã quần Bobby Extra Soft-Dry size XXL 42 miếng (Trên 16 kg)",
+                    Price = 2915000,
+                    PriceOld = 434000,
+                    Image = "/img/BimTa/bobby/6.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 7,
+                    ProductName="Tã quần Bobby Extra Soft-Dry size M 60 miếng (6 - 11 kg)",
+                    Price = 291500,
+                    PriceOld = 343000,
+                    Image = "/img/BimTa/bobby/7.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 8,
+                    ProductName="Tã dán Bobby siêu mỏng size XXL 56 miếng (Trên 16 kg)",
+                    Price = 289000,
+                    PriceOld = 340000,
+                    Image = "/img/BimTa/bobby/8.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 9,
+                    ProductName="Tã quần Bobby size M 76 miếng (6 - 11 kg)",
+                    Price = 278000,
+                    PriceOld = 504000,
+                    Image = "/img/BimTa/bobby/9.jpg",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 10,
+                    ProductName="Tã quần Bobby Extra Soft-Dry size XL 46 miếng (12 - 17 kg)",
+                    Price = 274400,
+                    PriceOld = 344000,
+                    Image = "/img/BimTa/bobby/10.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 11,
+                    ProductName="Tã quần Bobby size M 76 miếng (6 - 11 kg)",
+                    Price = 278000,
+                    PriceOld = 504000,
+                    Image = "/img/BimTa/bobby/9.jpg",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 12,
+                    ProductName="Tã quần Bobby Extra Soft-Dry size XL 46 miếng (12 - 17 kg)",
+                    Price = 274400,
+                    PriceOld = 344000,
+                    Image = "/img/BimTa/bobby/10.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 1,
+                    ProductName="Tã quần Bobby size M 76 miếng (6 - 11 kg)",
+                    Price = 343400,
+                    PriceOld = 404000,
+                    Image = "/img/BimTa/bobby/1.jpg",
+                    Trademark = "Bobby",
+                    TypeDiapers = "Miếng lót sơ sinh",
+                    WeighDiapers = "Dưới 5kg",
+                    Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 2,
+                    ProductName="Tã quần Bobby size XL 62 miếng (12 - 17 kg)",
+                    Price = 243400,
+                    PriceOld = 304000,
+                    Image = "/img/BimTa/bobby/2.jpg",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5kg - 10kg",Size = "S"
+                },
+                new Product
+                {
+                    ProductID = 3,
+                    ProductName="Tã quần Bobby size L 68 miếng (9 - 13 kg)",
+                    Price = 143400,
+                    PriceOld = 204000,
+                    Image = "/img/BimTa/bobby/3.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 4,
+                    ProductName="Tã quần Bobby size XXL 56 miếng (15 - 25 kg)",
+                    Price = 323100,
+                    PriceOld = 359000,
+                    Image = "/img/BimTa/bobby/4.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 5,
+                    ProductName="Tã quần Bobby Extra Soft-Dry size L 52 miếng (9 - 13 kg)",
+                    Price = 291500,
+                    PriceOld = 304000,
+                    Image = "/img/BimTa/bobby/5.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 6,
+                    ProductName="Tã quần Bobby Extra Soft-Dry size XXL 42 miếng (Trên 16 kg)",
+                    Price = 2915000,
+                    PriceOld = 434000,
+                    Image = "/img/BimTa/bobby/6.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 7,
+                    ProductName="Tã quần Bobby Extra Soft-Dry size M 60 miếng (6 - 11 kg)",
+                    Price = 291500,
+                    PriceOld = 343000,
+                    Image = "/img/BimTa/bobby/7.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 8,
+                    ProductName="Tã dán Bobby siêu mỏng size XXL 56 miếng (Trên 16 kg)",
+                    Price = 289000,
+                    PriceOld = 340000,
+                    Image = "/img/BimTa/bobby/8.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 9,
+                    ProductName="Tã quần Bobby size M 76 miếng (6 - 11 kg)",
+                    Price = 278000,
+                    PriceOld = 504000,
+                    Image = "/img/BimTa/bobby/9.jpg",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 10,
+                    ProductName="Tã quần Bobby Extra Soft-Dry size XL 46 miếng (12 - 17 kg)",
+                    Price = 274400,
+                    PriceOld = 344000,
+                    Image = "/img/BimTa/bobby/10.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 11,
+                    ProductName="Tã quần Bobby size M 76 miếng (6 - 11 kg)",
+                    Price = 278000,
+                    PriceOld = 504000,
+                    Image = "/img/BimTa/bobby/9.jpg",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 12,
+                    ProductName="Tã quần Bobby Extra Soft-Dry size XL 46 miếng (12 - 17 kg)",
+                    Price = 274400,
+                    PriceOld = 344000,
+                    Image = "/img/BimTa/bobby/10.png",
+                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+
+                //Huggies
+                new Product
+                {
+                    ProductID = 11,
+                    ProductName="Tã quần Huggies Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 342400,
+                    PriceOld = 380000,
+                    Image = "/img/BimTa/huggies/11.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 12,
+                    ProductName="Tã quần Huggies Dry size XXL 56 miếng (Trên 15 kg)",
+                    Price = 342400,
+                    PriceOld = 380000,
+                    Image = "/img/BimTa/huggies/12.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 13,
+                    ProductName="Tã quần Huggies Dry size L",
+                    Price = 442400,
+                    PriceOld = 580000,
+                    Image = "/img/BimTa/huggies/13.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 14,
+                    ProductName="Tã quần Huggies Platinum nature made siêu cao cấp size L 44 miếng (9 - 14 kg)",
+                    Price = 337500,
+                    PriceOld = 375000,
+                    Image = "/img/BimTa/huggies/14.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 15,
+                    ProductName="Tã dán Huggies Platinum nature made siêu cao cấp size L 54 miếng (9 - 14 kg)",
+                    Price = 618000,
+                    PriceOld = 780000,
+                    Image = "/img/BimTa/huggies/15.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 16,
+                    ProductName="Tã dán Huggies Platinum nature made siêu cao cấp size NB 60 miếng (Dưới 5 kg)",
+                    Price = 189900,
+                    PriceOld = 211000,
+                    Image = "/img/BimTa/huggies/16.jpg",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 17,
+                    ProductName="Tã lót Huggies size NB2 60 miếng (4 - 7 kg)",
+                    Price = 94300,
+                    PriceOld = 111000,
+                    Image = "/img/BimTa/huggies/17.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 18,
+                    ProductName="Tã dán Huggies Dry size S 56 miếng (4 - 8 kg)",
+                    Price = 242400,
+                    PriceOld = 380000,
+                    Image = "/img/BimTa/huggies/18.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 19,
+                    ProductName="Tã quần Huggies Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 842400,
+                    PriceOld = 980000,
+                    Image = "/img/BimTa/huggies/19.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 20,
+                    ProductName="Tã quần Huggies Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 1042400,
+                    PriceOld = 1180000,
+                    Image = "/img/BimTa/huggies/20.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 11,
+                    ProductName="Tã quần Huggies Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 342400,
+                    PriceOld = 380000,
+                    Image = "/img/BimTa/huggies/11.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 12,
+                    ProductName="Tã quần Huggies Dry size XXL 56 miếng (Trên 15 kg)",
+                    Price = 342400,
+                    PriceOld = 380000,
+                    Image = "/img/BimTa/huggies/12.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 13,
+                    ProductName="Tã quần Huggies Dry size L",
+                    Price = 442400,
+                    PriceOld = 580000,
+                    Image = "/img/BimTa/huggies/13.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 14,
+                    ProductName="Tã quần Huggies Platinum nature made siêu cao cấp size L 44 miếng (9 - 14 kg)",
+                    Price = 337500,
+                    PriceOld = 375000,
+                    Image = "/img/BimTa/huggies/14.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 15,
+                    ProductName="Tã dán Huggies Platinum nature made siêu cao cấp size L 54 miếng (9 - 14 kg)",
+                    Price = 618000,
+                    PriceOld = 780000,
+                    Image = "/img/BimTa/huggies/15.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 16,
+                    ProductName="Tã dán Huggies Platinum nature made siêu cao cấp size NB 60 miếng (Dưới 5 kg)",
+                    Price = 189900,
+                    PriceOld = 211000,
+                    Image = "/img/BimTa/huggies/16.jpg",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 17,
+                    ProductName="Tã lót Huggies size NB2 60 miếng (4 - 7 kg)",
+                    Price = 94300,
+                    PriceOld = 111000,
+                    Image = "/img/BimTa/huggies/17.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 18,
+                    ProductName="Tã dán Huggies Dry size S 56 miếng (4 - 8 kg)",
+                    Price = 242400,
+                    PriceOld = 380000,
+                    Image = "/img/BimTa/huggies/18.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 19,
+                    ProductName="Tã quần Huggies Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 842400,
+                    PriceOld = 980000,
+                    Image = "/img/BimTa/huggies/19.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 20,
+                    ProductName="Tã quần Huggies Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 1042400,
+                    PriceOld = 1180000,
+                    Image = "/img/BimTa/huggies/20.png",
+                    Trademark = "Huggies",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+
+                //moony
+                new Product
+                {
+                    ProductID = 21,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 378000,
+                    PriceOld = 445000,
+                    Image = "/img/BimTa/moony/21.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 22,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 578000,
+                    PriceOld = 645000,
+                    Image = "/img/BimTa/moony/22.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 23,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 778000,
+                    PriceOld = 845000,
+                    Image = "/img/BimTa/moony/23.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 24,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 978000,
+                    PriceOld = 999000,
+                    Image = "/img/BimTa/moony/24.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 25,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 278000,
+                    PriceOld = 345000,
+                    Image = "/img/BimTa/moony/25.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 26,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 878000,
+                    PriceOld = 945000,
+                    Image = "/img/BimTa/moony/26.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 27,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 778000,
+                    PriceOld = 945000,
+                    Image = "/img/BimTa/moony/27.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 28,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 278000,
+                    PriceOld = 545000,
+                    Image = "/img/BimTa/moony/28.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 29,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 178000,
+                    PriceOld = 195000,
+                    Image = "/img/BimTa/moony/29.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 30,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 1878000,
+                    PriceOld = 1445000,
+                    Image = "/img/BimTa/moony/30.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 21,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 378000,
+                    PriceOld = 445000,
+                    Image = "/img/BimTa/moony/21.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 22,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 578000,
+                    PriceOld = 645000,
+                    Image = "/img/BimTa/moony/22.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 23,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 778000,
+                    PriceOld = 845000,
+                    Image = "/img/BimTa/moony/23.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 24,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 978000,
+                    PriceOld = 999000,
+                    Image = "/img/BimTa/moony/24.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 25,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 278000,
+                    PriceOld = 345000,
+                    Image = "/img/BimTa/moony/25.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 26,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 878000,
+                    PriceOld = 945000,
+                    Image = "/img/BimTa/moony/26.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 27,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 778000,
+                    PriceOld = 945000,
+                    Image = "/img/BimTa/moony/27.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 28,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 278000,
+                    PriceOld = 545000,
+                    Image = "/img/BimTa/moony/28.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5 - 10kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 29,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 178000,
+                    PriceOld = 195000,
+                    Image = "/img/BimTa/moony/29.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 30,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 1878000,
+                    PriceOld = 1445000,
+                    Image = "/img/BimTa/moony/30.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 29,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 178000,
+                    PriceOld = 195000,
+                    Image = "/img/BimTa/moony/29.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+                new Product
+                {
+                    ProductID = 30,
+                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
+                    Price = 1878000,
+                    PriceOld = 1445000,
+                    Image = "/img/BimTa/moony/30.png",
+                    Trademark = "Moony",TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
+                },
+            };
+
+            Page = 0;
+        }
     }
 
 
@@ -1704,311 +5973,5 @@ namespace AvaKids.Models
     }
 
 
-    public class ListBimTa
-    {
-        public List<Product> BimTa { get; set; }
-
-        public ListBimTa()
-        {
-            BimTa = new List<Product>()
-            {
-                //Bobby
-                new Product
-                {
-                    ProductID = 1,
-                    ProductName="Tã quần Bobby size M 76 miếng (6 - 11 kg)",
-                    Price = 343400,
-                    PriceOld = 404000,
-                    Image = "/img/BimTa/bobby/1.jpg",
-                    Trademark = "Bobby", 
-                    TypeDiapers = "Miếng lót sơ sinh", 
-                    WeighDiapers = "Dưới 5kg",
-                    Size = "NB"
-                },
-                new Product
-                {
-                    ProductID = 2,
-                    ProductName="Tã quần Bobby size XL 62 miếng (12 - 17 kg)",
-                    Price = 243400,
-                    PriceOld = 304000,
-                    Image = "/img/BimTa/bobby/2.jpg",
-                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 5kg - 10kg",Size = "S"
-                },
-                new Product
-                {
-                    ProductID = 3,
-                    ProductName="Tã quần Bobby size L 68 miếng (9 - 13 kg)",
-                    Price = 143400,
-                    PriceOld = 204000,
-                    Image = "/img/BimTa/bobby/3.png",
-                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
-                },
-                new Product
-                {
-                    ProductID = 4,
-                    ProductName="Tã quần Bobby size XXL 56 miếng (15 - 25 kg)",
-                    Price = 323100,
-                    PriceOld = 359000,
-                    Image = "/img/BimTa/bobby/4.png",
-                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
-                },
-                new Product
-                {
-                    ProductID = 5,
-                    ProductName="Tã quần Bobby Extra Soft-Dry size L 52 miếng (9 - 13 kg)",
-                    Price = 291500,
-                    PriceOld = 304000,
-                    Image = "/img/BimTa/bobby/5.png",
-                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
-                },
-                new Product
-                {
-                    ProductID = 6,
-                    ProductName="Tã quần Bobby Extra Soft-Dry size XXL 42 miếng (Trên 16 kg)",
-                    Price = 2915000,
-                    PriceOld = 434000,
-                    Image = "/img/BimTa/bobby/6.png",
-                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
-                },
-                new Product
-                {
-                    ProductID = 7,
-                    ProductName="Tã quần Bobby Extra Soft-Dry size M 60 miếng (6 - 11 kg)",
-                    Price = 291500,
-                    PriceOld = 343000,
-                    Image = "/img/BimTa/bobby/7.png",
-                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
-                },
-                new Product
-                {
-                    ProductID = 8,
-                    ProductName="Tã dán Bobby siêu mỏng size XXL 56 miếng (Trên 16 kg)",
-                    Price = 289000,
-                    PriceOld = 340000,
-                    Image = "/img/BimTa/bobby/8.png",
-                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
-                },
-                new Product
-                {
-                    ProductID = 9,
-                    ProductName="Tã quần Bobby size M 76 miếng (6 - 11 kg)",
-                    Price = 278000,
-                    PriceOld = 504000,
-                    Image = "/img/BimTa/bobby/9.jpg",
-                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
-                },
-                new Product
-                {
-                    ProductID = 10,
-                    ProductName="Tã quần Bobby Extra Soft-Dry size XL 46 miếng (12 - 17 kg)",
-                    Price = 274400,
-                    PriceOld = 344000,
-                    Image = "/img/BimTa/bobby/10.png",
-                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Dưới 5kg",Size = "NB"
-                },
-                new Product
-                {
-                    ProductID = 11,
-                    ProductName="Tã quần Bobby size M 76 miếng (6 - 11 kg)",
-                    Price = 278000,
-                    PriceOld = 504000,
-                    Image = "/img/BimTa/bobby/9.jpg",
-                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
-                },
-                new Product
-                {
-                    ProductID = 12,
-                    ProductName="Tã quần Bobby Extra Soft-Dry size XL 46 miếng (12 - 17 kg)",
-                    Price = 274400,
-                    PriceOld = 344000,
-                    Image = "/img/BimTa/bobby/10.png",
-                    Trademark = "Bobby", TypeDiapers = "Miếng lót sơ sinh", WeighDiapers = "Từ 10 - 13kg",Size = "NB"
-                },
-
-                //Huggies
-                new Product
-                {
-                    ProductID = 11,
-                    ProductName="Tã quần Huggies Dry size XL 62 miếng (12 - 17 kg)",
-                    Price = 342400,
-                    PriceOld = 380000,
-                    Image = "/img/BimTa/huggies/11.png",
-                    Trademark = "Huggies"
-                },
-                new Product
-                {
-                    ProductID = 12,
-                    ProductName="Tã quần Huggies Dry size XXL 56 miếng (Trên 15 kg)",
-                    Price = 342400,
-                    PriceOld = 380000,
-                    Image = "/img/BimTa/huggies/12.png",
-                    Trademark = "Huggies"
-                },
-                new Product
-                {
-                    ProductID = 13,
-                    ProductName="Tã quần Huggies Dry size L",
-                    Price = 442400,
-                    PriceOld = 580000,
-                    Image = "/img/BimTa/huggies/13.png",
-                    Trademark = "Huggies"
-                },
-                new Product
-                {
-                    ProductID = 14,
-                    ProductName="Tã quần Huggies Platinum nature made siêu cao cấp size L 44 miếng (9 - 14 kg)",
-                    Price = 337500,
-                    PriceOld = 375000,
-                    Image = "/img/BimTa/huggies/14.png",
-                    Trademark = "Huggies"
-                },
-                new Product
-                {
-                    ProductID = 15,
-                    ProductName="Tã dán Huggies Platinum nature made siêu cao cấp size L 54 miếng (9 - 14 kg)",
-                    Price = 618000,
-                    PriceOld = 780000,
-                    Image = "/img/BimTa/huggies/15.png",
-                    Trademark = "Huggies"
-                },
-                new Product
-                {
-                    ProductID = 16,
-                    ProductName="Tã dán Huggies Platinum nature made siêu cao cấp size NB 60 miếng (Dưới 5 kg)",
-                    Price = 189900,
-                    PriceOld = 211000,
-                    Image = "/img/BimTa/huggies/16.jpg",
-                    Trademark = "Huggies"
-                },
-                new Product
-                {
-                    ProductID = 17,
-                    ProductName="Tã lót Huggies size NB2 60 miếng (4 - 7 kg)",
-                    Price = 94300,
-                    PriceOld = 111000,
-                    Image = "/img/BimTa/huggies/17.png",
-                    Trademark = "Huggies"
-                },
-                new Product
-                {
-                    ProductID = 18,
-                    ProductName="Tã dán Huggies Dry size S 56 miếng (4 - 8 kg)",
-                    Price = 242400,
-                    PriceOld = 380000,
-                    Image = "/img/BimTa/huggies/18.png",
-                    Trademark = "Huggies"
-                },
-                new Product
-                {
-                    ProductID = 19,
-                    ProductName="Tã quần Huggies Dry size XL 62 miếng (12 - 17 kg)",
-                    Price = 842400,
-                    PriceOld = 980000,
-                    Image = "/img/BimTa/huggies/19.png",
-                    Trademark = "Huggies"
-                },
-                new Product
-                {
-                    ProductID = 20,
-                    ProductName="Tã quần Huggies Dry size XL 62 miếng (12 - 17 kg)",
-                    Price = 1042400,
-                    PriceOld = 1180000,
-                    Image = "/img/BimTa/huggies/20.png",
-                    Trademark = "Huggies"
-                },
-
-                //moony
-                new Product
-                {
-                    ProductID = 21,
-                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
-                    Price = 378000,
-                    PriceOld = 445000,
-                    Image = "/img/BimTa/moony/21.png",
-                    Trademark = "Moony"
-                },
-                new Product
-                {
-                    ProductID = 22,
-                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
-                    Price = 578000,
-                    PriceOld = 645000,
-                    Image = "/img/BimTa/moony/22.png",
-                    Trademark = "Moony"
-                },
-                new Product
-                {
-                    ProductID = 23,
-                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
-                    Price = 778000,
-                    PriceOld = 845000,
-                    Image = "/img/BimTa/moony/23.png",
-                    Trademark = "Moony"
-                },
-                new Product
-                {
-                    ProductID = 24,
-                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
-                    Price = 978000,
-                    PriceOld = 999000,
-                    Image = "/img/BimTa/moony/24.png",
-                    Trademark = "Moony"
-                },
-                new Product
-                {
-                    ProductID = 25,
-                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
-                    Price = 278000,
-                    PriceOld = 345000,
-                    Image = "/img/BimTa/moony/25.png",
-                    Trademark = "Moony"
-                },
-                new Product
-                {
-                    ProductID = 26,
-                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
-                    Price = 878000,
-                    PriceOld = 945000,
-                    Image = "/img/BimTa/moony/26.png",
-                    Trademark = "Moony"
-                },
-                new Product
-                {
-                    ProductID = 27,
-                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
-                    Price = 778000,
-                    PriceOld = 945000,
-                    Image = "/img/BimTa/moony/27.png",
-                    Trademark = "Moony"
-                },
-                new Product
-                {
-                    ProductID = 28,
-                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
-                    Price = 278000,
-                    PriceOld = 545000,
-                    Image = "/img/BimTa/moony/28.png",
-                    Trademark = "Moony"
-                },
-                new Product
-                {
-                    ProductID = 29,
-                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
-                    Price = 178000,
-                    PriceOld = 195000,
-                    Image = "/img/BimTa/moony/29.png",
-                    Trademark = "Moony"
-                },
-                new Product
-                {
-                    ProductID = 30,
-                    ProductName="Tã quần Moony Dry size XL 62 miếng (12 - 17 kg)",
-                    Price = 1878000,
-                    PriceOld = 1445000,
-                    Image = "/img/BimTa/moony/30.png",
-                    Trademark = "Moony"
-                },
-            };
-        }
-    }
+    
 }

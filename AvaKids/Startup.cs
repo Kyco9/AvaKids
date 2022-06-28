@@ -52,6 +52,10 @@ namespace AvaKids
                     name: "default",
                     pattern: "{controller=BimTa}/{action=DanhSachBimTa}/{id?}");
 
+                //endpoints.MapControllerRoute(
+                //   name: "Pageing",
+                //   pattern: "Search", "FilteredTestQR/{query}/{page}",
+                //   new { controller = "BimTa", action = "FilteredTestQR" });
 
                 endpoints.MapControllerRoute(
                     name: "SanPham",

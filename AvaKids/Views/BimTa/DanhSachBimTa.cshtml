@@ -1,12 +1,11 @@
-﻿
-@{
+﻿@{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 
 <div class="container">
     <div class="count-proc">
-        <h2>@ViewBag.TongSoLuong SẢN PHẨM TÃ CHO BÉ</h2>
+        <h2>@Model.CountSP SẢN PHẨM TÃ CHO BÉ</h2>
     </div>
     <div class="filter-contain">
         <div class="filter">
@@ -62,6 +61,16 @@
                             </a>
                         </div>
                     </div>
+
+                    <div class="slider-price">
+                        <p>Hoặc chọn mức giá phù hợp với bạn</p>
+                        <div class="select-price">
+                            <p id="price_show">0-1000000</p>
+
+                            <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;"><div id="price-range"></div>
+                        </div>
+                    </div>
+
                     <div class="clear-filter-price">
                         <button>Bỏ chọn</button>
                     </div>
@@ -138,6 +147,27 @@
     <div class="filtered-qr">
         @await Html.PartialAsync("FilteredTestQR")
     </div>
+
+    @*<div class="paging">
+    @if (Model.Page > 0)
+    {
+
+    <a href="@Url.Action("DanhSachBimTa", new { page = Model.Page - 1 })"
+    class="btn btn-default">
+    &laquo; Prev
+    </a>
+    }
+
+    <a href="@Url.Action("DanhSachBimTa", new { page = Model.Page})">@Model.Page</a>
+    @if (Model.Page < Model.PageMax)
+    {
+    <a href="@Url.Action("DanhSachBimTa", new { page = Model.Page + 1 })"
+    class="btn btn-default">
+    Next &raquo;
+    </a>
+    }
+    </div>*@
+
 </div>
 
 @section ScriptBimTa{
