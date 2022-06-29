@@ -64,6 +64,7 @@ var qr = {
     Page: 0
 };
 
+
 $('.ul-page li a').unbind().click(function () {
 
     var p = $(this).attr("data-page");
